@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",                   // ✅ Supports Object.entries() and async/await
+    "module": "ESNext",                    // Keep ES module system
+    "moduleResolution": "Node",            // Resolve Node.js-style modules
+    "outDir": "./dist",                    // Output directory for compiled JS
+    "rootDir": "./src",                    // Root directory of your source TS files
+    "strict": true,                        // Enable strict type checking
+    "esModuleInterop": true,               // Allow default imports from CommonJS
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing
+    "skipLibCheck": true,                  // Skip type checks for node_modules
+    "resolveJsonModule": true,             // ✅ Allow importing JSON files
+    "lib": ["ES2017", "DOM"]               // ✅ Fixes Object.entries() issue
+  },
+  "include": ["src/**/*.ts"],              // Include all TypeScript files in src
+  "exclude": ["node_modules", "dist"]      // Exclude unnecessary files
+}
