@@ -17,6 +17,9 @@ interface LinkData {
   concordancia: number;
 }
 
+// Variável para armazenar o mapa de discursos em memória
+let mapaDiscursos: Record<string, string> = {};
+
 function getColorByComunidade(comunidade: number): string {
   const colors = [
     "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0",
@@ -31,11 +34,112 @@ let grafo: Graph | null = null;
 const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
 
+/**
+ * Exibe um modal com os discursos de um político.
+ * @param nomePolitico - O nome do político para exibir no título do modal.
+ * @param nomeArquivo - O nome do arquivo JSON contendo os discursos.
+ */
+async function exibirModalDiscursos(nomePolitico: string, nomeArquivo: string) {
+  // Cria o overlay de fundo
+  const overlay = document.createElement("div");
+  overlay.id = "modal-overlay";
+  Object.assign(overlay.style, {
+    position: "fixed", top: "0", left: "0",
+    width: "100%", height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    zIndex: "1000",
+    display: "flex", alignItems: "center", justifyContent: "center",
+  });
+
+  // Cria o container do modal
+  const modal = document.createElement("div");
+  Object.assign(modal.style, {
+    background: "white", padding: "20px",
+    borderRadius: "8px", width: "80%",
+    maxWidth: "700px", maxHeight: "90vh",
+    overflowY: "auto", position: "relative",
+  });
+
+  // Adiciona título e botão de fechar
+  modal.innerHTML = `
+    <h2 style="margin-top: 0;">Discursos de ${nomePolitico}</h2>
+    <button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
+    <div id="discursos-content"><p>Carregando...</p></div>
+  `;
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  // Função para fechar o modal
+  const fecharModal = () => document.body.removeChild(overlay);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) fecharModal();
+  });
+  (modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
+
+  // Busca e exibe os discursos
+  try {
+    // Assumindo que os arquivos de discursos estão na pasta /public/discursos/
+    const response = await fetch(`/discursos/${nomeArquivo}`);
+    if (!response.ok) throw new Error(`Não foi possível encontrar o arquivo: ${nomeArquivo}`);
+    
+    const politicoData = await response.json();
+    const discursos = politicoData.discursos; // Acessa a lista de discursos dentro do objeto principal
+
+    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+
+    if (Array.isArray(discursos) && discursos.length > 0) {
+      // Limpa o "Carregando..."
+      contentDiv.innerHTML = "";
+      // Itera sobre a lista de discursos encontrada
+      discursos.forEach((discurso: any) => {
+        const discursoEl = document.createElement("div");
+        discursoEl.style.borderBottom = "1px solid #eee";
+        discursoEl.style.padding = "10px 0";
+        discursoEl.style.marginBottom = "10px";
+        
+        // Formata a data para melhor visualização
+        const dataFormatada = new Date(discurso.dataHoraInicio).toLocaleDateString('pt-BR', {
+          day: '2-digit', month: '2-digit', year: 'numeric'
+        });
+
+        // Monta o HTML com os dados corretos do JSON
+        discursoEl.innerHTML = `
+          <p><strong>Data:</strong> ${dataFormatada}</p>
+          <p><strong>Tipo do Discurso:</strong> ${discurso.tipoDiscurso || 'Não informado'}</p>
+          <p><strong>Sumário:</strong> ${discurso.sumario || 'Não informado'}</p>
+          ${discurso.urlTexto ? `<a href="${discurso.urlTexto}" target="_blank" rel="noopener noreferrer">Ler íntegra no Diário da Câmara</a>` : ''}
+        `;
+        contentDiv.appendChild(discursoEl);
+      });
+    } else {
+      contentDiv.innerHTML = "<p>Nenhum discurso encontrado.</p>";
+    }
+
+  } catch (error) {
+    console.error("Erro ao carregar discursos:", error);
+    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+    contentDiv.innerHTML = `<p style="color: red;">Ocorreu um erro ao carregar os discursos.</p>`;
+  }
+}
+
+async function carregarMapeamento() {
+  try {
+    const response = await fetch('/mapeamento_discursos.json');
+    if (!response.ok) throw new Error('Falha ao carregar mapa de discursos');
+    mapaDiscursos = await response.json();
+    console.log("Mapa de discursos carregado com sucesso.");
+  } catch (error) {
+    console.error("Não foi possível carregar o arquivo de mapeamento:", error);
+    alert("Atenção: A funcionalidade de exibir discursos pode não funcionar.");
+  }
+}
+
 async function carregarGrafo(ano: string) {
   try {
     const response = await fetch(`/${ano}.json`);
     const texto = await response.text();
-    console.log(`Resposta do fetch para vinicius${ano}.json:`, texto);
+    // Removido o console.log do response para não poluir o console
     if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
     const jsonData = JSON.parse(texto);
     construirGrafo(jsonData);
@@ -106,6 +210,21 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   forceAtlas2.assign(graph, { ...fa2Settings, iterations: 1000 });
 
   sigmaRenderer = new Sigma(graph, container as HTMLElement);
+
+  // Evento de clique para buscar discursos usando o mapa
+  sigmaRenderer.on("clickNode", ({ node }) => {
+    const attrs = graph.getNodeAttributes(node);
+    const nomePolitico = attrs.label.toUpperCase();
+
+    const nomeArquivo = mapaDiscursos[nomePolitico];
+    
+    if (nomeArquivo) {
+      exibirModalDiscursos(attrs.label, nomeArquivo);
+    } else {
+      console.log(`Nenhum arquivo de discurso encontrado no mapa para: ${attrs.label}`);
+    }
+  });
+
 
   //Search bar
   const searchInput = document.createElement("input");
@@ -280,7 +399,6 @@ sliderContainer.style.left = "10px";
 sliderContainer.style.zIndex = "10";
 sliderContainer.style.display = "flex";
 sliderContainer.style.flexDirection = "column";
-// REMOVIDO alignItems para não atrapalhar centralização dos botões
 sliderContainer.style.background = "white";
 sliderContainer.style.padding = "6px 10px";
 sliderContainer.style.border = "1px solid #ccc";
@@ -288,13 +406,11 @@ sliderContainer.style.borderRadius = "8px";
 sliderContainer.style.boxShadow = "0 2px 6px rgba(0,0,0,0.15)";
 sliderContainer.style.minWidth = "150px";
 
-// Container da label + input lado a lado (Ano:)
 const linhaAno = document.createElement("div");
 linhaAno.style.display = "flex";
 linhaAno.style.alignItems = "center";
 linhaAno.style.gap = "8px";
 linhaAno.style.marginBottom = "8px";
-// Força largura igual ao slider (mais fácil controlar alinhamento)
 linhaAno.style.width = "130px";
 
 const labelAno = document.createElement("span");
@@ -306,12 +422,10 @@ inputAno.type = "number";
 inputAno.min = "2017";
 inputAno.max = "2024";
 inputAno.value = anos[indiceAnoAtual];
-//Define largura do input para que junto com o label a linha tenha 130px
 inputAno.style.width = "100px";
 inputAno.style.padding = "3px 5px";
 inputAno.style.border = "1px solid #ccc";
 inputAno.style.borderRadius = "4px";
-//Remover aparência padrão em alguns navegadores
 (inputAno.style as any).mozAppearance = "textfield";
 (inputAno.style as any).webkitAppearance = "none";
 
@@ -319,25 +433,23 @@ linhaAno.appendChild(labelAno);
 linhaAno.appendChild(inputAno);
 sliderContainer.appendChild(linhaAno);
 
-//Slider com largura igual à linhaAno
 const slider = document.createElement("input");
 slider.type = "range";
 slider.min = "0";
 slider.max = (anos.length - 1).toString();
 slider.value = indiceAnoAtual.toString();
 slider.step = "1";
-slider.style.width = "130px";  // mesma largura da linhaAno
+slider.style.width = "130px";
 slider.style.pointerEvents = "none"; 
 slider.style.opacity = "0.5";
 slider.style.marginBottom = "8px";
 sliderContainer.appendChild(slider);
 
-// Container dos botões ◀ ▶ alinhados ao centro do slider
 const botoesContainer = document.createElement("div");
 botoesContainer.style.display = "flex";
 botoesContainer.style.gap = "8px";
-botoesContainer.style.justifyContent = "center"; // centraliza os botões horizontalmente
-botoesContainer.style.width = "130px"; // mesma largura do slider e linhaAno
+botoesContainer.style.justifyContent = "center";
+botoesContainer.style.width = "130px";
 
 const botaoMenos = document.createElement("button");
 botaoMenos.textContent = "◀";
@@ -357,8 +469,6 @@ botoesContainer.appendChild(botaoMenos);
 botoesContainer.appendChild(botaoMais);
 sliderContainer.appendChild(botoesContainer);
 
-
-//Função para atualizar ano
 function atualizarAno(novoIndice: number) {
   if (novoIndice < 0 || novoIndice >= anos.length) return;
   indiceAnoAtual = novoIndice;
@@ -368,7 +478,6 @@ function atualizarAno(novoIndice: number) {
   carregarGrafo(anoSelecionado);
 }
 
-//Validação inputAno
 inputAno.addEventListener("change", () => {
   const valor = inputAno.value;
   const indice = anos.indexOf(valor);
@@ -382,5 +491,11 @@ inputAno.addEventListener("change", () => {
 
 document.body.appendChild(sliderContainer);
 
-//Carrega grafo inicial
-carregarGrafo("2017");
+// Função para iniciar a aplicação
+async function iniciarAplicacao() {
+  await carregarMapeamento(); // Carrega o mapa primeiro
+  carregarGrafo("2017");      // Depois carrega o grafo inicial
+}
+
+// Inicia a aplicação
+iniciarAplicacao();

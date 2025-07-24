@@ -1,0 +1,183 @@
+{
+    "id": 220611,
+    "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220611",
+    "nome": "General Pazuello",
+    "siglaPartido": "PL",
+    "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37906",
+    "siglaUf": "RJ",
+    "idLegislatura": 57,
+    "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220611.jpg",
+    "email": "dep.generalpazuello@camara.leg.br",
+    "discursos": [
+        {
+            "dataHoraInicio": "2023-12-05T15:12",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=6%2F12%2F2023&txPagina=53&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Venezuela,Guiana,Soberania nacional,Território,Exército Brasileiro",
+            "sumario": "O Deputado expressou preocupação com a possível disputa territorial entre Venezuela e Guiana, envolvendo a soberania territorial brasileira.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Sem revisão do orador.) - Sr. Presidente, eu pedi a palavra para fazer um alerta de verdade à Nação. Nós estamos vivendo um momento delicadíssimo na geopolítica mundial em vários lugares: Rússia em guerra com a Ucrânia, Hamas em guerra com Israel, China com risco real de ações sobre Taiwan, Coreia do Norte e Coreia do Sul em tensões agravadas, guerra civil no Sudão. Agora essas disputas estão chegando às nossas fronteiras. A Venezuela está a um passo de invadir a Guiana. Senhores, a Guiana e a Venezuela fazem fronteira com o Brasil. O objetivo da Venezuela é anexar a região de Essequibo, uma disputa de mais de 1 século. Isso traz para o País o risco de ter a soberania violada... (Desligamento do microfone.) O SR. GENERAL PAZUELLO (PL - RJ) - ...pelo território brasileiro no norte do Estado de Roraima. Por mais que não queiramos enxergar a verdade, a guerra vai acontecer. Não podemos deixar o Governo Federal nem cogitar em relativizar a nossa soberania e a inviolabilidade de nosso território. O Exército Brasileiro possui as estruturas e o poder de combate necessários para garantir a inviolabilidade do nosso território... (Desligamento do microfone.) O SR. GENERAL PAZUELLO (PL - RJ) - ...precisa ficar atento e ativo, para que ninguém  ressalto, ninguém  tente nos associar a ditaduras, como a da Venezuela. Muito obrigado."
+        },
+        {
+            "dataHoraInicio": "2023-10-25T20:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=26%2F10%2F2023&txPagina=167&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Emenda de plenário,Projeto de lei ordinária,Minoria parlamentar,Voto favorável",
+            "sumario": "O Deputado orientou a bancada na votação da Emenda de Plenário nº 12 apresentada ao Projeto de Lei nº 4.173, de 2023, que dispõe sobre a tributação da renda auferida por pessoas físicas residentes no País em aplicações financeiras, entidades controladas e trusts no exterior.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Pela ordem. Sem revisão do orador.) - Sr. Presidente, é um prazer estar aqui. Senhores, o assunto desse destaque não é a bitributação. O foco desse destaque está em manter a prioridade dos acordos já feitos pelo nosso País. Os acordos internacionais têm prevalência sobre a lei que está sendo votada. Precisamos manter os acordos internacionais. Essa é uma exigência da OCDE, e eu acredito que o destaque está sendo mal interpretado. Uma das consequências de não manter o acordo poderá gerar uma bitributação, mas o foco do destaque é garantir que a prioridade seja feita em cima dos acordos que o Brasil já fez. Então, a Minoria orienta \"sim\" ao destaque."
+        },
+        {
+            "dataHoraInicio": "2023-10-24T21:22",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=25%2F10%2F2023&txPagina=169&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": null,
+            "sumario": "O Deputado ressaltou a atuação da Frente Parlamentar em Apoio ao Petróleo, Gás e Energia (FREPPEGEN), apoiada por 217 Deputados, que destaca o desenvolvimento nacional e a importância estratégica da exploração de petróleo, gás e energia no Brasil. De acordo com o Parlamentar, a FREPPEGEN visa a cooperação econômica, o aprimoramento do setor, a geração de empregos e o incentivo a ações sustentáveis na geração de energia, com o objetivo de garantir a segurança energética e melhorar a qualidade de vida da população brasileira.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO GENERAL PAZUELLO (SEM REGISTRO TAQUIGRÁFICO). FRENTE PARLAMENTAR EM APOIO AO PETRÓLEO, GÁS E ENERGIA (FREPPEGEN) Prezados Pares e Convidados, Representantes dos Setores do Petróleo, do Gás e da Energia... Sejam todos muito benvindos e muito obrigado pelo prestígio que emprestam a esta importante Cerimonia. A Frente Parlamentar em Apoio ao Petróleo, Gás e Energia, a nossa FREPPEGEN, foi proposta por este Parlamentar e apoiada por 217 Parlamentares desta Câmara dos Deputados. Esse incontestável apoio está baseado, sem dúvida alguma, no princípio fundamental desta Frente, com foco no desenvolvimento nacional e na relevância estratégica e geopolítica da exploração do petróleo, do gás natural e da energia elétrica, incluindo fontes convencionais e renováveis, em nosso País. Para tanto, a FREPPEGEN manterá sua atenção na cooperação e no desenvolvimento econômicos, em reconhecimento à essencialidade da estrutura orgânica do Setor Energético Brasileiro, e seus objetivos prioritários serão o aprimoramento organizacional do Setor, a geração de empregos e o incentivo permanente ao planejamento de ações cada vez mais sustentáveis na geração de energia no Brasil. Por fim, a Frente Parlamentar em Apoio ao Petróleo, Gás e Energia refletirá as intenções e esforços do Parlamento Brasileiro para a garantia da Segurança Energética no País e, consequentemente, para a melhoria da qualidade de vida de nossa população. Assim, tudo faremos em benefício dos combustíveis e energias que movem esta grande Nação. Salão Nobre - Câmara dos Deputados, 24 de outubro de 2023.   GENERAL PAZUELLO Deputado Federal (PL/RJ)"
+        },
+        {
+            "dataHoraInicio": "2023-09-05T11:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Homenagem",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "HOMENAGEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=6%2F9%2F2023&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Sessão solene,Profissional de Educação Física,Conselho Federal de Educação Física (Confef),Aniversário de fundação,Homenagem",
+            "sumario": "O Deputado discursou na sessão solene em homenagem aos profissionais de educação física e aos 25 anos do Conselho Federal de Educação Física — CONFEF.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Sem revisão do orador.) - Cumprimento a Deputada Laura Carneiro, que preside esta sessão solene; o Dr. Cláudio, Presidente; a Débora e o Jorge Steinhilber. Cumprimento todos os componentes da Mesa. Cumprimento, também, todos os senhores e senhoras que vieram prestigiar este evento; o Deputado Luiz Lima, nosso representante esportista na Câmara e, com muito orgulho, parceiro no Rio de Janeiro, o nosso Deputado! Na pessoa dele e na de todos os senhores e senhoras aqui, saúdo as demais autoridades e os Srs. Deputados presentes. Eu não poderia me furtar a prestigiar este evento, pela razão óbvia de ter sido usuário do sistema por 48 anos. Todos os dias, dos 10 anos até os 58 anos de idade, nós acordamos e fomos nos encontrar com os profissionais de educação física, para conduzir a preparação física dos militares. Eu começo exatamente neste ponto, para dizer aos senhores que a base de uma força armada é o jovem, é o homem, homem ou mulher, é o ser humano. Esta base está alicerçada na capacidade física daquele combatente: inicialmente, preparar o jovem para se tornar um combatente e, depois, manter a operacionalidade da tropa. Isso traz a lógica e o porquê de o Exército ser o embrião das escolas de educação física no nosso País, o que remonta às décadas de 30 e de 40, até porque houve também a preparação dos nossos militares que foram para a Força Expedicionária Brasileira. Desde então, há realmente uma estrutura de referência no Rio de Janeiro, na Urca, que é o Centro de Capacitação Física do Exército  ele já teve outros nomes, o atual é este. Dentro deste centro, existem as escolas de educação física, os institutos de pesquisa e a área desportiva efetiva do Exército, os quais receberam um upgrade de 2010 a 2011. Os senhores devem lembrar que o Brasil sediou, em 2011, os Jogos Mundiais Militares, para os quais houve uma preparação muito intensa das três forças não só no Rio de Janeiro, mas também nas cidades próximas, em Minas e São Paulo também, para preparar nossos atletas a fim de competirem nestes jogos, que seriam sediados no Rio de Janeiro. Naquele momento, foi criado o Programa Atletas de Alto Rendimento. Este grande programa foi fundamental para nossa classe desportiva brasileira porque os atletas de alto rendimento passaram a ter a possibilidade de usar a estrutura do Exército, da Marinha e da Aeronáutica e, a partir dali, terem as condições básicas de progredirem no seu treinamento com uma estrutura já baseada nas três forças. Este programa está ativo até hoje, e eu tive a oportunidade, na época, de participar da sua implementação no CCFEx. Eu tenho visitado as forças também hoje com o PROFESP, que segue na mesma linha em busca de novos atletas. Chegam ao programa não só atletas que já têm um grau de rendimento, como também crianças e jovens que se destacam tanto no treinamento comum, como no paralímpico. Portanto, àqueles que não conhecem o PROFESP, que não conhecem como ele funciona, principalmente no Rio de Janeiro, nas três forças, aqui fica o convite. Existe aquela frase já conhecida: mens sana in corpore sano, e isso é a base do que nós estamos falando hoje aqui. Não existe nós termos a cabeça preparada para o nosso dia a dia sem termos uma preparação física adequada, adaptada a cada momento da vida. É isso o que nos vai trazer os benefícios para trabalhar melhor. Vemos os programas japoneses, vemos todo esse trabalho que é feito e sabemos como nos sentimos melhores quando treinamos de manhã e vamos trabalhar, somos outra pessoa. Eu coloco aqui os parabéns reais a quem se dedica efetivamente a treinar, a aprender e a cuidar das pessoas. Um profissional de educação física cuida efetivamente das pessoas. Tenho um exemplo pessoal que vou dividir com os senhores. Imaginem: estando eu afastado do Rio de Janeiro, obviamente, o professor de educação física da minha filha a viu com dificuldade e passou a buscá-la em casa. Ele caminhava até a academia para dar aula a ela e ia a pé até em casa para devolvê-la. Fez isso porque viu que ela precisava, que era muito importante para ela manter o treinamento. Então, isso é cuidar das pessoas. Isso é o resultado real do preparo físico operacional, é o resultado real da vida no dia a dia de nós todos, que precisamos estar preparados para enfrentar os desafios. Parabéns a todos e todas! Contem conosco aqui também na Câmara para apoiá-los, Deputada Laura e Deputado Luiz Lima, o nosso atleta campeão, em tudo o que for necessário. Muito obrigado."
+        },
+        {
+            "dataHoraInicio": "2023-08-23T22:26",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=24%2F8%2F2023&txPagina=311&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Contribuição sindical,contrário",
+            "sumario": "O Deputado abordou a questão do Imposto Sindical em seu discurso, destacando sua preocupação com a reintrodução desta taxa e seus possíveis impactos. Lembrou que a extinção do imposto em 2017 foi uma decisão democrática para buscar alternativas ao financiamento dos sindicatos e enfatizou a importância de ouvir todas as partes envolvidas, considerar os impactos econômicos e sociais e evitar abordagens ideológicas. O orador argumentou que, em meio às incertezas econômicas do país, reintroduzir o imposto pode criar ônus adicionais às empresas e não refletir os interesses dos trabalhadores. Portanto, se posicionou contrário ao retorno do Imposto Sindical.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO GENERAL PAZUELLO (SEM REGISTRO TAQUIGRÁFICO). A VOLTA DO IMPOSTO SINDICAL PELOS INTERESSES DOS TRABALHADORES OU DOS SINDICATOS Senhor Presidente, Senhoras e Senhores... Boa tarde (noite)! Diante de inúmeras improbidades, da corrupção e do regime nefasto e pernicioso presentes em grande parte dos sindicatos brasileiros, em 2017, esta Casa optou, sabiamente, no âmbito da última Reforma Trabalhista, pela extinção da obrigatoriedade do Imposto Sindical. Naquele momento, cumprindo seu papel, esta Casa conduziu as discussões sobre este tema de forma absolutamente democrática e chegou à conclusão de que seria muito mais viável para o País, buscar alternativas para o fortalecimento e confiabilidade dos sindicatos nacionais, assim como conscientizar os trabalhadores brasileiros sobre a importância de sua participação efetiva em suas causas, como também no financiamento voluntário de suas estruturas. Entretanto, hoje, de forma absolutamente controversa, pretende-se reintroduzir tal Imposto no âmbito do País, e a nossa preocupação, caros Parlamentares, deve ser... com que efetividade isto será feito e a que preço, sendo o mais caro, aquele que poderá recriar, como outrora, os embates, a discórdia e a dissociação entre trabalhadores e empregadores brasileiros. Consideramos indiscutível a importância do papel que alguns sindicatos brasileiros desenvolvem, com seriedade e responsabilidade, eles são uma importante ferramenta, tanto para a defesa e o prestígio dos direitos dos trabalhadores, como para a intermediação dos contenciosos com seus empregadores. No entanto, nosso País passa por grandes incertezas econômicas e o atual Gov Fed tornou-se responsável pela volta do crescimento das taxas de desemprego e diante de tal proposição, nos cabe verificar se a volta do Imposto Sindical seria a melhor solução para os desafios e dificuldades financeiras atualmente enfrentados pelos trabalhadores brasileiros... como também verificar se esses trabalhadores concordam ou não com a obrigatoriedade em contribuir com Entidades que, por vezes, sequer representam seus interesses. E por outro lado, Amigos, convenhamos que a última coisa que o País precisa neste momento é gerar novos ônus para suas empresas, que já enfrentam tantas dificuldades financeiras. Desta forma, se temos que voltar a essa pauta, torna-se fundamental ouvir todas as partes envolvidas, compreender os impactos econômicos e sociais consequentes e, ao invés de tratar o tema de forma ideológica e partidária, buscar soluções justas e equilibradas, viáveis nos campos social e econômico do Brasil atual. Cautela e bom senso são extremamente necessários neste momento, levando em consideração não apenas os interesses sindicais, mas também as necessidades dos trabalhadores brasileiros e a atual realidade econômica do País... NÃO ao retorno do Imposto Sindical! Muito obrigado. Deputado General Pazuello  PL/RJ"
+        },
+        {
+            "dataHoraInicio": "2023-06-20T16:12",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=21%2F6%2F2023&txPagina=29&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Dia Mundial do Refugiado,Alto Comissariado das Nações Unidas para Refugiados (ACNUR),Refugiado,Veneno,Roraima",
+            "sumario": "Necessidade de ação do governo brasileiro junto ao Alto Comissariado das Nações Unidas para Refugiados – ACNUR, diante do elevado fluxo de venezuelanos ao Estado de Roraima em decorrência da opressão ditatorial reinante naquele país.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Sem revisão do orador.) - Muito obrigado, meu amigo. Sr. Presidente, obrigado pela oportunidade. Saúdo os Deputados Gustavo Gayer e Luiz Lima, presentes aqui. Senhores, hoje é o Dia Internacional dos Refugiados. Eu queria marcar esse ponto, porque hoje, no mundo, nós estamos falando de fluxos de pessoas que saem de seus países, fogem de seus países por diversas razões: por guerra, por ditaduras, por fome, por tortura, por tudo que vocês podem imaginar. Esses movimentos acontecem no mundo o tempo todo. Aqui, esse movimento está acontecendo da Venezuela para o Brasil, em Roraima, na cidade de Pacaraima. Mais de 1 milhão e 200 mil pessoas entraram no Brasil nesses últimos anos. Ao todo, 7,5 milhões de venezuelanos já saíram do seu país para buscar oportunidades e fugir da opressão, fugir da ditadura, fugir das perseguições. Quero dizer a todos que temos que olhar para isso; temos que buscar proximidade com as agências da ONU, como o ACNUR  Alto Comissariado das Nações Unidas para Refugiados, para que juntos possamos trabalhar, juntos possamos receber essas pessoas e juntos possamos sempre questionar e criticar países que não respeitam os direitos humanos. Muito obrigado."
+        },
+        {
+            "dataHoraInicio": "2023-06-07T12:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=8%2F6%2F2023&txPagina=71&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Supremo Tribunal Federal (STF),Redistribuição,Royalty,Petróleo,Economia,Rio de Janeiro (Estado),Bancada parlamentar,atuação",
+            "sumario": "Expectativa quanto à decisão do Supremo Tribunal Federal sobre a redistribuição de royalties de petróleo. Importância dos royalties para a economia do Estado do Rio de Janeiro.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Pela ordem. Sem revisão do orador.) - Senhores, Presidente, minha observação hoje tem a ver com o risco que o Rio de Janeiro corre ante a decisão que o STF está estudando sobre a redistribuição dos royalties de petróleo. Esta discussão é pertinente? Sim, é, mas nós temos que compreender o quanto a matriz econômica  petróleo, energia e gás  é importante para o Rio de Janeiro. Esta é a nossa principal matriz. Hoje os Estados dependem destes royalties para funcionarem adequadamente. Não podemos apenas discutir como os outros Estados veem, mas como nosso Rio de Janeiro vê. Concito toda a bancada do Rio de Janeiro, independentemente de partido político, a trabalharmos juntos, a levarmos propostas claras e a nos posicionarmos, a fim de influenciarmos a decisão de mantermos um Rio de Janeiro economicamente saudável e compensarmos o que reflete a retirada do petróleo, do gás do mar e como isso se apresenta no litoral do Rio de Janeiro. É importante termos este olhar. Nós estamos atentos. Nós não vamos nos calar perante um ataque contra a economia do nosso Estado. Fiquem certos disso. Novamente, a bancada do Rio de Janeiro se junta à política sem partido, defendendo nosso Estado. Muito obrigado."
+        },
+        {
+            "dataHoraInicio": "2024-11-05T14:24",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=6%2F11%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Requerimento de urgência,Projeto de lei ordinária,Audiência de custódia,Prisão preventiva,Criminoso,Reincidência,Crime hediondo,Organização criminosa,Política de segurança pública,Proposição legislativa,Rio de Janeiro (Estado),Grupo de estudo",
+            "sumario": "O Deputado celebrou a aprovação do requerimento de urgência apresentado ao Projeto de Lei nº 714, de 2023, que altera o artigo 310, do Decreto-Lei nº 3.689, de 3 de outubro de 1941, Código de Processo Penal, para tornar obrigatória a decretação de prisão preventiva na audiência de custódia em casos de crimes hediondos, roubo, associação criminosa qualificada e quando for configurada reincidência criminal. Ademais, defendeu a proposição, que determina a prisão preventiva, por meio de decisão judicial, de criminosos reincidentes, que cometam crimes hediondos ou que façam parte de facções criminosas. Além disso, argumentou que a segurança pública é o principal assunto da década e solicitou apoio aos doze projetos de lei em tramitação, oriundos do Grupo de Estudos de Segurança Pública do Rio de Janeiro.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Sem revisão do orador.) - Sr. Presidente, obrigado pela concessão da palavra. Deputado Luiz Lima, obrigado por me ter cedido a vez. Meus companheiros de voo que estão aqui presentes, eu queria, de forma muito alegre, dizer para V.Exas. que ontem houve a aprovação do requerimento de urgência para que votemos aqui na Casa o projeto de lei que permite, ou melhor  acho que é mais forte , obriga o juiz a, na audiência pública, decretar prisão preventiva na hora para criminosos que cometam crimes hediondos, criminosos que façam parte de facções criminosas e, principalmente, criminosos que sejam reincidentes. Talvez a reincidência, devido à certeza da impunidade, seja o maior problema do nosso País. A partir do momento que ficar cara a reincidência, as coisas vão mudar, a segurança pública vai mudar. Eu posso afiançar aos senhores: a segurança pública é o principal assunto desta década. Precisamos enfrentar isso de frente. Estão tramitando na Casa em torno de doze projetos de lei que nós trouxemos do nosso Grupo de Estudos de Segurança Pública do Rio de Janeiro, que já estão distribuídos às Comissões e atendem a todas essas pautas de uma forma clara, ajustando e atualizando a lei para que possamos, realmente, ser efetivos não só no policiamento e na prisão, mas também na execução da pena. É nisso que nós estamos trabalhando. Acho que essa urgência que foi aprovada ontem aqui nesta Casa é o começo da solução. Parabéns aos Deputados que trabalharam nisso! Vamos estar juntos na aprovação do projeto. Muito obrigado, Presidente, pelas palavras."
+        },
+        {
+            "dataHoraInicio": "2024-10-08T17:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=9%2F10%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Eleição municipal,Direita política,Esquerda política,Conservadorismo,Rio de Janeiro (Estado),Governo federal,Irã,Nicarágua,Rússia,China,Parlamento",
+            "sumario": "O Deputado celebrou o desempenho da Direita nas eleições de 6 de outubro, destacando a consolidação do conservadorismo no Brasil após décadas de marginalização. Afirmou que percorreu 52 cidades no Rio de Janeiro e encontrou apoio a posições conservadoras. Ressaltou a importância de combater as ameaças da Esquerda e criticou o alinhamento do Governo atual com países como Irã, Nicarágua, Rússia e China. Pediu união no Parlamento para enfrentar as políticas do Governo Lula e reafirmou a missão da Direita de defender o País.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ. Sem revisão do orador.) - Sr. Presidente, companheiros que estão na Casa neste momento, estou usando a tribuna hoje para falar sobre as eleições que aconteceram no último domingo. Em algumas cidades, acabaram no primeiro turno. Em outras, haverá segundo turno. Acredito que a Direita e o conservadorismo do nosso País demonstraram o tamanho que têm. Eu rodei por 52 cidades no Rio de Janeiro para tratar do nosso partido e das nossas posições e só encontrei pessoas alinhadas, conservadoras e preocupadas com o nosso País. Acredito que a vitória do dia 6 de outubro ficará marcada na política do Brasil. Ocupamos definitivamente o espaço que nos é de direito, espaço que nos foi negado por décadas. Por 40 anos, a Direita e o conservadorismo ficaram apagados. Com o retorno das discussões em cima do Governo Lula e do Governo Dilma, com a Lava-Jato, com o impeachment de Dilma, com Temer e, finalmente, com Bolsonaro, a Direita ressurge, e o nosso País finalmente vai poder lidar de maneira clara com as ameaças que a Esquerda traz para o Brasil. Precisamos nos alinhar, precisamos estar ombreados, precisamos rechaçar o alinhamento que o atual Governo quer fazer com países como Irã, Nicarágua, Rússia e China. É preciso compreender o tamanho da nossa missão. O povo já cumpriu a sua parte votando. Nós, no Parlamento, temos que cumprir a nossa parte fazendo leis e rechaçando as investidas que chegam do Planalto. Senhores, parabéns por essa vitória no dia 6 de outubro! Sr. Presidente, gostaria que este pronunciamento fosse divulgado pelos meios de comunicação da Casa e no programa A Voz do Brasil. Muito obrigado."
+        },
+        {
+            "dataHoraInicio": "2024-07-09T12:32",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Homenagem",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "HOMENAGEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=10%2F7%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Sessão solene,Homenagem,Igreja Universal do Reino de Deus (IURD),Templo religioso,Aniversário de fundação,Igreja evangélica,Crença religiosa,Bispo,Operação Acolhida,Roraima,Refugiado,Venezuela,Israel,parceria,Política,Valor social",
+            "sumario": "O Deputado, na Sessão Solene em homenagem à Igreja Universal do Reino de Deus e ao Templo de Salomão,&nbsp;agradeceu à Igreja Universal do Reino de Deus por seu apoio à Operação Acolhida em Roraima, destacando a assistência prestada aos refugiados venezuelanos. Elogiou a energia positiva trazida pelos membros da igreja ao Plenário e ressaltou a responsabilidade da Igreja em manter e promover valores essenciais para os brasileiros. Agradeceu o constante apoio da Igreja ao povo de Israel, destacando a importância desses valores na política e na sociedade. Concluiu afirmando a continuidade da parceria e o apoio mútuo entre a Igreja e seus seguidores.",
+            "transcricao": "O SR. GENERAL PAZUELLO (PL - RJ) - Sra. Presidente da Mesa, Deputada Maria Rosas, quero cumprimentar V.Exa., o Sr. Deputado Márcio Marinho, a Sra. Deputada Rogéria Santos, o meu amigo Deputado Julio Cesar Ribeiro, meu parceiro aqui de combate, os senhores bispos, por intermédio dos quais cumprimento todos os integrantes da Igreja que aqui estão, e a Senadora Damares Alves, que passou ali e não me deu um beijo  eu ia lhe cobrar isso em plenário. (Risos.) Eu queria falar, em primeiro lugar, mesmo que o Bispo Alessandro já tenha dado um spoiler do porquê eu vim aqui, sobre a interação da equipe da Universal com a Operação Acolhida em Roraima. A Igreja foi parceira de toda hora para cuidar das pessoas, para diminuir a vulnerabilidade daqueles seres humanos que estavam chegando sem nada, fugindo da ditadura venezuelana, da fome, do medo, do espancamento, das agressões, dos estupros. Chegavam realmente muito vulneráveis, e a Igreja estava lá para nos ajudar. Muito obrigado. Esta foi a motivação de eu estar aqui para agradecer pessoalmente à Igreja Universal do Reino de Deus e a todos os senhores e senhoras, que labutam nesta missão. A segunda ideia que eu quero colocar aqui é o agradecimento pela energia que vocês estão trazendo para este plenário. Sentimos a energia positiva dos jovens que estão lá em cima e de todos que estão aqui sentados. (Palmas.) Este plenário precisa desta energia, e eu espero que ela fique aqui por um bom tempo depois que vocês forem embora. Essa é a segunda ideia. A terceira ideia que eu queria colocar é que vocês têm muita responsabilidade com o nosso País. O Exército também tem, mas vocês são os fiéis depositários dos valores que nós esperamos de um brasileiro. Eu espero estar sendo bem claro: vocês são os fiéis depositários dos valores que nós esperamos de um brasileiro. Continuem lutando e impondo esses valores, não só nas suas casas, nas escolas dos seus filhos, mas também na política. Não é da religião que vem a política, são os valores que chegam à política. Tragam esses valores para dentro da política. Por fim, eu não poderia deixar de agradecer, de forma clara, o apoio e o suporte de sempre ao povo de Israel. Eu sou filho de família judaica, eu sou o único na Câmara nesta situação e, eu, todas as vezes que conversei com outros Deputados, com pastores, vi o sorriso que é aberto e o carinho com o qual nós somos recebidos, o povo de Israel. Eu não posso deixar de agradecer por isso. O Embaixador estava aqui há pouco, eu acredito que ele teve que se retirar rapidamente por outras funções, mas aqui fica esta observação e este agradecimento. Eu agradeço pela Operação Acolhida, agradeço pelos valores que os senhores trazem para nós neste plenário e agradeço por todo o carinho, o apoio e o suporte ao povo de Israel. Nós estamos juntos e vamos continuar assim! Um forte abraço a todo mundo! Muito obrigado."
+        }
+    ]
+}

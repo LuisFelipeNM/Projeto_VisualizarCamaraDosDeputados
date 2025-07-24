@@ -1,0 +1,472 @@
+{
+    "id": 73441,
+    "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73441",
+    "nome": "Celso Russomanno",
+    "siglaPartido": "REPUBLICANOS",
+    "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+    "siglaUf": "SP",
+    "idLegislatura": 56,
+    "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73441.jpg",
+    "email": null,
+    "discursos": [
+        {
+            "dataHoraInicio": "2019-12-17T16:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=18%2F12%2F2019&txPagina=336&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "MULHER, MODELO DE PASSARELA, PLENARIO, SAUDAÇÃO.",
+            "sumario": "Presença no plenário de candidatas ao concurso Miss Brasil.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, informo que nós estamos recebendo as candidatas do concurso Miss Brasil no plenário, que vieram fazer uma visita de cortesia ao Congresso Nacional."
+        },
+        {
+            "dataHoraInicio": "2019-11-06T23:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=7%2F11%2F2019&txPagina=423&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, REQUERIMENTO DE DESTAQUE DE VOTAÇÃO EM SEPARADO, SUPRESSÃO, EXPRESSÃO TEXTUAL, DISPOSITIVO LEGAL, PEC 372/2017, PROPOSTA DE EMENDA À CONSTITUIÇÃO, REPUBLICANOS (PARTIDO POLÍTICO), VOTO CONTRÁRIO.",
+            "sumario": "Orientação de bancada na votação do requerimento de destaque para votação em separado da expressão além de outras atribuições definidas em lei específica de iniciativa do Poder Executivo, constante no § 5º-A, do art. 144, introduzido pelo art. 3º da Proposta de Emenda à Constituição nº 372, de 2017, sobre a criação das polícias penais federal, estaduais e distrital, \r\ncom vista à sua supressão.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - O Republicanos, Presidente, recomenda o voto \"não\", para corrigir o texto e para dar a esses servidores que estão aqui a decência de serem policiais penais daqui para a frente.\r\nParabéns a todos!"
+        },
+        {
+            "dataHoraInicio": "2019-08-20T14:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Pequeno Expediente",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PEQUENO EXPEDIENTE",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=21%2F8%2F2019&txPagina=11&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "PARLAMENTO DO MERCADO COMUM DO SUL (PARLASUL), MERCADO COMUM DO SUL (MERCOSUL), CÂMARA DOS DEPUTADOS, PRESENÇA.",
+            "sumario": "Presença, na Casa, de delegação do Parlamento do Mercado Comum do Sul - PARLASUL.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Sem revisão do orador.) - Sr. Presidente, Sras. e Srs. Deputados, estamos recebendo hoje a delegação dos cinco países do Parlamento do MERCOSUL. \r\nPor gentileza, podem entrar. \r\nEstão aqui representados o Uruguai, que atualmente preside o Parlamento do MERCOSUL, a Argentina, o Paraguai, a Bolívia, a Venezuela - eu acho que não faltou nenhum. Eu acho que eu citei todos os países.\r\nSão Deputados e Senadores dos países do MERCOSUL que estão fazendo aqui, nesta semana, a reunião da Mesa Diretora. Eles são nossos convidados hoje para conhecer o plenário.\r\nMuito obrigado, Sr. Presidente."
+        },
+        {
+            "dataHoraInicio": "2019-05-22T22:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=23%2F5%2F2019&txPagina=228&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DIA INTERNACIONAL DA FAMÍLIA, HOMENAGEM.",
+            "sumario": "Transcurso do Dia Internacional da Família.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, é com muito entusiasmo que vimos hoje a esta tribuna comemorar, junto a nossos pares, o Dia Internacional da Família. Por decisão de Assembleia Geral das Nações Unidas, em 1993, foi designado o 15 de maio para se celebrar a instituição da família, o núcleo essencial da sociedade em todas as organizações humanas.\r\nDe fato, independentemente do formato adotado, em obediência a características religiosas e culturais, a família sempre se manteve como o esteio da formação dos indivíduos, seja para efeito de proteção e cuidados, seja para efeito de transmissão de valores comunitários e de pertencimento.\r\nNão temos dúvida de que a família estável, que se constitui sobre relações de afeto e companheirismo, é determinante para a formação de pessoas saudáveis, gregárias, dotadas de autoestima e empatia, capazes de enfrentar com serenidade e confiança os desafios da vida em sociedade.\r\nNesse sentido, é fundamental compreender que o conceito de família ultrapassa a condição de consanguinidade, estendendo-se a todos os núcleos que se baseiam em uma relação de união, no exercício de divisão de responsabilidades, no esforço de educar as novas gerações.\r\nDo mesmo modo, é fundamental compreender que todos os modelos familiares são legítimos, merecendo o respeito da sociedade e a proteção do Estado, nos termos da Constituição.\r\nInteressa-nos, sobremaneira, destacar o papel da família na formação das crianças. Em casa, onde se dá o primeiro contato da criança com o outro, dá-se também a primeira experiência no mundo, em que deve predominar a sensação de acolhimento, segurança e respeito, sempre permeada por manifestações explícitas de afeto e interesse. Oriundas de famílias harmônicas, ainda que monoparentais ou adotivas, as crianças têm mais facilidade de convivência e aprendizado; tratadas com carinho e atenção, são mais alegres, compassivas e pacíficas; respeitadas em suas características, são capazes de respeitar as diferenças e os interesses dos outros.\r\nInversamente, crianças ignoradas e desprezadas não desenvolverão autoestima e, consequentemente, tenderão à insegurança e ao egoísmo; maltratadas ou brutalizadas, por palavras e gestos, certamente desenvolverão personalidade agressiva ou violenta, quando não problemas psíquicos ainda mais graves. Em suma, se a vivência familiar na infância não for satisfatória, nos aspectos mencionados, a tendência é que se formem indivíduos com menor capacidade de interagir de modo saudável e produtivo no meio social.\r\nExiste ainda a relevante questão das mídias eletrônicas e redes sociais, que vêm afetando de modo substancial o comportamento de adolescentes e mesmo de adultos. O excesso de tempo dedicado ao ambiente virtual, além de todos os problemas de conteúdo a ele inerentes, será sempre o tempo roubado ao convívio familiar, em que devem prevalecer a conversa, a troca de ideias, o compartilhamento de experiências. Hoje, em adaptação aos novos tempos, temos de investir atentamente para a construção de um relacionamento presencial e autêntico, em que os pais se dedicam aos filhos de modo direto, como indicativo inequívoco de afeto e interesse.\r\nPor todas essas razões, Sr. Presidente, entendemos que o Estado brasileiro deva incentivar e promover iniciativas que valorizem o papel da família na educação das crianças, no sentido de alertar para a importância do tempo compartilhado entre pais e filhos, do exemplo doméstico de respeito e afeto, da consolidação de valores democráticos de tolerância, solidariedade e responsabilidade em relação aos destinos comunitários.\r\nSem menosprezar, em absoluto, o processo educativo a cargo da escola, seja para a aprendizagem de conteúdos formais, seja para o indispensável exercício de socialização, enfatizamos o papel da família como sede do desenvolvimento individual e psicológico e modelo primordial de comportamento em sociedade. Por meio de campanhas educativas, deve o Estado, repetimos, incentivar a população a se dedicar mais integral e conscientemente ao convívio familiar, em favor de todos os membros, mas com especial benefício para as crianças e os adolescentes.\r\nEssa é a mensagem que gostaríamos de compartilhar com os nobres colegas, por ocasião do transcurso do Dia Internacional da Família.\r\nSr. Presidente, solicito que este discurso seja divulgado pelos canais de comunicação desta Casa e no programa A Voz do Brasil.\r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2019-05-21T22:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2019&txPagina=369&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "REQUERIMENTO DE DESTAQUE DE VOTAÇÃO EM SEPARADO,  ART 3º, ARTIGO (TEXTO LEGISLATIVO), PLV 6/2019, PROJETO DE LEI DE CONVERSÃO , MPV 863/2018, MEDIDA PROVISÓRIA, EMPRESA DE TRANSPORTE AÉREO , COBRANÇA, BAGAGEM DESPACHADA.",
+            "sumario": "Esclarecimento sobre a cobrança do despacho de bagagens pelas empresas aéreas.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (PRB - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, Sras. e Srs. Deputados, eu queria chamar a atenção de V.Exas. para o que está por trás dessa história da cobrança das bagagens.\r\nÉ importante que nós saibamos, em primeiro lugar, que o que interessa para as companhias aéreas é carregar no bagageiro do avião celular e outros produtos de alto valor aquisitivo. Hoje, não se transportam mais eletroeletrônicos via terrestre, só por avião. E é mais interessante cobrar pela bagagem que vai nos porões dos aviões do que levar a bagagem dos passageiros, que ocupa espaço e pesa pouco, Presidente.\r\nAlém disso, nós temos que considerar o que o Código de Defesa do Consumidor diz a respeito da venda casada, da venda condicionada, o que a lei proíbe. Se...\r\n(Desligamento automático do microfone.)"
+        },
+        {
+            "dataHoraInicio": "2019-05-21T22:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2019&txPagina=370&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, REQUERIMENTO DE DESTAQUE DE VOTAÇÃO EM SEPARADO,  ART 3º, ARTIGO (TEXTO LEGISLATIVO), PLV 6/2019, PROJETO DE LEI DE CONVERSÃO , MPV 863/2018, MEDIDA PROVISÓRIA, PARTIDO REPUBLICANO BRASILEIRO (PRB), VOTO FAVORAVEL.",
+            "sumario": "Orientação de bancada na votação do requerimento de destaque para votação em separado do art. 3º do projeto de lei de conversão, para inclusão no texto da Medida Provisória nº 863, de 2018, sobre a abertura do setor aéreo ao capital estrangeiro.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (PRB - SP. Sem revisão do orador.) - Sr. Presidente, o voto do PRB não foi dado ainda.\r\nNós votamos \"sim\", porque a venda casada, a venda condicionada é proibida no País. Se eu quero voar, se eu quero andar de avião, eu tenho que carregar a minha mala junto. Não é possível eu ter que pagar pela mala separadamente!\r\nPor isso, o nosso voto é \"sim\"."
+        },
+        {
+            "dataHoraInicio": "2019-05-14T18:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=15%2F5%2F2019&txPagina=155&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DIA DAS MÃES, HOMENAGEM.",
+            "sumario": "Transcurso do Dia das Mães.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, chegamos a mais um mês de maio, e, como representante do povo brasileiro, preciso dedicar uma parte do meu tempo para falar sobre essa solenidade tão especial e afetuosa que é o Dia das Mães.\r\nAbsolutamente ciente de que as mães são dignas de muito mais, não vou, por questões regimentais, falar por mais do que 5 minutos. Mas, quando eu terminar, 15 novos bebês terão vindo ao mundo em nosso País. Nenhum desses bebês estaria tornando sua família mais plena se não tivesse sido gerado, nutrido e parido pelo corpo sagrado de sua mãe.\r\nSer mãe é ser a fonte primeira de vida. Sem as mães, a vivência inexiste. Tanto faz se é mãe coruja ou exigente; mãe despreocupada ou superprotetora; mãe de sangue ou de coração. Não importa absolutamente nada: se amamentou ou se deu mamadeira; se foi parto normal ou cesárea; se o filho foi planejado ou aconteceu. Quando uma mulher torna-se mãe, um verdadeiro milagre tem lugar, e, com todas as alegrias e dificuldades, o coração dela passa a bater acelerado, forte e feliz em outro peito.\r\nSenhoras e senhores, todos os seres humanos devemos cada um de nossos sinais vitais às nossas mães, mulheres que pausaram honradamente suas vidas pelas vidas de outras pessoas.\r\nO papel de mãe é tão fenomenal quanto difícil. Ele se constrói com pedaços do maior cansaço que uma mulher enfrenta na vida, mesclado com pitadas de angústias e incertezas sobre o que fazer com a criança a cada febre e com doses imensas de amor e alegria. E, quando os trabalhos braçais dos filhos pequenos se vão, aparecem as tarefas mentais, eternas e ainda mais desgastantes, de bem educar e formar bons cidadãos.\r\nDizem que as mães devem criar os filhos para o mundo. Mas isso é parcialmente verdade. Os filhos irão para o mundo, mas continuarão para sempre ligados a suas mães, que dão origem verdadeiramente a essas vidas, acordam de madrugada apenas para ver se eles respiram e fazem acrobacias para que tudo dê certo na jornada maravilhosa e caótica da maternidade, sem esperar absolutamente nada em troca.\r\nVocês, mães, realizaram a jornada mais incrível em que um ser humano pode mergulhar. Sentiram o amor mais genuíno e brutal que alguém pode levar no peito. Quando vocês ensinaram seus filhos a andar, estavam na verdade dando as mãos para a humanidade inteira e ajudando toda a sociedade a caminhar um pouco mais adiante. A cada vez que vocês disseram não para o egoísmo e violência de suas crianças, transformaram o mundo em um lugar melhor para se viver. Toda vez que uma mãe encontra o meio termo entre a permissividade e a repreensão, entre o mais puro afeto e a educação, o mundo suspira de admiração e aplaude em silêncio.\r\nQueridas mães felizes, queridas mães exaustas, queridas mães realizadas, queridas mães solteiras, muito obrigado por terem nos dado seu tempo, sua energia, seu sangue e seu amor para que pudéssemos respirar. Por cada madrugada em claro, por cada manhã em que vocês começaram tudo de novo, por cada filho do qual vocês jamais desistiram, todo nosso reconhecimento e gratidão.\r\nAos 15 novos brasileiros que nasceram enquanto eu falava, meus votos de que sejam muito bem-vindos ao mundo e de que possam se aninhar por muitos anos nos colos de suas mães. A todas as mães do nosso País e a todas as mulheres que querem se tornar mães, meu mais fraterno abraço, com votos de sucesso e longa felicidade.\r\nSolicito, Sr. Presidente, divulgação nos meios de comunicação da Casa.\r\nE, para encerrar, peço que hoje o aplauso para as mães não seja silencioso. Uma salva de palmas e feliz Dia das Mães!"
+        },
+        {
+            "dataHoraInicio": "2019-04-10T20:04",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=11%2F4%2F2019&txPagina=209&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DIA DO JORNALISTA, HOMENAGEM.\r\nIMPRENSA, JORNALISMO, CONTRA, CRIME, COMBATE.",
+            "sumario": "Comemoração do Dia do Jornalista. Expectativa de resgate da confiança do povo brasileiro na imprensa e de combate à impunidade de homicidas de profissionais do jornalismo.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, em 7 de abril comemoramos no Brasil o Dia do Jornalista.\r\nE vou começar, mas apenas começar, com dados brutais: um jornalista é assassinado a cada 4 dias no mundo, segundo a UNESCO, e em nove de cada dez casos, os assassinos ficam impunes. O Brasil sempre aparece nos rankings de países que menos punem esses homicidas.\r\nComo repórter, apresentador de televisão e radialista, posso garantir: é uma profissão dura, que requer coragem e firmeza e, ao mesmo tempo, inteligência e diálogo. É ofício que não se faz sem riscos e desafios. E não poderia ser diferente.\r\nAfinal, como poderia ser sereno o trabalho de quem desmascara esquemas de corrupção? Como poderia ser tranquila a profissão de quem escancara as podridões da sociedade? Como poderia ser fácil vasculhar por informações tão confiáveis quanto necessárias para que as pessoas tomem decisões inteligentes nos mais variados aspectos da sua vida? É por esse abalo constante nas estruturas de poder, é por remexer tanto a mentira que tenta esconder o real que a profissão incomoda tanto. \r\nA transparência que os jornalistas aportam a suas vidas, senhoras e senhores, é mais do que valiosa, é essencial para o fortalecimento da democracia. A sociedade civilizada somente existe com boa informação, produzida de modo independente e plural.\r\nO cenário atual, de mídias digitais, de notícias dando a volta ao mundo em, literalmente, segundos, de redes sociais e plataformas inovadoras, não é uma ameaça à profissão. Ao contrário, é uma oportunidade, um palco excelente onde o jornalista sério deve atuar. A boa e velha imprensa está se adaptando aos novos tempos e empregando seus profissionais para ocupar com brilhantismo o espaço antes reservado às fofocas e ao amadorismo. \r\nEm tempos de fake news, é o jornalismo sério que derruba rumores, que faz a checagem de dados, que valoriza a velocidade, mas não a pressa. A melhor maneira de combater notícias falsas é produzindo conteúdo real. É, então, em momentos como os atuais, de profusão de pseudonotícias, que mais temos que valorizar o jornalismo bem feito, aquele que liberta o ser humano e funciona como contenção de impropriedades.\r\nVivemos em um país estruturalmente corrupto. Não foi do dia para a noite que o brasileiro passou a desconfiar de suas instituições. A credibilidade de algumas entidades vem sendo destroçada há décadas, tudo em função de uma sequência de abusos que o povo não tolera mais e que o jornalismo tem ajudado cotidianamente a denunciar.\r\nEu comecei com dados tristes, mas como fazem os grandes jornais, encerro com notícia boa. No meio do mar de descrença que banha o Brasil, nossa imprensa se destaca como um porto seguro e continua tendo a confiança de 71% dos brasileiros, segundo pesquisa do Datafolha. O Brasil é o segundo país com a maior confiança na mídia, de acordo com a Universidade de Oxford e o Instituto Reuters.\r\nSó quem não conhece a mediocridade que é viver sem informações plurais não reconhece a magnitude de uma imprensa livre e emancipadora. \r\nNessa data comemorativa, senhoras e senhores, não desejo que a profissão de jornalista se torne fácil, pois a beleza do ofício está exatamente na sua complexidade. Espero, no entanto, que a confiança do brasileiro na imprensa se renove em 2019 e que a impunidade àqueles que nos calam encontre seu fim.\r\nRecebam, jornalistas, meus efusivos cumprimentos. Parabéns pela confiança do povo brasileiro e parabéns pela sua data!\r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2019-03-20T19:52",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=21%2F3%2F2019&txPagina=252&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DIA MUNDIAL DO CONSUMIDOR, HOMENAGEM.\r\nDIREITO DO CONSUMIDOR, CÓDIGO DE DEFESA DO CONSUMIDOR, DEFESA, CELSO RUSSOMANNO, DEPUTADO FEDERAL, ATUAÇÃO PARLAMENTAR.",
+            "sumario": "Transcurso do Dia Mundial do Consumidor. Relevância do Código de Defesa do Consumidor. Ações desenvolvidas pelo orador no exercício do mandato parlamentar, em prol dos consumidores brasileiros.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, aproveito a oportunidade neste Pequeno Expediente para homenagear o Dia Mundial do Consumidor, celebrado em 15 de março.\r\nA data foi instituída pela ONU, sob inspiração de uma mensagem enviada ao Congresso americano pelo Presidente Kennedy. Por meio dessa mensagem, ele procurava fixar quatro regras básicas a serem observadas na comercialização de produtos e serviços: garantia de qualidade; acesso a informações corretas; liberdade de escolha; e atuação do Estado em casos de injustiça.\r\nDesde então, tais regras passaram a funcionar como uma espécie de \"Declaração dos Direitos do Consumidor\" e serviram de base para a criação de leis sobre o tema em vários outros lugares. Aqui no Brasil, por exemplo, ideias semelhantes ajudaram a conscientizar a sociedade sobre o papel essencial das relações de consumo não só no desenvolvimento econômico, como também no da própria cidadania.\r\nÉ importante ressaltar que esse processo teve a contribuição inestimável de associações como o PROCON, cuja atuação foi determinante para incluir a defesa do consumidor na Constituição de 1988. Foi uma grande vitória, que vem sendo consolidada, a partir de 1991, com a entrada em vigor do Código de Defesa do Consumidor e, desde então, com a instalação de PROCONs e juizados especiais em diversos Municípios brasileiros.\r\nSei, por experiência própria, como essas iniciativas têm favorecido um maior equilíbrio nas relações de consumo, as quais, no passado, sempre foram muito desiguais e tendentes a prejudicar quem comprava mercadorias ou contratava serviços. Para mim, o Código de Defesa do Consumidor tem sido instrumento valioso no trabalho que realizo como Deputado Federal, já há algum tempo.\r\nA esse respeito, na condição de membro titular da Comissão de Defesa do Consumidor, tive a oportunidade de propor várias audiências públicas para tratar de temas de interesse dos cidadãos, como as que examinaram: a cobrança de tarifas registradas indevidamente em hidrômetros; as práticas abusivas das operadoras de telefonia móvel nos pacotes de acesso à Internet; e a situação deficitária dos fundos de pensão.\r\nTambém fiz uso de meu mandato para investigar a eficácia da fiscalização dos contratos de concessão de rodovias federais, bem como os reajustes abusivos das mensalidades custeadas pelo FIES, entre outras questões merecedoras de exame por parte desta Casa.\r\nVisando, ainda, proporcionar maior efetividade ao Código de Defesa do Consumidor, além de ampliar seu campo de incidência, apresentei o Projeto de Lei nº 2.314, de 2015, para qualificar o pagamento indireto ao fornecedor como \"serviço\" e, assim, enquadrar, no âmbito do CDC, os serviços públicos de caráter geral, desde que remunerados direta ou indiretamente. Esse projeto já foi aprovado na Câmara e, atualmente, tramita no Senado.\r\nNessa mesma linha, com o objetivo de estender a proteção do código à relação estabelecida entre entidades de previdência privada e seus participantes, apresentei o Projeto de Lei Complementar nº 98, de 2015, ainda em tramitação aqui na Câmara.\r\nNão vou prolongar mais este relato de minha atuação parlamentar. Mas acredito que as poucas ações mencionadas sejam suficientes para demonstrar o meu compromisso com a defesa do consumidor. Acredito ser essa a melhor forma de homenageá-lo por ocasião da passagem do dia que lhe é dedicado.\r\nSolicito que este discurso seja divulgado no programa A Voz do Brasil e nos demais meios de comunicação desta Casa.\r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2019-02-19T18:12",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=20%2F2%2F2019&txPagina=171&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, PARECER CONTRÁRIO, EMP 6/2018, EMP 8/2018, EMENDA DE PLENÁRIO, PLP 441/2017, PROJETO DE LEI COMPLEMENTAR, PARTIDO REPUBLICANO BRASILEIRO (PRB).",
+            "sumario": "Orientação de bancada na votação das Emendas de Plenário de nºs 6 e 8, com parecer contrário, oferecidas ao Projeto de Lei Complementar nº 441, de 2017, sobre os cadastros positivos de crédito e a responsabilidade civil do operadores, ressalvados os destaques.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/PRB - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, eu queria chamar a atenção aqui dos Deputados, porque algumas emendas que estão no texto acrescentam a defesa dos direitos do consumidor. Se nós rejeitarmos as emendas aqui, estaremos retirando direitos que estavam no projeto original e foram retirados pelo Relator.\r\nComo desde o princípio estou negociando isso, eu gostaria de chamar a atenção dos Parlamentares para que nós mantenhamos as emendas votando \"sim\" e as discutamos uma por uma, porque elas foram retiradas, e nós estamos tirando direitos dos consumidores que não deveríamos.\r\nEntão, o PRB vota \"sim\".\r\nO SR. PRESIDENTE (Rodrigo Maia. Bloco/DEM - RJ) - Deputado, não foi isso não. O nosso acordo do ano passado não foi esse não.\r\nO SR. CELSO RUSSOMANNO (Bloco/PRB - SP) - Algumas emendas foram retiradas do texto sem acordo pelo Deputado Ihoshi. Eu estou lhe dizendo, porque conheço uma por uma.\r\nO SR. PRESIDENTE (Rodrigo Maia. Bloco/DEM - RJ) - Eu também conheço, Deputado. Eu não conheço o acordo, não.\r\nO SR. CELSO RUSSOMANNO (Bloco/PRB - SP) - Eu quero discutir as emendas.\r\nO SR. PRESIDENTE (Rodrigo Maia. Bloco/DEM - RJ) - V.Exa. vai discutir todas, estão todas em votação nominal. Mas não foi esse o acordo daqueles que estavam aqui na legislatura passada. O nosso acordo era outro: rejeitar as emendas e manter o texto dos destaques supressivos. Esse foi o nosso acordo do ano passado, e o Senado manteria o nosso acordo.\r\nComo vota o PPS?"
+        },
+        {
+            "dataHoraInicio": "2019-02-14T12:04",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=15%2F2%2F2019&txPagina=116&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DIA INTERNACIONAL DE LUTA CONTRA O CÂNCER INFANTIL, PREVENÇÃO, CÂNCER, INFÂNCIA. \r\nASSOCIAÇÃO BRASILEIRA DE AJUDA À CRIANÇA COM CÂNCER (ABRACC), ELOGIO.",
+            "sumario": "Transcurso do Dia Internacional de Luta contra o Câncer na Infância. Importância dos trabalhos realizados pela Associação Brasileira de Ajuda à Criança com Câncer - ABRACC.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, 15 de fevereiro é o Dia Internacional de Luta contra o Câncer na Infância, data instituída em 2001 por uma rede global de 132 organizações de pais, presentes em 78 países, nos cinco continentes.\r\nO objetivo desta efeméride é conscientizar a população mundial, sobretudo os pais, professores e profissionais de saúde, para a importância do diagnóstico precoce dos casos de câncer infanto-juvenil, disseminando informações sobre os primeiros sintomas e formas de prevenção.\r\nSegundo dados do Instituto Nacional do Câncer - INCA, anualmente cerca de 13 mil crianças e adolescentes desenvolvem algum tipo de câncer no Brasil. Felizmente, menos de 3% dos cânceres na infância são malignos, e por esta razão o índice de cura pode chegar a 85%. Ainda assim, entre nós o câncer é a principal causa de mortalidade por doença na faixa de 5 a 19 anos.\r\nComo acontece nas outras faixas etárias, as chances de cura dos cânceres infanto-juvenis aumentam muito quando a doença é detectada precocemente. Porém, na criança os primeiros sintomas nem sempre são evidentes, pois na infância o câncer apresenta manifestações inespecíficas e comuns a várias doenças.\r\nÉ importante, portanto, que aqueles que têm crianças sob sua supervisão e responsabilidade estejam atentos a sinais como: emagrecimento sem causa aparente, febre de origem indeterminada, fraqueza muscular, dor óssea ou articular recorrente, irritabilidade, dor de cabeça persistente, manchas roxas pelo corpo, distensão abdominal com massa palpável e crescimento de gânglios linfáticos não associados a processo infeccioso.\r\nTal como ocorre com os adultos, a prevenção do câncer na infância se dá primordialmente pela adoção de um estilo de vida saudável. A alimentação deve ter como base frutas, legumes, peixes, grãos integrais e azeite extravirgem, evitando-se os produtos industrializados, frituras e embutidos. Exercícios físicos regulares também contribuem muito para reduzir os índices de incidência da doença. \r\nMas sabe-se, contudo, que o desenvolvimento de alguns tumores malignos na infância e na adolescência está associado a fatores genéticos; quando este risco é conhecido, a criança ou o jovem deve ser acompanhado de perto por um oncohematologista pediátrico e realizar exames periódicos de rotina. \r\nSr. Presidente, nobres colegas, um diagnóstico de câncer e a intensidade do tratamento requerido são devastadores. Para a criança, isso significa o início de uma difícil via crucis de internações, consultas, exames, medicamentos. Para os pais é enorme a sobrecarga física e emocional que a situação representa.\r\nQuando este drama atinge uma família em situação de vulnerabilidade social, o estresse de todos os envolvidos é ainda maior, pois à penúria material habitual somam-se as muitas novas demandas que os cuidados médicos intensivos implicam.\r\nQuero, pois, aproveitar a oportunidade para saudar uma entidade que tem realizado trabalho admirável no apoio às famílias carentes alcançadas pela tragédia de terem uma criança ou um adolescente diagnosticado com câncer. Refiro-me à Associação Brasileira de Ajuda à Criança com Câncer - ABRACC, uma entidade sem fins lucrativos voltada para a ajuda a estas famílias. \r\nO trabalho da ABRACC vai desde a doação de leites especiais, medicamentos, roupas, brinquedos, fraldas e equipamentos hospitalares, entre outros itens, até a oferta de apoio psicológico personalizado, assistência jurídica e campanhas de sensibilização da opinião pública sobre a doença. Um trabalho voluntário que merece nossos mais sinceros aplausos.\r\nSenhoras e senhores, espero ter contribuído, com estas minhas breves reflexões, para o sucesso do esforço global realizado neste 15 de fevereiro em prol da conscientização das populações do mundo inteiro sobre as diferentes formas de manifestação e de prevenção do câncer infanto-juvenil. \r\nAproveito o ensejo para reiterar o meu apoio a todas as iniciativas que visem a estender a mão às famílias atingidas por este terrível mal.\r\nSr. Presidente, solicito a V.Exa. que este discurso seja veiculado no programa A Voz do Brasil e os demais canais de comunicação desta Casa Legislativa. \r\nObrigado."
+        },
+        {
+            "dataHoraInicio": "2020-12-14T16:48",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=15%2F12%2F2020&txPagina=88&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "PRESIDÊNCIA, PARLAMENTO DO MERCADO COMUM DO SUL (PARLASUL), MERCADO COMUM DO SUL (MERCOSUL).",
+            "sumario": "Eleição do orador para a Presidência do Parlamento do Mercado Comum do Sul - PARLASUL. Principais desafios da representação brasileira junto ao Mercado Comum do Sul - MERCOSUL.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, Sras. e Srs. Deputados, eu quero agradecer à representação brasileira do MERCOSUL, do Parlamento do MERCOSUL, tanto os Senadores quanto os Deputados que integram a delegação brasileira, porque hoje fui eleito Presidente do Parlamento do MERCOSUL para o ano de 2021.\r\nNesta data em que eu assumo o Parlamento do MERCOSUL, instituição criada para ser o berço legislativo de representação popular de nossa área de integração e instrumento da ligação com o Congresso Nacional, eu vejo que os principais desafios do nosso Parlamento do MERCOSUL estão em três esferas.\r\nPrimeira, reforçar inteiramente e implementar com eficiência as competências já previstas no seu protocolo constitutivo, especialmente as relacionadas ao processo de consulta entre o Conselho do Mercado Comum e o Parlamento.\r\nNo presente momento, apenas o Brasil disciplinou a legislação nacional, a tramitação rápida dos tratados, quando acionado. É necessário que os demais países adotem as regras previstas no protocolo para que possamos exigir do conselho a utilização do mecanismo e assim aumentar a competência normativa do PARLASUL.\r\nEm segundo lugar, fortalecer-se institucionalmente perante os Governos dos Estados Partes, para credenciar-se como ator importante, indispensável na interlocução das nossas negociações.\r\nEm terceiro lugar, empenhar-se mais em ser uma caixa de ressonância da cidadania. Estar mais presente junto às demandas da população dos nossos países e assim servir de canal para a integração que não seja puramente econômica e comercial, mas que envolva a dimensão social, cultural e política dos nossos povos.\r\nPor último, devemos promover mais atividades de aproximação política com os Parlamentos nacionais, com visitas regulares recíprocas e com a realização de eventos conjuntos entre o PARLASUL e os Parlamentos nacionais.\r\nFaz-se necessária, Sr. Presidente, essa simbiose, para que o próprio Parlamento do MERCOSUL surja como interlocutor responsável nos assuntos políticos da integração do nosso MERCOSUL.\r\nQuero agradecer, Presidente, o espaço e dizer que estarei de portas abertas como Presidente do Parlamento do MERCOSUL no ano de 2021 para todos os Parlamentares brasileiros e de outros países, a fim de que nós possamos crescer com essa integração e, de fato, promover a economia.\r\nÉ importante dizer que só nesse ano passado, Presidente, o MERCOSUL movimentou mais de 400 milhões de dólares de negócios. Isso mostra a pujança do nosso bloco. E o que nós temos pela frente? Tratar com a Ásia, com o Oriente, com a comunidade europeia, com o NAFTA - Estados Unidos, México e Canadá -, enfim, com o mundo. E para isso é importante que nós estejamos num bloco em que o Brasil é o protagonista.\r\n Muito obrigado, Presidente."
+        },
+        {
+            "dataHoraInicio": "2020-07-07T19:20",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=8%2F7%2F2020&txPagina=151&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, PARECER, COMISSÃO MISTA, PRESSUPOSTO CONSTITUCIONAL, MPV 925/2020, MEDIDA PROVISÓRIA, REPUBLICANOS (PARTIDO POLÍTICO), VOTO FAVORÁVEL.",
+            "sumario": "Orientação de bancada na votação do parecer da Comissão Mista, quanto ao atendimento dos pressupostos constitucionais de relevância e urgência e de sua adequação financeira e orçamentária, à Medida Provisória nº 925, de 2020, a respeito das medidas emergenciais para a aviação civil brasileira, diante da pandemia da Covid-19.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - O Republicanos, Presidente, vota \"sim\".\r\nQuero parabenizar o Relator Arthur Maia pelo ótimo trabalho que desenvolveu, atendendo as necessidades dos consumidores, entendendo, ao mesmo tempo, este problema que nós vivemos, a pandemia, um problema extremamente sério para as companhias aéreas. Cabe abrirmos mão de um pouco do Código de Defesa do Consumidor neste momento para que sejam preservadas as companhias aéreas no Brasil.\r\nO Republicanos vota \"sim\"."
+        },
+        {
+            "dataHoraInicio": "2020-04-01T17:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=2%2F4%2F2020&txPagina=98&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "DEFESA, EMENDA DE PLENÁRIO, IMPORTAÇÃO, ESTADOS UNIDOS, PRODUTO PARA SAÚDE USADO, ARRENDAMENTO MERCANTIL, PL 864/2020, PROJETO DE LEI ORDINÁRIA, ALTERAÇÃO, LEI DE VIGILÂNCIA SANITÁRIA SOBRE PRODUTOS FARMACÊUTICOS, OBRIGAÇÃO, AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (ANVISA), URGÊNCIA, LIBERAÇÃO, MEDICAMENTO, EQUIPAMENTO MÉDICO-HOSPITALAR, INSUMO, APROVAÇÃO, VALIDAÇÃO, FOOD AND DRUG ADMINISTRATION (FDA), AGÊNCIA EUROPEIA DE MEDICAMENTOS, PHARMACEUTICALS AND MEDICAL DEVICES AGENCY (PMDA), NATIONAL MEDICAL PRODUCTS ADMINISTRATION (NMPA), COMBATE, PANDEMIA, CORONAVÍRUS.",
+            "sumario": "Razões da defesa pelo orador da aprovação do requerimento de destaque para votação em separado da Emenda nº 5, apresentada ao Projeto de Lei 864, de 2020, sobre alteração da Lei nº 6.360, de 1976, com vista à liberação imediata do uso de materiais, medicamentos, equipamentos e insumos da área da saúde para auxílio no combate à pandemia do Covid-19.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Participação por videoconferência. Sem revisão do orador.) - Eu só gostaria de esclarecer para os meus colegas, Sr. Presidente, e para os Líderes dos outros partidos que esses equipamentos são equipamentos de leasing.\r\nNos Estados Unidos, os hospitais usam um sistema de leasing. Eles ficam durante 3 anos com os equipamentos, que depois saem totalmente revisados, e existe um mercado para isso.\r\nA minha preocupação é muito grande. Todos esses produtos vêm com garantia, e estão faltando respiradores no mundo todo. Como foi muito bem dito, até nos Estados Unidos eles estão faltando. Esse mercado é um mercado internacional, com garantia de 12 meses, e são respiradores de alta qualidade da General Electric ou da Phillips. O problema todo é que eles são seminovos.\r\nAgora, o que nós temos aqui - e nós vamos ver o que vai acontecer lá na frente - é que, se faltarem os respiradores e depois quiserem buscá-los, pode ser tarde demais.\r\nEntão eu queria deixar só um caminho aberto, porque, se for necessário, é melhor ter uma vida salva, com alguém respirando mesmo que com um aparelho seminovo, do que ter uma vida ceifada sem o respirador.\r\nFoi por isso que eu defendi esse destaque, mas, se a maioria entende que não, eu respeito a maioria.\r\nObrigado, Presidente."
+        },
+        {
+            "dataHoraInicio": "2020-04-01T16:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "ENCAMINHAMENTO DE VOTAÇÃO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=2%2F4%2F2020&txPagina=95&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ENCAMINHAMENTO DE VOTAÇÃO, REQUERIMENTO DE DESTAQUE DE VOTAÇÃO EM SEPARADO, EMENDA DE PLENÁRIO, PL 864/2020, PROJETO DE LEI ORDINÁRIA, FAVORÁVEL.",
+            "sumario": "Encaminhamento da votação do requerimento de destaque para votação em separado da Emenda nº 5, apresentada ao Projeto de Lei nº 864, de 2020, sobre alteração da Lei nº 6.360, de 1976, com vista à liberação imediata do uso de materiais, medicamentos, equipamentos e insumos da área da saúde para auxílio no combate à pandemia do Covid-19.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Participação por videoconferência. Sem revisão do orador.) - Presidente, são duas as emendas. O Republicanos abre mão de uma.\r\nA Emenda nº 5, que é o terceiro destaque, o qual eu gostaria de defender, trata da possibilidade de adquirirmos equipamentos usados dos Estados Unidos como leasing. Nos Estados Unidos, todos os equipamentos de hospital, como monitores cardíacos e respiradores, são usados por 3 anos; depois, são vendidos no mercado internacional, com uma garantia de 12 meses.\r\nEu estou muito preocupado com a importação. Nós estamos liberando a importação, mas infelizmente não há equipamentos nem respiradores no mundo em quantidade suficiente, mesmo novos.\r\nExistem esses equipamentos usados, com 2 ou 3 anos de uso, que estão novos, com a mesma garantia que é dada para os novos, de 12 meses. Talvez nós precisemos disso, e os hospitais têm tido muita dificuldade hoje para comprar respiradores.\r\nEsses respiradores podem ser comprados, vêm com garantia de 12 meses, e poderiam atender à necessidade para evitar o que aconteceu na Itália, onde, quando acabaram os respiradores, as pessoas começaram a morrer à míngua.\r\nEntão eu gostaria de pedir a todos os que me acompanham, a todos os nossos colegas, Presidente, que acatassem este Destaque nº 3, para que nós não tenhamos o mesmo problema que os outros países tiveram.\r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2020-03-12T12:20",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=13%2F3%2F2020&txPagina=106&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "VICTOR RUSSOMANO JÚNIOR, ADVOGADO, PROFESSOR, HOMENAGEM PÓSTUMA.",
+            "sumario": "Homenagem póstuma ao advogado e professor Victor Russomano Júnior.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, subo hoje à tribuna para o doloroso dever de comunicar a morte, em 20 de janeiro passado, de Victor Russomano Júnior. Trata-se, em primeiro lugar, de perda enorme para a família Russomano, à qual tenho a honra de pertencer, mas uma perda, também, para a advocacia, referência que era, no âmbito da Justiça do Trabalho, sobretudo para as novas gerações.\r\nÉramos primos chegados, amigos, além de parentes. Desde o primeiro diagnóstico, duríssimo, como costuma ser a constatação da letalidade de um câncer, percorri com ele as muitas estações desta Paixão, qual uma via-sacra, que a todos envolveu - familiares, colegas de trabalho, admiradores e pessoas de suas relações pessoais. \r\nPude acompanhar de perto seu calvário, até o dramático desfecho. Testemunhei contrito sua dor, a luta do guerreiro indômito. Partilhei as expectativas dos médicos, que colocaram toda a sua ciência, na busca heroica da cura. Nutri as mesmas esperanças. Fiz parte da imensa corrente que se formou.\r\nRecorro, neste ponto, às palavras de Fernando Luís Russomano, em homenagem prestada, entre muitas, por ocasião do falecimento, em uma das Turmas do Tribunal Regional do Trabalho do Distrito Federal, em que parafraseou Victor, que, por sua vez, parafraseou o pai, Mozart Victor Russomano. Afirmou ele, então, que possuía uma \"alma fria, fria do vento minuano gaúcho, que sopra, enregelante, nos Pampas do Sul\". E complementou: \"Pois trago minh'alma gelada. Bate queixo em pleno verão, tiritante de derrota épica em peleja aguerrida, inglória e perdida para uma doença galopante...\"\r\nSr. Presidente, os desígnios superiores são, de fato, insondáveis -porque superiores, são insondáveis. Era uma guerra perdida, e Victor Russomano, um vencedor, na vida, não logrou repetir os mesmos feitos vitoriosos, diante da Indesejada das gentes.\r\nNão teve a sorte de contar com um serviço nacional de importação e liberação urgente de remédios para pacientes terminais ágil, eficiente, inteligente, desburocratizado, como de esperar em nações civilizadas. Victor já não tinha condições físicas de viajar, para ir ao encontro da única droga, no mundo, recém-aprovada nos Estados Unidos, com alguma possibilidade de curá-lo. Era preciso que a droga viesse a ele. \r\nContudo, os meandros da administração pública obstaram todas as tentativas. Todas as chances lhe foram negadas. Por toda a parte, em todos os setores demandados, as muralhas da burocracia, da má vontade, do descaso eram intransponíveis, quase uma omissão de socorro. Ao fim e ao cabo, não houve tempo.\r\nSe o remédio teria resolvido? Se poderia surtir o efeito esperado? Que chances de cura haveria? Nunca saberemos de fato! Mas teria servido para lhe dar mais conforto físico e psicológico, uma sobrevida digna, se realmente houvesse um órgão com competência de diligenciar o que necessário fosse para o rápido enfrentamento do problema - problema, vale dizer, que não é de um paciente ou uma família, mas que aflige, sem solução, milhares de pacientes e famílias brasileiras.\r\nDe qualquer maneira, nobres colegas, como no poema de Bandeira, aquela, a Indesejada das gentes, haveria de encontrar \"lavrado o campo, a casa limpa, a mesa posta, com cada coisa em seu lugar\".\r\nSim, Sr. Presidente, Victor Russomano tornou-se um paradigma, tanto em sua vida pessoal, dedicada aos seus e aos que lhe estavam à volta, como na condição de cidadão, brasileiro, profissional.\r\nProfessor na Universidade de Brasília (UnB), autor de obra festejada e um dos mais experientes, hábeis e respeitados advogados em sua especialidade, exerceu com maestria a profissão do Direito, capaz de levar a bom termo mesmo os casos mais difíceis que lhe caíam nas mãos. Do pai, o ex-Ministro do Tribunal Superior do Trabalho (TST) Mozart Victor Russomano, tomou o exemplo da ética, a brilhante oratória, o gosto pelo estudo do Direito e matérias afins.\r\nDe fato, Sr. Presidente, apagou-se uma estrela, na constelação do Direito brasileiro. Victor Russomano Júnior se foi aos 61 anos de idade.\r\nFicam aqui, portanto, minhas condoídas homenagens. Ao lado delas, um compromisso: o de lutar para que outros pacientes possam, num futuro próximo, dispor de todos os meios, dentro e fora do País, que lhes deem acesso a novos tratamentos e recursos da moderna ciência médica.\r\nQue o século XXI chegue finalmente ao Brasil! \r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2022-08-02T23:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Encerramento",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "DISCURSO ENCAMINHADO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=3%2F8%2F2022&txPagina=324&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "HOMENAGEM, MOZART VICTOR RUSSOMANO, ESCRITOR, CENTENÁRIO, ANIVERSARIO DE NASCIMENTO.",
+            "sumario": "Homenagem à memória do jurista, magistrado, professor e escritor Mozart Victor Russomano ao ensejo do transcurso do seu centenário de nascimento.",
+            "transcricao": "DISCURSO NA ÍNTEGRA ENCAMINHADO PELO SR. DEPUTADO CELSO RUSSOMANNO.\r\n\r\nSr. Presidente, Sras. e Srs. Deputados, no último dia 5 de julho, transcorreu um século desde o nascimento de um dos mais afamados nomes do direito brasileiro, orgulho de Pelotas e do Rio Grande do Sul: Mozart Victor Russomano, com quem guardo a grande honra do parentesco.\r\nJurista, magistrado, professor e escritor, ele edificou uma carreira profissional irretocável. Foi referência indispensável na literatura trabalhista e parâmetro de conduta para gerações de juízes brasileiros.\r\nGraduado na Faculdade de Direito de Porto Alegre, com apenas 23 anos de idade tornou-se juiz do trabalho, tendo sido promovido por merecimento ao Tribunal Regional do Trabalho da 4ª região, em 1959, e nomeado Ministro do Tribunal Superior do Trabalho, em 1969.\r\nNa mais alta corte trabalhista do nosso País, Mozart exerceu os cargos de Corregedor-Geral, Vice-Presidente e Presidente, aposentando-se para representar o Brasil no Conselho de Administração da Organização Internacional do Trabalho, órgão que também presidiu.\r\nOs seguros caminhos abertos em suas sentenças, votos, artigos, livros, aulas e conferências conduziram não pouca vez a ciência jurídica em terrenos densos e íngremes, criando jurisprudência e auxiliando o trabalho legiferante do Congresso Nacional.\r\nPara Mozart Victor Russomano, a aspiração intelectual poderia andar junto com o ofício de juiz. Doutor em direito pela Universidade Federal do Rio Grande do Sul e doutor honoris causa, entre outras, pela PUC do Rio Grande do Sul, pela Universidade de San Marcos de Lima, no Peru, e pela Universidade Bordeaux I, na França, ele nunca se afastou da Academia.\r\nComo professor, Mozart passou adiante seu conhecimento e sua experiência na Faculdade de Direito de Pelotas e na Universidade de Brasília.\r\nSr. Presidente, o tempo do Plenário infelizmente não me permitirá discutir em detalhes a profícua trajetória profissional de Mozart Russomano. Quero somente me referir, como parente, como sobrinho-neto, ao grande ser humano que foi Mozart, brilhante e genuíno, modelo para toda a família Russomano e para a sua descendência, que continua e honra o seu legado.\r\nFaço uma menção especial ao seu filho, o saudoso primo Victor Russomano Júnior, eminente causídico e professor, que nos deixou cedo demais, em 2020, com 61 anos de idade.\r\nNa pessoa de Mozart Victor Russomano Neto, um dos mais respeitados advogados em atuação no País, presto minhas homenagens a toda a família pela passagem do centenário do patriarca, circunstância celebrada por diversas instituições, como o Tribunal Superior do Trabalho, a Ordem dos Advogados do Brasil, a Câmara Municipal e a Prefeitura de Pelotas.\r\nTermino, Sr. Presidente, reiterando a máxima reverência, com aplausos à vida e à obra deste gigante brasileiro, colosso do direito nacional e orgulho de Pelotas, Mozart Victor Russomano.\r\nMuito obrigado."
+        },
+        {
+            "dataHoraInicio": "2022-04-27T22:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=28%2F4%2F2022&txPagina=188&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, SUBEMENDA SUBSTITUTIVA GLOBAL, PL 1998/2020, PROJETO DE LEI ORDINÁRIA, REPUBLICANOS (PARTIDO POLÍTICO), VOTO FAVORÁVEL.",
+            "sumario": "Orientação de bancada na votação da Subemenda Substitutiva Global oferecida pelo Relator da Comissão de Seguridade Social e Família ao Projeto de Lei nº 1.998, de 2020, sobre a regulamentação da prática de telemedicina no País, ressalvados os destaques.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, o Republicanos vota \"sim\". \r\nNós temos um acordo com o Relator para rediscutirmos este projeto no Senado e, depois, o trazermos de volta para a Câmara, para atender ao consumidor e garantir a ele que o profissional da saúde, se errar, será responsabilizado.\r\nNós votamos \"sim\".\r\nMuito obrigado, Sr. Presidente."
+        },
+        {
+            "dataHoraInicio": "2022-04-27T21:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=28%2F4%2F2022&txPagina=179&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "PEDRO VILELA, DEPUTADO FEDERAL, RELATOR, PL 1998/2020, PROJETO DE LEI ORDINÁRIA, REGULAMENTAÇÃO, TELEMEDICINA, ATENDIMENTO MÉDICO, VOTAÇÃO, DEFESA.",
+            "sumario": "Compromisso do Relator Pedro Vilela de votação do Projeto de Lei nº 1.998, de 2020, sobre a regulamentação da prática de telemedicina no País.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, acabamos de conversar com o Relator, o qual se comprometeu que vamos votar desse jeito. O projeto vai ao Senado, onde vamos conversar com os Senadores para fazerem a adequação para que a responsabilização do profissional liberal seja amparada no Código de Defesa do Consumidor, como ocorre hoje, e para que, se por algum acaso o profissional de saúde, médico ou não, errar, este seja responsabilizado no conselho do domicílio do consumidor, e não em outro Estado. Dessa forma, contemplamos a garantia de que o consumidor será preservado toda vez que ele se utilizar da telessaúde ou da telemedicina."
+        },
+        {
+            "dataHoraInicio": "2022-04-27T21:24",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=28%2F4%2F2022&txPagina=174&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "CONSELHO REGIONAL DE MEDICINA (CRM), RESPONSABILIZAÇÃO, ATENDIMENTO DOMICILIAR, ERRO MÉDICO, TELEMEDICINA.",
+            "sumario": "Responsabilidade do Conselho Regional de Medicina pelo atendimento ao usuário, em seu domicílio, no caso de erro do profissional na consulta pelo sistema de telemedicina.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Serei rápido. A Deputada Alice entende, porque a tentativa aqui é de construção. \r\nO que ocorre é o seguinte: se o profissional que está fazendo a teleconsulta - ou o telessaúde, não importa - estiver em outro Estado e ele errar, por algum motivo, na prescrição médica, e o paciente passar mal, a responsabilização é objetiva e é feita no Conselho Regional. O que diz o Código de Defesa do Consumidor? Que o profissional liberal será responsabilizado mediante a verificação de culpa. Quem apura a culpa? É o conselho da classe.\r\nE se ele estiver num Estado distante? Por exemplo, o consumidor não tem como sair do Acre para ir a São Paulo resolver o seu problema porque a demanda dele é no domicílio dele. Então, a responsabilização tem que ser feita onde? Onde ele prestou o serviço. \r\nEu compreendo - o Deputado Hiran Gonçalves até estava conversando comigo - o entendimento do Conselho Federal de Medicina, que diz que a responsabilização pode ser feita de um Estado para outro, só que como é que o consumidor que não tem recursos para fazer isso vai a uma audiência em outro Estado? Como é que ele vai ser ouvido em outro Conselho? Como é que ele vai se defender? Como é que ele vai pagar advogado para se defender em outro Estado?\r\nNós temos que dizer: \"Olha, você pode fazer a teleconsulta. Mas, se der problema, você vai ter que responder no domicílio do consumidor\". Assim se resolve o problema e não há mais discussão."
+        },
+        {
+            "dataHoraInicio": "2022-04-26T20:04",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=27%2F4%2F2022&txPagina=158&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "ORIENTAÇÃO DE BANCADA, REQUERIMENTO DE DESTAQUE DE VOTAÇÃO EM SEPARADO, EMENDA DE PLENARIO, MPV 1089/2021, MEDIDA PROVISORIA, REPUBLICANOS (PARTIDO POLÍTICO), VOTO FAVORAVEL.",
+            "sumario": "Orientação de bancada na votação do requerimento de destaque para votação em separado da Emenda de Plenário nº 4, apresentada à Medida Provisória nº 1.089, de 2021, sobre a alteração das Leis de nºs 6.009, de 1973; 7.565, de 1986; e 11.182, de 2005, com vista à atualização de processos e procedimentos relativos ao transporte aéreo.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente Marcelo Ramos, ao longo de todos estes anos aqui, eu tenho tentado resolver o problema das bagagens. \r\nVárias vezes eu chamei à Comissão de Defesa do Consumidor a ANAC para que nós resolvêssemos isso. E a ANAC me dizia: \"Olha, deixe do jeito que está, que nós vamos fazer os voos low cost. Serão voos mais baratos, as tarifas serão mais baratas, e nós vamos resolver o problema. Viaja com bagagem quem quiser; viaja sem bagagem quem quiser também.\" Só que isso nunca foi cumprido, Presidente. \r\nComo bem falou o Deputado Vinicius Carvalho, nosso Líder, que é um defensor do consumidor, essa não é uma questão ideológica - e eu sou Vice-Líder do Governo no Congresso Nacional. Essa é uma questão de defesa do consumidor. Nós estamos aqui para ajudar as pessoas que precisam viajar e que têm que levar uma bagagem. Não é possível que uma pessoa não possa levar uma única bagagem! Esse tipo de prática existe fora do Brasil? Existe, mas para voos low cost, com tarifas reduzidas. Existem, de fato, esses voos, mas são voos que custam 50 dólares para se viajar pela Europa inteira. Não é como é aqui no Brasil, com tarifas caríssimas.\r\nEles estão usando os bagageiros das aeronaves para transportar celular, que é um produto de alto valor agregado e pesado. Muitas vezes nos voos - e todos os Deputados já viram isso -, as companhias aéreas oferecem duas passagens para as pessoas saírem de dentro do voo, porque o porão da aeronave está carregado demais. Isso porque, infelizmente, o que dá mais lucro hoje para as companhias aéreas é transportar carga, não é transportar passageiros. \r\nEntão, nós temos que colocar um fim nisso. Pelo amor de Deus, eu peço o voto de todos os Parlamentares - isso não é uma questão ideológica, é uma questão de defesa do consumidor - em favor da emenda da Deputada Perpétua Almeida."
+        },
+        {
+            "dataHoraInicio": "2023-10-26T12:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=27%2F10%2F2023&txPagina=90&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Projeto de lei ordinária,Dia Nacional do Hematologista e Hemoterapeuta,Homenagem,Saúde",
+            "sumario": "O Deputado expressou gratidão ao Presidente da Câmara e aos demais Parlamentares pela aprovação do Projeto de Lei nº 3.466, de 2.023, que cria o Dia Nacional do Hematologista e Hemoterapeuta. Destacou a importância de reconhecer esses profissionais médicos, que cuidam de doenças do sangue e atendem pacientes tanto no serviço público quanto no privado; e a relevância da data, 29 de outubro, para homenagear e lembrar o trabalho desses especialistas.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Muito obrigado, Sr. Presidente, Deputado Pompeo de Mattos, V.Exa. que representa muito bem o Estado do Rio Grande do Sul, onde minha esposa é nascida. Eu gostaria de agradecer a V.Exa., Sr. Presidente, e a todos os Parlamentares desta Casa pela aprovação do projeto de lei que institui o Dia Nacional do Hematologista e Hemoterapeuta, profissionais que geralmente não são lembrados. Nós vamos ter agora a comemoração, no dia 29 de outubro, do Dia do Hematologista e Hemoterapeuta. Isso é extremamente importante, para nos lembrarmos desses médicos que cuidam das doenças do sangue que nos acometem a cada dia. Esses profissionais tratam, sem dúvida nenhuma, da melhor maneira possível, desses consumidores do serviço público e do serviço privado que precisam deles. Então, deixo registrada a minha homenagem a eles. Muito obrigado a esta Casa, a todos os meus pares, por ter aprovado esse projeto de lei, que agora segue para o Senado Federal. Obrigado, Sr. Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-09-19T19:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "ENCAMINHAMENTO DE VOTAÇÃO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=20%2F9%2F2023&txPagina=141&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Encaminhamento de votação,Requerimento de urgência,Projeto de lei ordinária,favorável",
+            "sumario": "O Deputado encaminhou a votação do requerimento de apreciação em regime de do Projeto de L nº 3.466, de 2023, que institui o dia 29 de outubro como o Dia Nacional do Hematologista e Hemoterapeuta.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Sem revisão do orador.) - Sr. Presidente, Sras. e Srs. Deputados, o projeto de minha autoria institui o dia 29 de outubro como Dia Nacional do Hematologista e Hemoterapeuta. É importante dizer que os hematologistas e hemoterapeutas brasileiros são profissionais que atuam no diagnóstico, no tratamento e prevenção das doenças relacionadas às células sanguíneas e a outros compostos do sangue, como os fatores de coagulação. São também atores essenciais em toda a cadeia que envolve a coleta e doação de sangue, dos seus componentes e dos hemoderivados, contribuindo para garantir a segurança e a qualidade dos procedimentos e produtos a eles relacionados, em especial para as suas aplicações terapêuticas, ponto de maior atenção. Saliente-se, Sr. Presidente, que muitas doenças que envolvem os componentes do sangue, que poucos anos atrás apresentavam alta taxa de mortalidade, hoje são curáveis graças à dedicação dos hematologistas e hemoterapeutas, que têm se dedicado incansavelmente à luta contra esses agravos. Muitos tipos de leucemia, que antigamente eram uma sentença de morte para quem recebia esse diagnóstico, hoje são plenamente tratáveis, com bons prognósticos para o futuro dos pacientes. Certamente muitos avanços obtidos devem ser creditados aos referidos profissionais que atuam em muitas frentes, o que inclui a área de pesquisa, desenvolvimento e inovação científica. Nesse contexto, Sr. Presidente, a definição de uma data nacional para o reconhecimento do valor dos hematologistas e hemoterapeutas na proteção da vida e da saúde humana, apesar de ser uma providência muito singela, deve ser vista como uma forma de agradecimento pelas suas contribuições feitas ao ser humano, uma forma justa de homenagear tão valorosos profissionais e um incentivo para que todos continuem na luta para a melhoria da saúde da população. Então, Sr. Presidente, eu gostaria muito de fazer um pedido aos Líderes, que já assinaram. Quero, inclusive, agradecer aos Deputados Augusto Puppio, André Figueiredo, Marangoni, Raimundo Santos, Cabo Gilberto Silva e Fábio Macedo por terem assinado o requerimento de urgência, a fim de que possamos fazer essa singela homenagem aos hematologistas, aos hemoterapeutas e a todos os médicos que atuam na pesquisa e na defesa da saúde através do sangue. Obrigado, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-11-19T19:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=20%2F11%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Aprovação,Projeto de lei ordinária,Cargo vago,Desembargador,Juiz do Trabalho substituto,Justiça do trabalho,criação,Cargo em comissão,Poder Judiciário,Tribunal Regional do Trabalho (TRT)",
+            "sumario": "O Deputado agradeceu o apoio dos partidos políticos ao projeto de lei que visa reforçar a estrutura da 15ª Região do Tribunal Regional do Trabalho. Destacou a falta de desembargadores como um dos principais entraves à celeridade dos processos na região e afirmou que a aprovação da proposta permitirá maior eficiência no funcionamento do tribunal. Salientou que a medida é essencial para garantir um atendimento mais adequado e ágil aos cidadãos que utilizam os serviços do poder judiciário trabalhista.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, só quero agradecer a todos os partidos políticos pelo apoio a esse projeto de lei extremamente importante para a 15ª Região do Tribunal Regional do Trabalho. Lá estão faltando juízes de segundo grau, ou seja, desembargadores, e, por esse motivo, os processos não têm celeridade. A partir da aprovação desse projeto de lei, nós vamos conseguir fazer com que o tribunal trabalhe com mais efetividade, dando atenção aos nossos consumidores do serviço público da forma que deve ser. Muito obrigado a todos."
+        },
+        {
+            "dataHoraInicio": "2024-11-19T19:32",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PARECER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=20%2F11%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Parecer (proposição legislativa),Emenda de plenário,Projeto de lei ordinária,Cargo vago,Desembargador,Juiz do Trabalho substituto,Justiça do trabalho,criação,Cargo em comissão,Poder Judiciário,Tribunal Regional do Trabalho (TRT)",
+            "sumario": "O Deputado proferiu parecer à Emenda de Plenário apresentada ao Projeto de Lei nº 3.467, de 2024, que dispõe sobre a transformação de cargos vagos no quadro permanente do Tribunal Regional do Trabalho da 15ª Região, sem aumento de despesas.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Para proferir parecer. Sem revisão do orador.) - Sr. Presidente, como bem colocou a Deputada Erika Kokay, \"considero meritório o propósito da emenda, tendo em vista que ela prestigia o princípio constitucional da impessoalidade na administração pública e os valorosos servidores efetivos do Tribunal Regional do Trabalho da 15ª Região. Decerto, os gestores dessa egrégia Corte Trabalhista, com sede em Campinas, no Estado de São Paulo, proverão os cargos comissionados a serem criados da forma que melhor contribua para a prestação dos serviços jurisdicionais à população em suas demandas trabalhistas, mediante a nomeação dos mais diligentes servidores efetivos daquele tribunal. Ante o exposto, no âmbito da Comissão de Administração e Serviço Público, somos pela aprovação da Emenda de Plenário nº 1, na forma da subemenda substitutiva em anexo. Na Comissão de Finanças e Tributação, somos pela não implicação em receitas ou despesas públicas, não cabendo manifestação sobre a compatibilidade ou adequação financeira da Emenda de Plenário nº 1. Na Comissão de Constituição e Justiça e de Cidadania, somos pela constitucionalidade, juridicidade e boa técnica legislativa da Emenda de Plenário nº 1 e, no mérito, por sua aprovação, na forma da subemenda substitutiva da Comissão de Administração e Serviço Público.\" Era o que eu tinha a relatar. Deputado Celso Russomanno, Relator."
+        },
+        {
+            "dataHoraInicio": "2024-11-19T19:24",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PARECER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=20%2F11%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Parecer (proposição legislativa),Projeto de lei ordinária,Cargo vago,Desembargador,Juiz do Trabalho substituto,Justiça do trabalho,criação,Cargo em comissão,Poder Judiciário,Tribunal Regional do Trabalho (TRT)",
+            "sumario": "O Deputado proferiu parecer ao Projeto de Lei nº 3.467, de 2024, que dispõe sobre a transformação de cargos vagos no quadro permanente do Tribunal Regional do Trabalho da 15ª Região, sem aumento de despesas.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Para proferir parecer. Sem revisão do orador.) - Sr. Presidente, Sras. e Srs. Parlamentares, venho à tribuna relatar o parecer de Plenário, pelas Comissões de Administração e Serviço Público; Finanças e Tributação, de acordo com o art. 54 do Regimento Interno; e Constituição e Justiça e de Cidadania, acerca do Projeto de Lei nº 3.467, de 2024. \"I  Relatório O Projeto de Lei nº 3.467, de 2024, de autoria do colendo Tribunal Superior do Trabalho, prevê, conforme justificativa do projeto: (...) visa aumentar de 55 para 70 (setenta) o quantitativo de desembargadores do Trabalho (Juízes de Tribunal Regional do Trabalho) mediante a transformação de 25 cargos vagos de Juiz Substituto, no âmbito do quadro permanente do Tribunal Regional do Trabalho da 15ª Região - Campinas. Da transformação, propõe-se também a criação de 9 (nove) Cargos em Comissão nível CJ-2, 9 (nove) Cargos em Comissão nível CJ-3 e 24 (vinte e quatro) Funções Comissionadas nível FC-5 (...) Esclarece-se também que a proposta passou pelo crivo do tribunal, bem como do Conselho Superior da Justiça do Trabalho, e é fruto de um pedido de providências debatido no âmbito do Conselho Nacional de Justiça, onde se reconheceu a deficiência do atual quadro de magistrados de segundo grau, pelo que se concluiu pela apresentação do presente projeto de lei com vista à resolução do problema. O projeto foi distribuído às Comissões de Administração e Serviço Público; Finanças e Tributação; e Constituição e Justiça e de Cidadania, para exame da admissibilidade (...). Em 18 de novembro de 2024, foi aprovado requerimento de urgência para apreciação em plenário da matéria. Este é o relatório. Passo agora ao voto. II - Voto De fato, a deficiência de números de juízes de segundo grau constatada nos debates em torno do pedido de providências do Tribunal Regional do Trabalho da 15ª Região vem prejudicando a prestação jurisdicional do tribunal aos seus jurisdicionados, problema que vinha sendo remediado mediante a convocação de juízes substitutos de segundo grau. A proposta apresentada de transformação de cargos vem como uma solução adequada e necessária para tornar mais efetiva e célere a prestação jurisdicional, com a grande vantagem de não provocar custos adicionais. Portanto, concluo meu o voto nos seguintes termos: - Pela Comissão de Administração e Serviço Público, somos pela aprovação do PL 3.467/24; - Pela Comissão de Finanças e Tributação, somos pela não implicação financeira ou orçamentária da matéria em aumento ou diminuição da receita e da despesa pública, não cabendo pronunciamento quanto à adequação financeira ou orçamentária do projeto; - Pela Comissão de Constituição e Justiça e de Cidadania, somos pela constitucionalidade, juridicidade e boa técnica legislativa e, no mérito, pela aprovação do Projeto de Lei nº 3.467, de 2024. Brasília, 19 de novembro de 2024. Deputado Celso Russomanno - Relator\" Presidente, existe uma emenda que foi apresentada pela Deputada Erika Kokay. Passo ao voto do Relator. \"I - Voto do Relator Durante a discussão da matéria, foi apresentada uma emenda de Plenário, de autoria da ilustre Deputada Erika Kokay, que pretende que os cargos em comissão criados a partir das sobras orçamentárias previstas no projeto sejam obrigatoriamente ocupados por servidores titulares de cargos efetivos.\" (Pausa.) Então, passemos à discussão. Depois eu leio o relatório da emenda, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-04-24T19:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=25%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Projeto de lei ordinária,Língua portuguesa,Gramática,Redação legislativa",
+            "sumario": "O Deputado alertou a Presidência para a necessidade de corrigir um erro de redação constante no art. 2º-C do Projeto de Lei nº 3.115, de 2023, que criminaliza o cambismo digital e protege a economia popular em eventos esportivos, de diversão e lazer.",
+            "transcricao": "O SR. CELSO RUSSOMANNO (Bloco/REPUBLICANOS - SP. Pela ordem. Sem revisão do orador.) - Sr. Presidente, há um erro de concordância no art. 2º-C, que precisa ser corrigido. O correto é \"não se punem\", mas está escrito \"não se pune\". E atividades são \"praticadas\", não \"praticados\". Precisamos corrigir isso."
+        }
+    ]
+}

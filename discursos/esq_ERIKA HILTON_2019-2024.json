@@ -1,0 +1,591 @@
+{
+    "id": 220645,
+    "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220645",
+    "nome": "Erika Hilton",
+    "siglaPartido": "PSOL",
+    "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36839",
+    "siglaUf": "SP",
+    "idLegislatura": 57,
+    "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220645.jpg",
+    "email": "dep.erikahilton@camara.leg.br",
+    "discursos": [
+        {
+            "dataHoraInicio": "2023-11-21T18:32",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F11%2F2023&txPagina=114&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Vítima,Crise climática,Espetáculo,Lucro,segurança\r\nProjeto de lei ordinária,Comissão de Constituição e Justiça e de Cidadania (CCJC),Crise climática,Política urbana,Política ambiental",
+            "sumario": "A Deputada expressou solidariedade à família de Ana Benevides, vítima da crise climática e da negligência de uma empresa que priorizou o lucro em detrimento da segurança em eventos. Destacou a necessidade de adaptar as cidades para lidar com as crises climáticas, celebrando a aprovação de um projeto sobre resiliência urbana na Comissão de Constituição e Justiça. Ressaltou a urgência de políticas públicas voltadas para saúde, meio ambiente e acesso a recursos diante das tragédias anunciadas. Enfatizou a importância do poder público enfrentar as crises climáticas e oferecer respostas efetivas, destacando que a Terra e as pessoas clamam por ajuda.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Muito obrigada, Presidente. Boa tarde a V.Exa. Venho a esta tribuna hoje, Presidente, primeiro, para prestar a minha solidariedade à família da jovem Ana Benevides, que morreu no último fim de semana, vítima não apenas da crise climática, mas também da negligência de uma empresa que lucra milhões, bilhões para desenvolver festivais e shows artísticos e colocou o lucro acima da vida. Uma jovem foi morta pela falta de estrutura e de preparo das nossas cidades para eventos dessa magnitude, para lidar com essa que é uma realidade no Brasil e no mundo. Nós estamos vendo as altas temperaturas. Nós estamos vendo as enchentes. Nós estamos vendo os rios secando. Nós estamos vendo as queimadas. Tudo isso vem resultando, cada vez mais, em desgraças, perdas, tragédias e mortes. As pessoas morrem vítimas da chuva. As pessoas morrem vítimas das altas temperaturas. Essa é uma realidade que já se impôs. Então, eu presto a minha solidariedade à família, aos amigos que precisaram se reunir, se organizar, para levar o corpo dessa jovem para o seu Estado, porque a empresa nem sequer se deu ao trabalho de tentar ajudar. Depois, houve outros episódios também relacionados a queimaduras. Dizendo isso, eu comemoro e celebro o avanço de um projeto importante. Nós precisamos nos colocar ao lado das pessoas. Esta Casa tem o dever de cuidar da vida dos mais vulneráveis, da vida dos mais necessitados, que são principalmente os mais atingidos por essas crises. Hoje, na Comissão de Constituição e Justiça e de Cidadania, nós conseguimos aprovar um projeto que trata da resiliência da cidade, das adaptações das cidades para lidar com as crises climáticas, com essas crises que já são realidade. O aquecimento global e toda essa discussão do futuro já não são mais do futuro; são do hoje, do agora. E o poder público, as autoridades, as pessoas responsáveis precisam parar e olhar para isso. O capital e o lucro não podem se colocar acima da vida. Tenho muito honra e alegria em vir a esta tribuna celebrar esta conquista, que não é apenas uma conquista do meu mandato, mas é também uma conquista da Terra, é uma conquista do planeta, é uma conquista das pessoas mais vulneráveis, que são vítimas das tragédias que vêm ocorrendo neste País e em todo o mundo, como foi o caso dessa jovem que morreu por conta do calor e também da negligência. Esse é um caso que não será mais, infelizmente, uma exceção, mas que se tornará uma regra, uma regra dos avanços da crise. E nós, enquanto Parlamentares nesta Casa, precisamos olhar para isso e entender quais são os contornos e as políticas públicas relacionadas à saúde, ao meio ambiente, ao abastecimento, ao acesso à energia elétrica que nós precisamos tomar. É preciso que haja planejamento. É preciso que haja prevenção. É preciso que haja respostas do poder público para lidar com essas tragédias que são anunciadas e que levam centenas de vidas  levaram nas enchentes, levaram agora, no calor, e vão seguir levando. A Terra clama por ajuda. As pessoas clamam por ajuda. E este é o nosso dever: olhar para esses mais vulneráveis e ir ao encontro deles. E, hoje, a aprovação desse importante projeto dará às cidades, a partir dos seus planos diretores, condições de se organizarem, de organizarem os recursos para essa realidade que já está colocada. Então, eu venho aqui manifestar a minha solidariedade, a minha indignação e também comemorar esta importante conquista, a aprovação desse projeto na Comissão de Constituição e Justiça. E que cada vez mais respostas às crises climáticas possam sair desta Casa e dos mandatos parlamentares. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-11-07T16:20",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=8%2F11%2F2023&txPagina=78&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Vacina,Vacinação,Saúde pública,Negacionismo\r\nBlecaute,São Paulo (SP),Prefeito,Governador,Consumidor,Energia elétrica,Crise climática,ressarcimento,Indenização,População de baixa renda",
+            "sumario": "A Deputada repudiou a insistência do negacionismo em relação às vacinas no Brasil, ressaltando a importância da vacinação para salvar vidas. Ademais, censurou o descaso com a cidade de São Paulo, enfatizando o recente episódio em que milhares de paulistanos ficaram sem energia elétrica, destacando as consequências graves como a perda de eletrodomésticos, medicamentos e alimentos. Além disso, criticou a falta de ação e o jogo de responsabilidades entre o Prefeito e o Governador, apontando a necessidade de uma resposta efetiva do poder público. Adicionalmente, reprovou a falta de preparo da Prefeitura e do Governo Estadual para lidar com crises climáticas. Por fim, afirmou que tomará providências junto ao Ministério Público para responsabilizar todos os envolvidos com o apagão e garantir o ressarcimento das famílias afetadas.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Obrigada, Presidente. Antes de mais nada, eu queria dizer que me espanta ainda  não deveria me espantar  a tentativa de ataque constante às vacinas no Brasil. Essa agenda do bolsonarismo já deveria ser página virada, mas o negacionismo segue em curso no nosso País. Isso é assustador e chocante. A vacina salvou vidas e segue salvando! Além disso, o que me traz a esta tribuna hoje, Presidente, é o descaso absurdo que ocorre na cidade de São Paulo com relação aos acontecimentos do último fim de semana que deixaram milhares de paulistanos sem energia elétrica. A cidade de São Paulo está completamente abandonada às traças e à própria sorte. Pessoas perderam eletrodomésticos, medicamentos, alimentos. Até agora, o que se viu foi o Prefeito fazendo a linha \"rei do camarote\". O Prefeito joga a bola para o Governador; o Governador joga a bola para o Prefeito; e nós não vemos o poder público se manifestando para dar respostas a esse lamentável e trágico episódio que está acontecendo na cidade de São Paulo. Ainda há famílias sem energia elétrica em suas casas. Isso é reflexo do descaso. Isso é reflexo do mau preparo da Prefeitura e do Governo do Estado para lidar com essa calamidade. Essa calamidade é reflexo dos problemas de zeladoria na cidade, é reflexo da falta de preparo das cidades para enfrentar crises climáticas, que são uma realidade em todo o mundo. Nós precisamos olhar para isso! As crises climáticas são uma realidade do agora. É preciso que as Prefeituras tenham planejamento e organização. Até ontem, o meu mandato havia coletado a informação de que quase 200 CEPs ainda estavam sem energia elétrica. Muito provavelmente, esse número é ainda maior. Nós entramos com uma ação pedindo ao Ministério Público que aplique uma multa de 50 milhões de reais por dia enquanto essas famílias permanecerem sem energia. É preciso que essas famílias tenham um canal para serem ressarcidas de suas perdas. É preciso reparar as perdas de eletrodomésticos, alimentos, medicamentos. Esse total descaso, que é um absurdo, denuncia a falta de preparo e de planejamento da Prefeitura da cidade de São Paulo. As pessoas estão clamando pelo olhar do poder público. As pessoas precisam de resposta. As empresas não podem lucrar bilhões de reais e tratar o povo como se não fosse nada, muito menos com a conivência do Estado e da Prefeitura. Ao fazer esta denúncia, quero dizer que o nosso mandato segue atento. Acompanharemos cada um dos endereços que permaneceram sem energia elétrica e seguiremos fiscalizando. Acionaremos o Ministério Público e todos os órgãos competentes para que essas famílias sejam respeitadas, para que essas famílias sejam ressarcidas, para que essas famílias não fiquem com esse prejuízo decorrente do despreparo e do descaso do Prefeito da cidade de São Paulo, que estava assistindo à Fórmula 1 enquanto deveria estar sentado com o seus Secretários pensando em como reparar essa grave problemática. A cidade de São Paulo está largada às traças. Esse é mais um episódio lamentável. E quem paga por isso é o povo pobre, que perdeu alimentos, eletrodomésticos, medicamentos. Esse absurdo não pode passar impune, sem que as pessoas olhem para essa situação. Venho a esta tribuna, Presidente, fazer essa grave denúncia e dizer que estamos acompanhando a situação e que acionamos o Ministério Público. Medidas precisam ser tomadas e serão tomadas! Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-10-04T22:16",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=5%2F10%2F2023&txPagina=86&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Projeto de lei ordinária,Política Nacional de Trabalho Digno e Cidadania para População em Situação de Rua (PNTC PopRua),Vulnerabilidade social,Defesa",
+            "sumario": "A Deputada destacou a crescente crise humanitária enfrentada pelo Brasil, representada pelo aumento da população em situação de rua. Questionou o papel do Parlamento, perguntando a quem realmente serve se não for possível apreciar o tema. Defendeu a necessidade de ações inclusivas e dignas para a população em situação de rua e afirmou que é responsabilidade do Poder Legislativo combater as injustiças sociais e garantir direitos básicos como moradia, alimentação e vestimenta para todos os cidadãos, especialmente os mais vulneráveis. Compartilhou sua própria experiência de ter sido expulsa de casa, conhecendo de perto as dificuldades enfrentadas por aqueles que vivem nas ruas. Agradeceu aos colegas que colaboraram para tornar mais humano e viável o projeto de lei que institui a Política Nacional de Trabalho Digno e Cidadania para População em Situação de Rua - PNTC PopRua, de sua autoria e relatado pelo Deputado Orlando Silva. A oradora, por fim, lamentou que setores da Casa insistam em se colocar a serviço das desigualdades e dos massacres sociais, no entanto, manifestou confiança, com a aprovação da matéria, em dar esperança à população em situação de rua do País.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Obrigada, Presidente. Nesta noite, nós estamos chamando a atenção deste Parlamento e da sociedade como um todo para olhar a grave situação humanitária que o Brasil vem enfrentando nos últimos anos, com o aumento da população em situação de rua. E nos chama a atenção o fato de que ainda haja pessoas que se dizem cidadãos de bem, que vão na contramão da dignidade humana, da empregabilidade, da inclusão e da inserção dessa população. Nesta Casa não se pode falar sobre nada. Não se pode falar sobre políticas para LGBT, não se pode falar sobre política para a negritude. Este Parlamento está a serviço de quem? Este Parlamento está a serviço de quê? Esta Casa precisa cumprir o serviço de reparar lacunas sociais históricas da sociedade. A população em situação de rua vem aumentando no nosso País, e falta um olhar sensível, de inclusão, de dignidade e de inserção dessa população. Disseram que nós vamos ao Supremo Tribunal Federal reclamar questões. Nós vamos ao Supremo Tribunal Federal reclamar questões que são inconstitucionais, que ferem cláusulas pétreas da nossa Constituição. Nós não estamos tratando de algo que é inconstitucional. Nós estamos tratando da dignidade humana. Nós estamos tratando de questões para que as pessoas tenham direito à empregabilidade, tenham direito à emancipação, tenham direito à comida no prato e à moradia digna e de qualidade. O Deputado perguntava se nos nossos gabinetes existem pessoas trabalhando que eram pessoas em situação de rua. Eu mesma fui expulsa de minha casa, conheço a realidade da rua. E nós saímos das ruas, nós saímos das mazelas para olhar por essa parcela da população que é esquecida, que é espezinhada, que é açoitada, exatamente por uma lógica burguesa, por uma lógica liberal, por uma lógica excludente. Em nome daquelas e daqueles que perderam a perspectiva de futuro, em nome daquelas e daqueles que não têm esperança por conta de políticas como a política econômica que estava em curso nos últimos anos neste País, que acirrou as desigualdades sociais, este Parlamento tem uma obrigação, este Parlamento tem um dever, que é combater as injustiças sociais, que é combater as desigualdades, que é garantir que todos os indivíduos na sociedade tenham direitos dignos, como, por exemplo, o direito à moradia, o direito à alimentação, o direito a se vestir, o direito à cidade, que são direitos constantemente negados a uma parcela mais vulnerável, a uma parcela mais pobre. Nós fizemos um esforço gigantesco, e aqui agradeço ao Relator, Deputado Orlando Silva, agradeço aos Líderes dos partidos, que nos ouviram. Fizemos as correções necessárias para tornar o projeto palatável e possível de ser votado, para levar mais dignidade ao povo pobre, massacrado, vulnerável e esquecido deste País. É lamentável que nesta Casa ainda haja setores que continuam se colocando a serviço das desigualdades, dos massacres sociais. Esta noite corrigiremos isso. Esta noite levaremos esperanças para debaixo dos viadutos, para as ruas deste País, dizendo para a população que dentro desta Casa há mandatos comprometidos e preocupados com as suas vidas, com as suas dignidades e com os seus direitos. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-09-13T16:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=14%2F9%2F2023&txPagina=85&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Mulher,Negros,Ministra do Supremo Tribunal Federal,Supremo Tribunal Federal (STF),Representatividade feminina,Violência contra a mulher,Feminicídio,População negra",
+            "sumario": "A Deputada se somou aos que defendem a nomeação de uma Ministra negra para o Supremo Tribunal Federal (STF). Destacou a importância da representatividade e enfatizou que quando uma mulher negra avança, toda a sociedade avança junto. Apresentou dados alarmantes sobre a violência e desigualdade que afetam as mulheres negras no Brasil, incluindo altas taxas de feminicídio, pobreza e desigualdade no mercado de trabalho. Argumentou que a presença de uma mulher negra na Corte é crucial para enfrentar a violência estrutural que afeta a vida das mulheres negras no País. Também enfatizou que existem juristas negras com currículos e competência para ocupar o cargo. A oradora, por fim, pediu ao Presidente da República que dê atenção a essa campanha.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Agradeço o tempo. Presidente, venho a esta tribuna hoje com esta camiseta, onde está escrito \"Por uma Ministra negra no Supremo Tribunal Federal\", ilustrando o anseio de todas as juristas negras do nosso País, e não só de juristas negras, mas de todas as mulheres negras brasileiras. Porque, como nos ensinou Angela Davis, quando uma mulher negra se movimenta, a estrutura se movimenta junto com ela. E nós sabemos da importância, da urgência e da necessidade de que essa estrutura que massacra e invisibiliza a atuação de mulheres negras em nosso País possa ser rompida. Sabemos que essa é uma decisão que compete apenas ao Presidente Lula. Respeitamos a sua decisão, mas, enquanto mulher negra, enquanto parte de um movimento que luta por visibilidade, por ascensão, por representatividade, não podemos deixar silenciar este clamor das bases sociais, que clamam sim para que o Supremo Tribunal Federal, nos seus mais de 130 anos, possa ter pela primeira vez uma mulher negra, não só porque é importante que haja uma mulher negra, mas também pelos dados que apontam a realidade de mulheres negras em nosso País. Quero passar alguns deles. Por exemplo, mulheres negras representam 62% das vítimas de feminicídio no Brasil. Em relação ao feminicídio no Brasil, dados do 15º Anuário Brasileiro de Segurança Pública apontam que duas em cada três vítimas são mulheres negras. Mulheres negras representam 66% do total de mulheres assassinadas no Brasil, com uma taxa de mortalidade de 4,1 por 100 mil habitantes, em comparação à taxa de 2,5 de mulheres brancas. No Brasil, 63% das casas chefiadas por mulheres negras estão abaixo da linha da pobreza. Em relação ao mercado de trabalho, nos cargos de gerência, negros ocupam 29,5% dos cargos e brancos 69%, entre outros dados. Aqui, trata-se de mostrar a urgência da necessidade de enfrentarmos a violência estrutural que acomete a vida de mulheres negras, e não só de apenas mostrar que existem sim mulheres negras capazes e competentes para ocupar esse lugar. Não se trata apenas de um discurso ativista. Não se trata apenas de um discurso militante. Trata-se de olhar para essa reivindicação e perceber que há juristas negras com currículos e com competência para ocupar esse espaço. Presidente, peço mais 30 segundos para concluir. Então, venho a esta tribuna hoje para vocalizar a expressão de mulheres negras da sociedade brasileira, para fazer um clamor ao Presidente da República para que olhe para essa reivindicação, que olhe para o currículo de juristas negras. A representação de mulheres negras no Supremo Tribunal Federal  uma mulher negra progressista, uma mulher negra que dará continuidade aos votos que a Exma. Ministra Rosa Weber colocou em sua atuação  é de extrema importância, é fundamental para as mulheres negras, para a juventude negra, para os homens negros e para a sociedade como um todo. Quando avançamos, a sociedade avança junto conosco. E essa é uma mobilização do movimento negro e das mulheres negras brasileiras. Enquanto mulher negra Parlamentar, ocupando este espaço, venho aqui exemplificar, vocalizar e ampliar essas vozes que debatem nas bases sociais, dizendo: nós mulheres negras existimos. Nós mulheres negras somos a maioria na sociedade brasileira e vivemos na base dessa pirâmide. Não podemos mais seguir caladas, silenciadas, invisibilizadas e tendo os nossos direitos negados. Este pode ser um gesto importante por parte do Presidente da República: uma campanha de mulheres negras neste País, à qual eu me somo, e uso deste espaço para vocalizar a luta de nós mulheres negras. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-08-31T12:04",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=1%2F9%2F2023&txPagina=74&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Defesa,Votação,Projeto de lei ordinária,Política Nacional de Trabalho Digno e Cidadania para População em Situação de Rua (PNTC PopRua)\r\nviolação,Direito do trabalho,Vigilante,Trabalhador terceirizado,Câmara dos Deputados,solidariedade\r\nAmeaça,Vítima,Padre,Assistência humanitária,População em situação de rua,São Paulo (SP),solidariedade\r\nDiscriminação religiosa,Homicídio,Ialorixá,Simões Filho (BA),Atuação parlamentar,Câmara dos Deputados",
+            "sumario": "A Deputada lamentou a falta de avanço em um projeto de lei que busca trazer dignidade à população em situação de rua no Brasil, ressaltando a importância de votar essa pauta. Em seguida, abordou a situação dos vigilantes da Casa, trabalhadores essenciais que enfrentam desrespeito e brutalidade. Pediu atenção da Mesa Diretora para a violação de direitos que esses trabalhadores enfrentam. Expressou solidariedade ao Padre Júlio Lancellotti, que tem recebido ameaças de morte por seu trabalho de solidariedade e amparo à população em situação de rua em São Paulo. A oradora repudiou a intolerância religiosa crescente no País e instou a Casa a se concentrar em questões importantes, como o combate às desigualdades e a defesa dos direitos e da vida de grupos minoritários.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Muito obrigada, Presidente. Bom dia a todos que nos ouvem. Presidente, venho a esta tribuna hoje falar de alguns assuntos. Primeiro, eu quero lamentar que nós estamos chegando ao fim do mês de agosto e não conseguimos avançar um projeto importante, que entra e sai da pauta todas as semanas, para tentar trazer dignidade à população em situação de rua, que aumenta consideravelmente no nosso País. Eu queria demarcar isso e dizer da importância de que nós consigamos avançar essa pauta, que já foi negociada com os mais diversos partidos. O Relator, Deputado Orlando, acatou as reivindicações. O projeto está pronto para ser votado e precisa ser votado. Uso esta tribuna também para falar de outro tema importante. Fui abordada nesta semana por parte dos vigilantes desta Casa, que me informaram da grave situação desses trabalhadores. A Deputada Erika Kokay também falou sobre isso nesta semana neste plenário. Esses trabalhadores prestam um serviço essencial e importante para o funcionamento desta Casa, para a manutenção do patrimônio, para a segurança dos Parlamentares que aqui estão e não podem ser tratados com tamanho desrespeito e com tamanha brutalidade. Esses trabalhadores têm família. Esses trabalhadores dependem dos seus empregos. A Mesa precisa olhar para essa situação de extrema violação de direitos trabalhistas: um aviso sem nenhum tipo de justificativa coloca na rua esses trabalhadores, que andam desesperados pelos corredores desta Casa, clamando pela atenção deste Parlamento para esta grave situação. Outro tema que também me traz a esta tribuna, Presidente, é a solidariedade que eu quero prestar ao meu grande amigo, companheiro e lutador assíduo na cidade de São Paulo Padre Júlio Lancellotti, que recebe mais uma grave ameaça de morte por prestar um trabalho de solidariedade, um trabalho de amparo, um trabalho que está completamente em consonância com os ensinamentos de Cristo. Ele é atacado, massacrado, violentado por atender irmãos e irmãs em situação de rua com o respeito, o carinho e a dignidade que essa população merece e precisa. A população em situação de rua também é uma população digna de ser respeitada, de ser amparada, de ter os seus direitos preservados, porque a Constituição Federal ampara essas pessoas assim como qualquer outro cidadão. Então, ficam registrados aqui a minha solidariedade e o meu apoio a essas pessoas e o meu repúdio a qualquer tipo de ataque, ameaça ou violência praticada contra quem quer que seja, em especial o querido Padre Júlio Lancellotti, que é uma voz importante na defesa da população em situação de rua, na defesa dos direitos das populações mais vulneráveis. Ele não pode ser tratado com violência, como foi tratado nos últimos dias. Nós temos visto o quanto a intolerância religiosa vem crescendo no nosso País. A execução brutal de Mãe Bernadete é um exemplo disso. Nós precisamos que esta Casa pare de discutir temas que não são importantes, inclusive em suas Comissões. Devemos usar esta Casa para o enfrentamento das desigualdades, a defesa da vida, a preservação dos direitos e a ascensão de grupos minoritários, que são constantemente massacrados e espezinhados na nossa sociedade. Era isso que eu tinha para falar hoje, Presidente. Muito obrigada."
+        },
+        {
+            "dataHoraInicio": "2023-08-09T18:16",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=10%2F8%2F2023&txPagina=121&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Partido Socialismo e Liberdade (PSOL),Voto favorável",
+            "sumario": "Orientação de bancada na votação do requerimento de apreciação em regime de urgência do Projeto de Lei nº 2.245, de 2023, sobre a instituição da Política Nacional de Trabalho Digno e Cidadania para População em Situação de Rua - PNTC PopRua.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Sr. Presidente, o projeto é de minha autoria, mas não consegui chegar a tempo de fazer a defesa. O PSOL orienta o voto favorável pela preciosidade desse projeto. O Brasil vem enfrentando uma crise humana gravíssima, com ausência de políticas públicas fundamentais que tragam dignidade, emancipação, direito, qualidade de vida e autonomia à população em situação de rua. A população em situação de rua do País não pode mais seguir sendo invisibilizada e negligenciada em seus direitos. Este, sim, é um projeto que visa ao respeito, à empatia, à inclusão e à autonomia dos nossos irmãos vivendo em situação de rua. Muitas vezes, eles são tratados pela perspectiva do ódio, do estigma, do preconceito, quando são famílias, crianças, idosos, mulheres, mães que perderam o emprego, que perderam oportunidades, que vivem nas ruas e precisam de um olhar responsável, empático e de qualidade. Por isso, encaminhamos voto \"sim\", Sr. Presidente. Obrigada."
+        },
+        {
+            "dataHoraInicio": "2023-07-05T20:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=6%2F7%2F2023&txPagina=133&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Contestação,Pronunciamento parlamentar,perseguição,Discriminação religiosa,Pastor evangélico,incentivo,Violência,Liberdade de religião,População LGBT",
+            "sumario": "Contestação ao discurso proferido no plenário sobre a tentativa de impedimento de pregações do Evangelho, pela oradora e pelo Senador Fabiano Contarato.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Obrigada, Presidente. Foi dito nessa tribuna que eu e o Senador Fabiano queríamos impedir a manifestação do Evangelho. Eu, como filha de uma mulher evangélica, crescida em um lar evangélico, não tenho nenhum tipo de compromisso com o bloqueio da manifestação religiosa. O que nós estamos discutindo neste momento é a perseguição a um criminoso, porque alguém que incita ódio, alguém que incita a violência contra determinados grupos da sociedade não pode ser considerado religioso. É criminoso! Crime esse reconhecido pelo Supremo Tribunal Federal, equiparado ao crime de racismo e que tem que ser respondido e responsabilizado no rigor da lei. Nós não queremos proibir a livre manifestação do Evangelho em respeito aos milhões de evangélicos do nosso País. O que nós não queremos é que se confundam criminosos com evangélicos, que se deturpe a palavra de Deus, que se use do Evangelho para pregar violência contra o grupo que já é historicamente violentado. Nós chegamos a esta Casa com muita dificuldade, com muito sacrifício. Nós estamos tentando, com muito sacrifício, reconstruir a agenda da dignidade e dos direitos da comunidade LGBTQI neste País, que também é cidadã de direito, que também merece ser respeitada. E não toleraremos, não aceitaremos que mercadores da fé, falsos profetas, usem as mídias ou os púlpitos de suas igrejas para atacar de forma covarde, criminosa e intolerante a nossa vida e a nossa dignidade. Obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-05-31T23:48",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=1%2F6%2F2023&txPagina=290&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de destaque de votação em separado,Expressão textual,Dispositivo legal,Projeto de lei de conversão,Medida provisória,Federação PSOL REDE,Voto favorável",
+            "sumario": "Orientação de bancada na votação do requerimento de destaque para votação em separado da expressão incluídos os direitos: e, por decorrência, das alíneas a, b, c, d, e e f do inciso I do art. 28 do Projeto de Lei de Conversão nº 12, de 2023, da Medida Provisória nº 1.154, de 2023, sobre a organização básica dos órgãos da Presidência da República e dos Ministérios.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - A Federação PSOL REDE orienta \"sim\", Presidente, porque este destaque, como já foi defendido pela companheira Deputada Dandara, desmonta uma política extremamente importante na defesa dos direitos de inúmeras minorias. É um absurdo que, na tentativa de atacar uma população extremamente vulnerabilizada, como é a população LGBTQIA+ brasileira, também queiram atacar pessoas idosas, crianças e adolescentes, pessoas com deficiências, população em situação de rua e grupos sociais vulneráveis. Isso é um escárnio! Isso é um desrespeito! Por isso nós orientamos \"sim\"."
+        },
+        {
+            "dataHoraInicio": "2023-05-17T21:24",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=18%2F5%2F2023&txPagina=183&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Dia Internacional de Luta contra a LGBTfobia,População LGBT,Defesa,Política pública",
+            "sumario": "Transcurso do Dia Internacional da Luta contra a LGBTfobia. Implantação de políticas públicas em prol da comunidade LGBTQIA+. Combate à violência contra a população gay no País.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Presidente, eu não poderia deixar de ocupar esta tribuna no dia de hoje, quando nós comemoramos o Dia Internacional da Luta contra a LGBTfobia. É importante lembrar que o Brasil segue sendo o primeiro país que mais mata e violenta esta população, um fato grave, que atenta contra a democracia. Antes, nós não tínhamos uma representação dentro deste espaço. Por aqui passaram o Deputado Jean Wyllys e o Deputado David Miranda, mas nós nunca tínhamos contado com a presença de travestis transexuais, como podemos contar agora. Não é possível falarmos em democracia e em reconstrução do País se nós negamos os direitos da comunidade LGBTQIA+. Nossa população ainda segue precisando de políticas públicas que façam o enfrentamento da fome, da pobreza, do desemprego, da falta de moradia, e o enfrentamento da violência policial, que acomete nossa população. Recentemente, houve o julgamento da travesti Laura Vermont, que foi brutalmente executada, o que ainda é a nossa realidade neste País. Seus agressores foram absolvidos. Esta travesti foi executada, e dois dos seus agressores foram absolvidos; os demais foram condenados por lesão corporal leve! O que é preciso para que sejam responsabilizados tais agressores e para que este Parlamento possa enxergar os direitos desta comunidade? As pessoas LGBTQIA+ do nosso País não podem continuar sendo tratadas como cidadãs de segunda classe. Nossos direitos não podem mais continuar sendo negociados, porque é nossa vida que está em jogo, é nosso direito de existir e de conviver em harmonia e plenitude na sociedade que está em jogo. Hoje é dia, sim, para demarcarmos toda a luta histórica porque, a despeito da violência que acomete nossa população, nós chegamos a este espaço e estamos dispostas a contribuir para um projeto de país que leve em consideração nossas demandas e nossas necessidades, um projeto em que nossas vidas não mais sejam negociadas. Nós estamos neste espaço para dizer que a agenda dos direitos da comunidade LGBTQIA+ não pode continuar sendo empurrada para debaixo do tapete, que o Parlamento brasileiro, o colegiado, os Deputados e os Senadores precisam legislar sobre os direitos da comunidade LGBTQIA+. Quando nós conseguirmos ultrapassar as tristes marcas de violência, de estigma e de opressão que acometem esta população, a sociedade brasileira será melhor para todos nós, sem sombra de dúvida. No dia de hoje, é preciso lembrar que nós ainda estamos sentenciadas à miséria, à prostituição e ao abandono familiar, que a cultura do ódio e da violência que acomete nossa relação com a sociedade precisa ser combatida imediatamente. Este combate só poderá ser feito através de políticas públicas e da participação efetiva da população LGBTQIA+, que precisa ocupar este espaço de discussão. Portanto, nesta data tão importante de enfrentamento da violência que nos acomete no Brasil, nós queremos lembrar os inúmeros desafios que temos e queremos lembrar todas as pessoas LGBTQIA+ que tombaram ao longo deste processo de luta. Queremos reafirmar o compromisso, com nossa presença neste espaço, de refundarmos este País através da perspectiva dos direitos, da emancipação, da dignidade e da cidadania da população LGBTQIA+ brasileira. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-04-25T16:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=26%2F4%2F2023&txPagina=77&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Lixo,Coleta seletiva,Itu (SP),Prefeitura,Denúncia",
+            "sumario": "Denúncia de precariedade dos serviços de coleta de lixo e cobrança de taxas exorbitantes pela Prefeitura Municipal de Itu, Estado de São Paulo. Votação pela Câmara de Vereadores de projeto de lei a respeito do tema.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Obrigada, Presidente. Eu só queria registrar que, neste momento, na cidade de Itu, ocorre uma votação na Câmara de Vereadores sobre a taxa de coleta do lixo. Eu tenho recebido vídeos lamentáveis enviados pelos moradores da região. A Prefeitura tem cobrado uma taxa de coleta do lixo, mas não tem ofertado o serviço. E essa taxa tem valores exorbitantes. Agora, a população se reúne em frente à Câmara de Vereadores para tentar um diálogo com o Poder Municipal e mostrar suas demandas. Esses vídeos que eu tenho recebido mostram o lixo tomando conta dos territórios na cidade, com crianças brincando em torno do lixo, e o Prefeito tem impedido que as pessoas possam se manifestar. Isso é de fato repugnante, é um abuso, é um autoritarismo por parte da Prefeitura. Nós vamos acompanhar essa situação. A população tem que ser tratada com respeito, com dignidade e com democracia. Se a taxa é cobrada, o serviço deve ser ofertado. As imagens são chocantes. Obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2023-04-25T16:24",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=26%2F4%2F2023&txPagina=73&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "População indígena,Brasília (DF),Acampamento\r\nMinorias,População de baixa renda,Ex-presidente da República,Partido Liberal (PL),São Paulo (Estado),Governador,São Paulo (SP),Prefeito,Vulnerabilidade social\r\nCultura (artes),São Paulo (SP),recursos",
+            "sumario": "Saudações aos indígenas reunidos no Acampamento Terra Livre, no Distrito Federal. Desprezo às minorias pelo Governo Jair Bolsonaro. Descaso do Governador do Estado de São Paulo, Tarcísio Gomes de Freitas, e do Prefeito Municipal de São Paulo, Ricardo Nunes, com as populações vulneráveis. Liberação pelo gestor municipal de recursos para a Virada Cultural, em detrimento da área de segurança pública e das populações em situação de rua na Capital paulista.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Obrigada, Presidente. Primeiro, uso esta tribuna para aclamar e saudar o Acampamento Terra Livre, onde estão indígenas de todo o Brasil que manifestam e demarcam a importância de este País olhar para as populações indígenas, para a diversidade, para a pluralidade. Nós, grupos diversos e dissidentes, tidos como abjetos, mas que fazemos parte da sociedade, enfrentamos nos últimos 4 anos o Governo negacionista e golpista de Bolsonaro. Falo não apenas dos povos indígenas, mas também de todos os que foram massacrados pela política que passou. Agora nós podemos voltar a nos organizar, a ter esperança, a lutar pelas nossas pautas. É isso que os povos indígenas e nós estamos fazendo. Eu tenho muito orgulho e me sinto muito honrada de ter sido convidada para estar com o grupo de indígenas na tarde de hoje, às 17 horas. Quero, Sra. Presidente, usar meu tempo para falar também sobre a grave crise humanitária que vem ocorrendo na cidade de São Paulo, em vista do completo desprezo e descaso por parte da Prefeitura e do Prefeito, o Sr. Ricardo Nunes. A cidade de São Paulo está completamente abandonada, está completamente esquecida, jogada às traças! Tanto o Governo Estadual como o Governo Municipal não têm nenhuma política em prol da dignidade da população em situação de rua, do povo pobre, dos mais vulneráveis. A Prefeitura de São Paulo insiste em manter guardados em caixa os recursos. Ela se comporta como um banco, Sra. Presidente! A Prefeitura não investe nas áreas que mais precisam. Agora, quando se aproxima a Virada Cultural em São Paulo, o Prefeito tira da cartola uma ideia magnífica: investir 10 milhões de reais numa Virada Cultural no metaverso, ao invés de tratar das questões ligadas à insegurança, ao que diz respeito ao entorno da cidade, por causa do abandono e descaso que ocorrem. O Secretário do Governador, numa fala triste, disse que iria retirar do centro da cidade as populações em situação de rua e levá-las para o interior do Estado para elas trabalharem de forma braçal, mas a população em situação de rua, a população pobre, a população vulnerável da cidade de São Paulo precisa mesmo é de uma boa administração, precisa que os recursos da cidade de São Paulo sejam empregados para resolver os problemas e as dificuldades que a cidade tem enfrentado nas mais diversas áreas. O Prefeito, primeiro, precisa reaparecer  o Prefeito está sumido, não dá as caras. Nós não sabemos quem é, na verdade, o Prefeito da cidade de São Paulo. Quando ele aparece, vem com soluções mirabolantes, com soluções que não dialogam com as reais necessidades da população de São Paulo. Quando estivemos à frente da Comissão de Direitos Humanos, nós entregamos vários relatórios ao Prefeito, que, até agora, não se manifestou nem tomou iniciativas para dar dignidade à população. Nós continuaremos denunciando o descaso e o abandono que os mais pobres, os mais vulneráveis e os mais necessitados têm enfrentado na cidade de São Paulo. Muito obrigada."
+        },
+        {
+            "dataHoraInicio": "2023-03-08T14:04",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=9%2F3%2F2023&txPagina=31&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Dia Internacional da Mulher,Representatividade política,Transexual,Travesti,Política pública,combate,Violência contra a mulher,Misoginia",
+            "sumario": "Importância da assunção do mandato parlamentar por transexuais e travestis. Luta das mulheres pela construção de modelo de sociedade inclusiva. Necessidade de enfrentamento violência contra a mulher no País. Transcurso do Dia Internacional da Mulher.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Obrigada, Deputada Maria do Rosário. Presidente, uso esta tribuna pela primeira vez, inicialmente, para falar da importância da chegada das primeiras representantes transexuais e travestis a este importante espaço da política nacional, que até então nunca havia contado com a nossa presença, e essa é uma grave denúncia ao processo democrático. Nós não poderemos falar em democracia plena se todos os indivíduos da sociedade brasileira não tiverem representação nos assentos desta Casa de Leis, não tiverem representação neste espaço legislativo. Quero reforçar hoje a importância do mês das mulheres, que não é só o mês de março, mas todos os meses do ano. Nós mulheres dos mais diversos grupos sociais  mulheres negras, mulheres indígenas, mulheres transexuais, mulheres trabalhadoras, mulheres do campo  lutamos arduamente pela construção de um modelo de sociedade que nos respeite, que nos inclua, que enfrente a misoginia e a violência praticada contra nós. Quero chamar o Parlamento brasileiro a olhar para as políticas em prol das mulheres, para a vida das mulheres, e a se comprometer cada vez mais com a construção de uma sociedade melhor e mais digna para todas nós. É preciso enfrentar a violência que nos acomete. Precisamos lembrar que ainda vivemos no País que mais mata, e mata de forma cruel, de forma violenta, mulheres como eu, meninas como eu, que, aos 13 anos ou 14 anos de idade, são jogadas nas ruas para viver da prostituição. Estas são 90% de nós. É preciso que haja um esforço desta Casa. É preciso que haja um esforço da sociedade brasileira para resgatar nossa humanidade e nossa dignidade. Eu espero que possamos lembrar e ouvir as inúmeras vozes de mulheres não apenas hoje, dia 8 de março, mas durante os 365 dias do ano, no enfrentamento do assédio, da exploração sexual e da violência que nos acometem. Que possamos celebrar nossa vida e a existência de V.Exa., Sra. Presidenta, que ocupa esta Casa há tanto tempo com outras mulheres aguerridas, com mulheres lutadoras, que tanto nos orgulham e tanto nos inspiram a construir uma sociedade melhor! Que tenhamos uma legislatura que se preocupe com a equidade, que se preocupe com a paridade, que não transforme as pautas sobre nossas vidas em guerras ideológicas, mas que lembre que a Constituição brasileira e os direitos dos cidadãos devem ser estendidos ao conjunto plural e diverso de todas as mulheres brasileiras! Nós louvamos, Deputada Maria do Rosário, nossa chegada a este espaço, porque somos os primeiros frutos de uma luta histórica, mas espero que não sejamos as últimas nem as únicas. Espero que nossa chegada a esta Casa possa ter um papel revolucionário e transformador no cenário político e em toda a sociedade brasileira. Viva o povo brasileiro! Vivam, em especial, as mulheres guerreiras, as mulheres lutadoras do nosso Brasil! Sigamos juntas! Muito obrigada."
+        },
+        {
+            "dataHoraInicio": "2024-07-10T20:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=11%2F7%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Emenda de plenário,Projeto de lei complementar,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação da Emenda de Plenário nº 104 apresentada ao Projeto de Lei Complementar nº 68, de 2024, que regulamenta a reforma tributária, institui o Imposto sobre Bens e Serviços - IBS, a Contribuição Social sobre Bens e Serviços - CBS,&nbsp;o Imposto Seletivo - IS e dá outras providências.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE orienta \"sim\", compreendendo que armas geram morte, violência, genocídio, brutalidade, feminicídio. O que o povo brasileiro precisa é de comida, de moradia, de trabalho e de dignidade. As armas são responsáveis pelo aumento da violência contra as mulheres. As armas são responsáveis pela brutalidade nos territórios. Elas irão parar nas mãos das milícias, do tráfico e da criminalidade gerando índices assustadores de brutalidade contra a vida das pessoas. Nós precisamos taxar as armas para diminuir o estímulo. Nós não podemos aceitar que não haja taxação sobre esse instrumento de morte. As armas não podem ser tratadas como modelo de segurança pública. Arma nas mãos erradas é causa de morte, de brutalidade, de genocídio, de violência e ceifa vidas inocentes. Por isso a orientação é \"sim\", pela taxação das armas, para que as pessoas não sigam comprando esse tipo de produto, essa ferramenta da morte, do genocídio, do feminicídio, da violência e da barbárie. Armas não! Livros sim! Educação sim! Armas jamais!"
+        },
+        {
+            "dataHoraInicio": "2024-07-10T19:12",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=11%2F7%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Subemenda substitutiva global,Projeto de lei complementar,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação da Subemenda Substitutiva Global oferecida ao Projeto de Lei Complementar nº 68, de 2024, que regulamenta a reforma tributária e institui o Imposto sobre Bens e Serviços - IBS, a Contribuição Social sobre Bens e Serviços - CBS e o Imposto Seletivo - IS e dá outras providências.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE orienta o voto \"sim\", compreendendo a importância deste debate neste momento, por se tratar de um avanço. Este é um momento histórico, em que estamos simplificando o sistema tributário deste País. Nós sabemos, obviamente, que há pontos que poderiam ser melhores  nada é como nos nossos sonhos , mas compreendemos que esta reforma conseguiu abarcar muitas coisas que são essenciais e importantes. Neste ponto, inclusive, quero destacar a inclusão do incentivo e da não tributação no debate sobre livros. Nós conseguimos avançar nesse ponto, o que para nós é uma grande vitória, entendendo, é claro, que talvez houvesse um ou outro ponto que pudesse ter sido mais aprofundado ou mais debatido. Este é um momento histórico, porque esta medida trará simplificação e transparência ao processo, enfrentará a guerra fiscal e trará avanços para o Brasil. Então, a orientação da Federação PSOL REDE é \"sim\", Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-07-09T20:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=10%2F7%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei complementar,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência ao Projeto de Lei Complementar nº 68, de 2024, que institui o Imposto sobre Bens e Serviços — IBS, a Contribuição Social sobre Bens e Serviços — CBS e o Imposto Seletivo — IS e dá outras providências.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE orienta \"sim\" à urgência, entendendo a importância desse debate, a necessidade de que tenhamos um sistema tributário menos difícil de ser compreendido pelas pessoas, que enfrente as desigualdades. Obviamente, amanhã, ao longo do dia, teremos a necessidade de aprofundar a discussão sobre alguns pontos, mas entendemos que esse é um avanço importante. Desde a ditadura, nós não discutíamos uma reforma tributária  há 40 anos. É hora de dar uma resposta, é hora de simplificar, é hora de trazer transparência, é hora de combater desigualdades e avançar. Então, a nossa orientação é \"sim\", Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-07-09T19:52",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=10%2F7%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Substitutivo,Senado Federal,Projeto de lei ordinária,diretrizes,Ensino médio,Crítica",
+            "sumario": "A Deputada manifestou oposição ao relatório do ensino médio, argumentando que o texto trabalhado no Senado era mais adequado e contemplava melhorias importantes. Criticou o Relator por desconsiderar as alterações do Senado e apresentar um texto significativamente diferente. Dessa maneira, justificou o voto contrário da Federação PSOL REDE ao relatório.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, primeiro, quero pedir a V.Exa. que respeite e preserve esse espaço da orientação, que para nós é extremamente importante. A nossa orientação é contrária ao relatório, porque nós temos a compreensão de que o texto trabalhado no Senado contempla aquilo que nós acreditamos ser uma reforma, uma estrutura importante para o ensino médio. O Relator desconsiderou, desacatou as melhorias apresentadas pelo Senado e apresentou um texto completamente diferente daquele que o Senado havia melhorado. Não há condição de votar favoravelmente ao relatório da maneira como ele se encontra. Por isso, a Federação PSOL REDE orienta o voto contrário ao relatório. Obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-06-18T16:44",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=19%2F6%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Projeto de lei ordinária,Aborto provocado,Crime contra a vida,Idade gestacional,Gestante,penalidade,contrário,mobilização",
+            "sumario": "A Deputada criticou o Projeto de Lei nº 1.904, de 2024, que equipara o aborto legal após 22 semanas de gestação ao homicídio. Argumentou que o projeto ataca a dignidade, a democracia e os direitos das mulheres, meninas e pessoas gestantes, especialmente as vítimas de estupro e violência. Afirmou que a proposta penaliza mais severamente as vítimas do que os agressores. O PSOL apresentou um requerimento para retirar a urgência do projeto. Por fim, elogiou os movimentos feministas pela mobilização contra o projeto, destacando a importância da luta pelos direitos das vítimas de violência.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Obrigada, Presidente. Venho a esta tribuna hoje dizer que o povo brasileiro, em especial as mulheres, meninas e pessoas que gestam neste País, acompanharam na semana passada, de forma estonteante, assustadora, preocupada, o que foi a tramitação do regime de urgência do Projeto de Lei nº 1.904, de 2024, que é uma proposição que quer igualar ao homicídio o aborto legal, previsto por lei desde 1940, praticado após 22 semanas de gestação. Esse é mais um projeto contra a dignidade, contra a democracia, contra o direito constitucional e contra a vida de mulheres e crianças, que, muitas vezes, são vitimadas pelo ódio e pelo estupro. Nós do PSOL nos posicionamos contrariamente. Estivemos na rua ao lado das vozes que se levantaram em todo o País para dizer que esse projeto é um escárnio, que esse projeto é uma barbárie, que esse projeto é um retrocesso que se impõe dentro da Câmara dos Deputados e que leiloa, sacrifica o direito das pessoas que são vulneráveis. Os que querem esse projeto não olham para a vítima, não olham e não tentam frear, inibir a violência e o estupro na nossa sociedade; em vez de tentarem barrar ou dar saídas para essas mulheres que são estupradas, vão na contramão e acabam punindo-as. Esse não é um projeto sobre legalização ou não legalização do aborto, e é importante que a sociedade brasileira tenha a clareza do que está sendo debatido aqui. Esse é um projeto para que mulheres, meninas e pessoas que gestam no Brasil, quando vítimas do estupro, vítimas da violência, sejam criminalizadas com uma pena maior do que aqueles que cometeram essa barbaridade contra as suas vidas. Muitos, de forma hipócrita, usam os microfones deste Parlamento para dizer que defendem a vida, mas não estão preocupados com a vida de crianças de 8 anos, 9 anos ou 10 anos de idade que terão que levar adiante uma gravidez fruto da violência, fruto do estupro. Isso é barbárie, isso é ódio, isso é crime. Por isso, nós apresentamos um requerimento de retirada da urgência desse projeto, porque, para nós, não há saída para o PL 1.904. A melhor saída para esse projeto é que ele seja enterrado, seja esquecido, e que mulheres, crianças, meninas vítimas da violência, do ódio e do estupro parem de ser perseguidas, parem de ser atacadas e não tenham as suas vidas usadas para esse leilão colocado pela extrema direita e pelo fundamentalismo. Presidente, peço mais 30 segundos para concluir, parabenizando os movimentos feministas Brasil afora, que tomaram as ruas, mostraram a força da mobilização popular e disseram que não, essas vidas não serão rifadas, essas vidas não serão leiloadas por uma agenda política nefasta, uma agenda política de retrocesso, como é essa que pauta e ancora o Projeto de Lei nº 1.904. Obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-06-18T16:32",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "BREVES COMUNICAÇÕES",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=19%2F6%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Projeto de lei ordinária,Aborto provocado,Idade gestacional,Deputado federal,declaração,Incitação à violência",
+            "sumario": "A Deputada denunciou a fala do Deputado que utilizou a expressão \"taque o cacete neles\" em referência aos que votarem contra o Projeto de Lei nº 1.904, de 2024, que proíbe o aborto após 22 semanas de gestação, interpretando-a como incitação à violência e ao ódio. Solicitou à Mesa que a expressão fosse retirada das notas taquigráficas, afirmando que tal linguagem e incitação à agressão não são toleráveis em um ambiente democrático. Enfatizou que a Câmara dos Deputados é um espaço de debate de ideias, não de violência, e que o respeito deve prevalecer entre os Parlamentares.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Presidente, enquanto o Deputado fazia a sua defesa, ele disse em relação àqueles que votarem contrariamente ao projeto: \"Taque o cacete neles\". Isso me parece uma incitação clara à violência. Parece-me uma incitação clara ao ódio, à perseguição e ao não republicano. Não é democrático que nós incentivemos que se agrida, que se taque o cacete  sei lá o que isso significa. Então, eu solicito à Mesa que retire das notas taquigráficas essa expressão. Esta Casa não pode tolerar que um Deputado use a tribuna para defender a sua posição exigindo que Deputados que votem contrariamente a uma proposição sejam agredidos ou violentados. Nós não podemos tolerar esse tipo de argumentação, esse tipo de vocabulário. Eu solicito à Mesa que avalie minha solicitação e retire das notas taquigráficas esse pedido para que se taque o cacete em Parlamentares que votarem contrariamente a uma proposição. Esta é uma Casa da democracia. Esta é uma Casa das ideias. A violência não pode ser comungada entre nós."
+        },
+        {
+            "dataHoraInicio": "2024-06-05T19:48",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=6%2F6%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Câmara dos Deputados,desrespeito,Violência física,Internação hospitalar,Deputada federal,Comissão,Extrema direita",
+            "sumario": "A Deputada denunciou a crescente violência e desrespeito no Parlamento, destacando o episódio de agressão que levou a Deputada Luiza Erundina à UTI. Ela expressou solidariedade à colega e repúdio à brutalidade sofrida, criticando o ambiente de hostilidade exacerbada, especialmente nas Comissões. Ela exige que o Presidente da Câmara, Arthur Lira, e a Mesa Diretora tomem medidas firmes para restaurar a civilidade e prevenir a escalada da violência, que, segundo ela, ameaça transformar o espaço parlamentar em uma arena de guerra patrocinada por setores extremistas da direita. A Deputada enfatizou que, embora divergências ideológicas sejam normais, a violência física não deve ser tolerada no ambiente democrático do Parlamento.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Obrigada, Presidente. Venho a esta tribuna para falar da brutalidade e da barbaridade que nós estamos vivenciando dentro desta Casa, dentro deste Parlamento, que deveria, por essência, ser um espaço respeitoso e republicano. Nossa nobre, querida e gigante Deputada Luiza Erundina está sendo levada para a UTI de um hospital neste momento, por conta do nervoso e desrespeitoso ato ao qual foi submetida na Comissão de Direitos Humanos. Isso é uma mostra da brutalidade, da falta de respeito, da ausência de diplomacia. O dia de hoje foi marcado pela brutalidade em quase todas as Comissões que funcionaram nesta Casa. A Presidência da Mesa e o Deputado Arthur Lira precisam dar uma resposta, para que a normalidade dos trabalhos desta Casa continue. Um Deputado teve as calças rasgadas e hematomas na perna porque foi agredido, exatamente por causa da brutalidade a que foi acometido durante os trabalhos. Aonde nós chegaremos?! Aonde chegaremos, se a escalada da violência entre nós continuar desta maneira?! Nós precisamos de uma postura firme, precisamos de uma postura clara desta Mesa diante de tudo o que vem acontecendo. Não é possível que Deputados e agentes do DEPOL sejam violentados, agredidos, e nós, Deputados, tratemos isso com normalidade ou nos acostumemos com esse tipo de violência. Por isso, nós vimos aqui manifestar solidariedade à nossa companheira Deputada Luiza Erundina, que está internada, mas, com fé, sairá bem, sairá forte, porque é uma guerreira, uma lutadora, uma mulher respeitada por todos nesta Casa. Mas manifestamos, também, nosso repúdio a uma corja covarde e nojenta que não consegue respeitar nem a Deputada Luiza Erundina, aliás, não respeita ninguém. Nós não podemos naturalizar ou normalizar a extrapolação do limite da preservação física. Divergências ideológicas, divergências de ideias, divergências de opiniões fazem parte do Parlamento, mas a violência física, a agressão, o desrespeito, a brutalidade com que certos setores vêm nos tratando, tudo isso vai além. Hoje, extrapolaram-se todos os limites, e nós exigimos que o Presidente Arthur Lira e que esta Mesa deem uma resposta e barrem esta que é uma escalada da violência, senão, daqui a pouco, pessoas serão violentadas, serão alvo de tiros. Nós estamos indo para um lugar insustentável, um lugar não civilizatório, algo que não é possível, não é permitido. Aconteceu com a Deputada Luiza, mas espalhou-se por todas as Comissões desta Casa. É preciso uma resposta séria e contundente desta Mesa. Esta Casa não pode ser uma arena de guerra, uma arena de rinhas patrocinada pela extrema Direita, covarde, que não sabe fazer um diálogo respeitoso, que deve ser a essência do Parlamento brasileiro. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-05-21T22:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "criminalização,Movimento social,Constituição Federal (1988),Violência policial,Estudante,Assembleia Legislativa,São Paulo (Estado),Escola cívico-militar,Câmara dos Deputados",
+            "sumario": "A Deputada criticou a aprovação de medidas que criminalizam movimentos sociais no Plenário, afirmando que tais movimentos, resilientes e baseados na Constituição, não serão extintos. Ela também condenou a ação violenta da polícia contra estudantes que protestavam pacificamente contra o projeto de escola cívico-militar na Assembleia Legislativa de São Paulo. Denunciou a brutalidade policial e o desrespeito à democracia, prometendo continuar a luta ao lado dos movimentos sociais e dos estudantes para garantir os direitos constitucionais.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Presidente, de fato, é um escárnio o que nós estamos vendo ser aprovado neste Plenário na noite de hoje, mas nós temos certeza de que, diferentemente do que foi dito aqui, os movimentos sociais, o movimento de luta por terra, por moradia, não vão terminar, não vão se encerrar com essa busca de criminalizá-los. Estes são movimentos forjados pela resiliência, pela resistência, e que prezam por aquilo que está escrito na Constituição Federal e que deve ser respeitado. É um absurdo brutal que esta Casa tenha aprovado mais criminalização e é um desrespeito à Constituição! Mas eu não venho aqui, Presidente, para falar apenas sobre isso. Eu venho aqui para me colocar ao lado dos estudantes da cidade de São Paulo, para repudiar a ação covarde e truculenta que aconteceu na Assembleia Legislativa do Estado de São Paulo, na tarde de hoje, contra estudantes que, de forma pacífica e organizada, protestavam contra o projeto de escola cívico-militar que se está querendo colocar goela abaixo do povo paulista. O Governador do Estado de São Paulo, que é o inimigo número um da educação, o Governador do Estado de São Paulo, que tem uma das piores polícias do Brasil, agora ataca de forma covarde. As imagens mostram a brutalidade, a covardia, o despreparo com que aqueles agentes trataram os estudantes na tarde de hoje, em uma votação na Assembleia Legislativa do Estado de São Paulo. A democracia é desrespeitada. A Constituição é desrespeitada. Este projeto, inclusive, coloca na pauta o não direito à livre manifestação, a defender os seus direitos, criminalizando e perseguindo, porque é isto que os covardes que usam o seu poder no Parlamento querem. Eles querem colocar a mordaça, o silenciamento, passar a boiada e todas essas legislações nefastas goela abaixo do povo. Mas nós seguiremos junto com os movimentos, nós seguiremos junto com os estudantes, lutando, gritando e garantindo os nossos direitos, custe o que custar. Hoje, de fato, é um dia triste. É lamentável ver a Câmara dos Deputados perseguindo o movimento que luta, que trabalha com a questão agrária, que trabalha com o alimento orgânico, que torna a terra improdutiva e sem função social em algo produtivo, e que agora passa a ser criminalizado e a ter a Constituição rasgada na sua cara, e também nas nossas caras, junto com este episódio lamentável na Assembleia Legislativa do Estado de São Paulo."
+        },
+        {
+            "dataHoraInicio": "2024-05-21T19:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência apresentado ao Projeto de Lei nº 1.594, de 2024, que institui a Política Nacional dos Deslocados Ambientais e Climáticos – PNDAC, estabelecendo seus direitos e fornecendo diretrizes para que o Poder Público promova sua proteção.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE entende a importância do projeto e a gravidade do que vem acontecendo no Brasil e no mundo, que deixa milhões de pessoas desalojadas. Nós precisamos de políticas sérias e não podemos permitir que políticas dessa magnitude se confundam com debates esvaziados para deixar desorientada a sociedade. Nós não estamos aqui discutindo gênero, discutindo sexualidade, nada dessa natureza. Nós estamos olhando para os desastres e para as crises climáticas que acontecem no Brasil e no mundo e dizendo que é responsabilidade do Estado, da sociedade e do Parlamento levar políticas de assistência, de apoio e de socorro às pessoas que, por motivos de crise climática, precisam sair de sua casa. Essas pessoas enfrentam o impacto de perder a moradia e uma série de outros desafios. É isso que o projeto pretende sanar, solucionar e encaminhar. Por isso, nossa orientação é \"sim\", Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-05-21T19:44",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "ENCAMINHAMENTO DE VOTAÇÃO",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Encaminhamento de votação,Requerimento de urgência,Projeto de lei ordinária,favorável",
+            "sumario": "A Deputada encaminhou a votação do requerimento de urgência ao Projeto de Lei nº 1.594, de 2024, que institui a Política Nacional dos Deslocados Ambientais e Climáticos – PNDAC, estabelecendo seus direitos e fornecendo diretrizes para que o Poder Público promova sua proteção.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Obrigada, Presidente. Esta política importante, urgente e necessária trata dos deslocados climáticos no nosso País. Nós vemos a grave situação que as pessoas estão vivendo no Rio Grande do Sul, mas este projeto não é de agora. Essa catástrofe gigante tomou os holofotes, mas este projeto vem sendo construído com algumas entidades desde 2023. Este projeto já olhava, inclusive, para as vítimas em Petrópolis. Este projeto teve a composição e a construção pelas mãos de vítimas de desastres climáticos. Este projeto trata das políticas assistenciais e das políticas estruturais para dar às pessoas condições humanas, dignas e respeitosas, para que as pessoas tenham acesso digno à educação, à saúde, à política de moradia e a uma série de outras diretrizes que estão colocadas no projeto. É importante, Presidente, que o Parlamento se organize e comece a olhar com seriedade e profundidade para as questões climáticas. Agora nós estamos tratando do caso do Rio Grande do Sul, mas nós temos uma série de exemplos em São Paulo, no Rio de Janeiro. Enfim, outras cidades e outros Estados também enfrentam catástrofes assustadoras. A situação está cada vez pior. Os desastres climáticos são cada vez mais graves. Por isso, junto com instituições e organizações da sociedade civil, nós olhamos para essa demanda, que é uma demanda humana, que é uma demanda de pessoas que tiveram que sair de suas casas, de pessoas que estão desalojadas, de pessoas que perderam documento, perderam itens de casa, perderam roupa, perderam entes queridos. Essas pessoas não têm uma política que as socorra, não têm uma política que vá ao encontro das suas inúmeras demandas. As vítimas de desastres climáticos não são uma questão emergencial e pontual. Elas têm demandas que são decorrentes dessas situações e dessas crises. Com este projeto, Presidente, queremos discutir e enfrentar essas problemáticas, esses desafios. Esse enfrentamento é extremamente importante. Faço um apelo aos nobres Líderes: encaminhem o voto favorável, para que nós possamos discutir, para que nós possamos chegar a um entendimento e construir um bom texto, que esteja de acordo com as necessidades das vítimas, das pessoas que são atingidas e afetadas pelos inúmeros desastres climáticos no nosso País. Neste momento, o Rio Grande do Sul está enfrentando um dos seus piores momentos, mas volto a dizer que não é uma realidade isolada do Rio Grande do Sul. E digo mais, Presidente: essa é uma realidade que se impõe. Nós vamos continuar vendo, infelizmente, essas tragédias anunciadas por parte da natureza, reflexo da devastação ambiental, da ausência de um debate sério sobre o meio ambiente. As pessoas que são vitimadas precisam de uma política de socorro, uma política que as permeie e seja transversal, atingindo e discutindo os temas prioritários para essas vítimas."
+        },
+        {
+            "dataHoraInicio": "2024-05-21T17:48",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Requerimento de urgência,Projeto de lei ordinária,Orientação de bancada,Voto favorável,Federação PSOL REDE\r\nFilme documentário,Presidente da República,esclarecimento",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência para apreciação do Projeto de Lei nº 4.731, de 2023, que dispõe acerca da isenção de IPI para eletrodomésticos da chamada linha branca, concedida a usuários diretamente atingidos por desastres naturais ou eventos climáticos extremos. Além disso, apontou um erro recente no Plenário relacionado ao título de um documentário de Lula. Esclareceu que o documentário se chama \"Lula\" e não \"Sem espaço para a Oposição\", como mencionado anteriormente, e explicou que essa frase é uma manchete de um jornal.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Sr. Presidente, a Federação PSOL REDE orienta o voto \"sim\" e parabeniza a Deputada Gleisi Hoffmann e a Deputada Maria do Rosário pela importante política neste momento de desastre, neste momento em que as pessoas não vão ter itens essenciais em sua casa, como são os itens da linha branca. Essa é mais uma das políticas importantes e fundamentais para a reconstrução desse Estado, para o socorro e suporte às famílias atingidas no Rio Grande do Sul. Esse projeto é fundamental para isso. Sr. Presidente, eu também não poderia deixar de comentar algo que aconteceu há pouco neste Plenário, que é a falta de interpretação de texto, que é um problema grave no Brasil, atinge milhares e milhares de pessoas, atinge também Parlamentares e o Parlamento e coloca uma lente sobre o acesso à educação e à interpretação. O documentário Lula, apenas com o nome \"Lula\", não tem espaço para aquilo que foi colocado aqui, que não há espaço para oposição. Essa é uma manchete de um conhecido jornal que trata do tema, mas não é o nome do documentário. Então, eu não poderia deixar de dizer que esse grave erro de interpretação de texto reflete aquilo que acontece também no seio da sociedade brasileira. Obrigada, Sr. Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-05-21T16:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=22%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência ao Projeto de Lei nº 1.536, de 2024, que concede anistia ao pagamento das parcelas mensais de crédito de custeio adquiridos em 2024 pelos produtores rurais do Estado do Rio Grande do Sul para pagamentos até dezembro de 2024; suspende o pagamento das parcelas mensais de crédito de investimento e de comercialização adquiridos em 2024 pelos produtores rurais do Estado do Rio Grande do Sul pelo prazo de 2 (dois) anos; cria linha de crédito para catástrofes naturais; regulamenta o seguro de renda mínima ao produtor rural atingido por catástrofe.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a orientação da Federação PSOL REDE é favorável. O voto é \"sim\". Estamos acompanhando o drama que as famílias, as pessoas, os produtores daquela região vêm enfrentando, e todo e qualquer tipo de política de socorro e de suporte é extremamente essencial. Compreendemos que esta é mais uma política fundamental para levar socorro e tentar sanar o sofrimento, as perdas, a dor e todos os desafios que o povo gaúcho vem enfrentando diante dessa que é uma das maiores tragédias climáticas do nosso País. Compreendemos a importância desse suporte a esses produtores e os desafios que eles estão enfrentando naquela região. A nossa orientação é favorável à urgência. Votamos \"sim\", Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-05-07T20:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=8%2F5%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Substitutivo,Projeto de lei ordinária,Voto favorável,Federação PSOL REDE",
+            "sumario": "A Deputada orientou a bancada na votação do substitutivo oferecido ao Projeto de Lei nº 624, de 2023, que dispõe sobre o financiamento e a instalação de sistema de energia fotovoltaica para consumidores de baixa renda beneficiários da tarifa social.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE vota \"sim\" ao projeto, até porque sabe da importância de uma política que garanta energia elétrica na casa dos mais pobres do nosso País. No entanto, nós estamos atentos ao Capítulo III do texto. Nós entraremos em uma batalha para que isso seja mudado no Senado, para que esse projeto não sirva para auxiliar as empresas de energia elétrica a não terem compromisso com a qualidade da distribuição. Esse é um dentre alguns pontos que nós identificamos como problemáticos. É claro que a Tarifa Social de Energia Elétrica é uma política importante e fundamental para o País, mas nós precisamos fazê-la com responsabilidade. Em São Paulo, assim como em outros Municípios do Brasil, nós vimos o que foram os apagões, exatamente por conta do descompromisso das empresas fornecedoras de energia elétrica. Achamos que, no Capítulo III, há um problema que precisa ser corrigido. Então, a nossa orientação é o voto \"sim\" ao projeto, mas com essa ressalva."
+        },
+        {
+            "dataHoraInicio": "2024-04-24T19:12",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=25%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência para apreciação do Projeto de Lei nº 4.381, de 2023, que regulamenta os procedimentos a serem adotados pelas delegacias de polícia e demais órgãos responsáveis para o atendimento de mulheres indígenas vítimas de violências, nas hipóteses de medidas protetivas de urgência previstas na Lei n.º 11.340, de 2006, e Decreto 11.431, de 2023.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE orienta \"sim\", pela importância da temática, pelo reconhecimento da violência, pelo fortalecimento das políticas que façam o enfrentamento à violência contra as mulheres indígenas. Nós estamos no mês de abril, um mês extremamente simbólico  obviamente, a pauta das mulheres, inclusive as mulheres indígenas, é uma pauta de todo o sempre , um mês marcado por datas comemorativas importantes. Esse avanço é um sinal importante no enfrentamento de uma violência que cresce cada dia mais e assola, de forma brutal, a vida das mulheres indígenas. Por isso, a nossa orientação é \"sim\", Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-04-17T19:40",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=18%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Proposta de Emenda à Constituição,criminalização,Porte de droga para consumo próprio,Posse de entorpecente ou substância de efeito similar,Segurança jurídica,Tráfico de droga\r\nGoverno estadual,São Paulo (Estado),Inteligência artificial,Projeto pedagógico,Política educacional,Companhia de Saneamento Básico do Estado de São Paulo (Sabesp),Câmara Municipal,São Paulo (SP)",
+            "sumario": "A Deputada expressou preocupação com a Proposta de Emenda à Constituição nº 45, de 2023, aprovada pelo Senado, que criminaliza o porte de drogas, destacando que isso pode aumentar a insegurança jurídica e não diferenciar usuário e traficante. Criticou também a gestão do Governador do Estado de São Paulo, destacando o encaminhamento do debate sobre a Companhia de Saneamento Básico do Estado (Sabesp) para a Câmara Municipal e o uso de inteligência artificial na formulação do programa pedagógico. Defendeu os professores na educação pública e a necessidade de valorizá-los.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, quero dialogar sobre o assunto que foi tratado agora. É lamentável que o Senado Federal tenha aprovado essa legislação, criando ainda mais insegurança jurídica naquilo que distingue o usuário, o consumidor de drogas, do traficante de drogas. As políticas de drogas em todo o mundo  as políticas avançadas, as políticas sérias, as políticas que têm preocupação com a redução de danos, as políticas de saúde  vão na contramão daquilo que está sendo feito no País. O Brasil está retrocedendo em um debate que deveria ser feito com seriedade, e não com base em valores, em agendas eleitorais. Esse debate vai precarizar ainda mais a vida dos mais pobres e dos mais vulneráveis. O que os espaços de formulação de legislação, como a Câmara Federal e o Senado Federal, deveriam fazer era criar segurança jurídica para a população, fazer distinção clara entre o usuário e o traficante, e não continuar enchendo os presídios, encarcerando as pessoas que portam quantidades pequenas de maconha, por exemplo. O debate que está acontecendo no Supremo Tribunal Federal é sobre a legalização do porte de maconha, e não de drogas em geral. Então, quero lamentar, quero repudiar, quero dizer que nós temos a obrigação de fazer esse debate de forma clara, de forma transparente, no sentido do que já foi discutido em outros países do mundo. Mas não venho aqui para falar desse tema, queria apenas dialogar sobre isso. Venho aqui para fazer coro ao que disse a Deputada Professora Luciene Cavalcante sobre o absurdo que fez o Governador da cidade de São Paulo, que neste momento já encaminhou para a Câmara Municipal o debate sobre a SABESP. São Paulo está às traças, está completamente abandonada, e não só a cidade, mas o Estado. Faltam gestores capazes de olhar para as demandas da população e atendê-las. Não bastasse o debate sobre a água e uma série de outros temas, não bastasse o genocídio e a chacina que a Polícia Militar do Estado de São Paulo vem fazendo, como fez na Baixada, agora há um ataque claro e direto à educação, aos alunos, aos professores e, claro, à escola pública, à educação pública de qualidade, com a inteligência artificial formulando o debate pedagógico, o programa pedagógico. Isso é um escárnio, isso é um absurdo. Isso demonstra a irresponsabilidade e o desprezo com que o Governador da cidade de São Paulo faz sua gestão na área de educação. Talvez pudéssemos colocar a inteligência artificial para governar a cidade de São Paulo, porque aí, sim, a governabilidade seria melhor, mais capaz, mais competente e mais alinhada aos interesses das pessoas. Portanto, isso é um absurdo, é um escárnio. A escola precisa de pessoas, a educação pública precisa de pessoas. Os professores são os profissionais que merecem ser valorizados, respeitados, e não podem ser substituídos, de forma alguma, por inteligência artificial. Isso é um deboche. É preciso que nós estejamos com os nossos olhos atentos a essa notícia que nos surpreendeu na manhã de hoje. Muito obrigada, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-04-16T19:44",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=17%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Voto favorável,Federação PSOL REDE\r\nAtuação parlamentar,Exame toxicológico,respeito,Hipocrisia",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência para apreciação do Projeto de Lei nº 4.364, de 2020, que institui a Política Nacional de Cuidado Integral às Pessoas com Doença de Alzheimer e Outras Demências. Além disso, destacou a hipocrisia de um Deputado que mencionou a necessidade de respeito entre os Parlamentares ao mesmo tempo em que anunciou um pedido de exames toxicológicos aos colegas. Salientou que o respeito deve ser recíproco e não pode ser exigido apenas unilateralmente.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, antes de orientar quero dizer que é um absurdo o Deputado usar a tribuna para falar sobre respeito enquanto diz que vai pedir exame toxicológico aos colegas. O respeito é mútuo. O respeito tem que ir e tem que vir. O SR. BIBO NUNES (PL - RS) - Vou! A SRA. ERIKA HILTON (Bloco/PSOL - SP) - V.Exa. pode pedir o que quiser, só não poder ser hipócrita de falar em respeito desrespeitando seus colegas. É essa a questão. Peça os exames que V.Exa. julgar necessários, mas não use de hipocrisia para falar de respeito quando vocês desconhecem o sentido da palavra respeito. Os maiores desrespeitadores são os senhores. Presidente, dito isso, que é importante, a Federação PSOL REDE orienta o voto \"sim\", pela importância de uma política de cuidado aos mais necessitados, às demências e suas naturezas, que precisam de atenção e de uma política tão importante como essa."
+        },
+        {
+            "dataHoraInicio": "2024-04-16T19:36",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=17%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Partido Socialismo e Liberdade (PSOL),Voto favorável\r\nMovimento social,Pauta (processo legislativo),Colégio de líderes,criminalização,Proposição legislativa",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência ao Projeto de Lei nº 1.732, de 2022, que dispõe sobre a Residência Médica, para permitir o fracionamento das férias para o médico residente. Na oportunidade, manifestou desagrado ao ver projetos de criminalização dos movimentos sociais sendo colocados na pauta sem terem sido discutidos previamente no Colégio de Líderes.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Pode combinar o tempo, Presidente. A orientação do PSOL é o voto \"sim\" ao projeto que está colocado. Mas venho aqui me somar aos meus colegas e ao Líder do Governo, que manifestou a nossa surpresa, desagradável surpresa, ao vermos esses projetos sendo colocados, inclusive como primeiro item da pauta. Isso não foi tratado na reunião do Colégio de Líderes. Nós fomos pegos de surpresa porque tínhamos entendido que a pauta que estaria no Plenário neste momento era uma pauta tranquila, quase consensual. E, de repente, voltam os projetos de criminalização dos movimentos sociais. Há um projeto descabido, um projeto que ataca os direitos humanos, um projeto que não deveria estar como primeiro item da pauta. E não há só esse projeto. Há outros projetos na pauta de hoje que não foram tratados e não foram discutidos pelos Líderes no Colégio de Líderes. Qual é a finalidade do Colégio de Líderes e qual é a finalidade dos acordos que nós fazemos, na condição de Líderes, no Colégio de Líderes, para sermos surpreendidos, de forma negativa, com esses projetos nefastos e horrorosos que estão colocados para serem votados? Inclusive, o primeiro já foi votado. Então, é importante, Presidente, que nós olhemos para aquilo que foi colocado pelo Líder do Governo, para aquilo que foi colocado pelo Líder que acabou de sair desta tribuna, que não há a menor possibilidade, não há o menor clima para que esses projetos se mantenham na pauta e para que esses projetos sejam votados. Não há acordo entre os Líderes, e esse tema não foi tratado com a seriedade de que ele precisa, na reunião de Líderes, na residência oficial, na tarde de hoje. São projetos que mexem com a vida das pessoas, são projetos que pretendem criminalizar os movimentos sociais e não podem ser votados à revelia, da maneira como estão sendo votados. Ainda que não seja o mérito, que sejam os requerimentos de urgência, nós não tivemos acordo para que esta votação ocorresse da forma como ela está ocorrendo. É isso, Presidente."
+        },
+        {
+            "dataHoraInicio": "2024-04-16T18:56",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=17%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Requerimento de urgência,Projeto de lei ordinária,Federação PSOL REDE,Voto contrário",
+            "sumario": "A Deputada orientou a bancada na votação do requerimento de urgência ao Projeto de Lei nº 895, de 2023, que dispõe sobre sanções administrativas e restrições aplicadas aos ocupantes e invasores de propriedades rurais e urbanas em todo o território nacional.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, a Federação PSOL REDE orienta o voto \"não\", porque esse projeto que está colocado é uma grave violação aos direitos humanos. Não existe invasão de terra. Existe ocupação legítima, reconhecida pelo Judiciário. E esta Casa mais uma vez se coloca na contramão da defesa dos mais vulneráveis, dos mais precarizados. Nós tivemos aqui uma CPI extremamente necessária, que não deu em nada. É importante respeitar os direitos humanos. É importante respeitar os movimentos em defesa da ocupação das terras. Estes projetos são projetos criminosos, que, além de criminalizar os movimentos sociais, ainda atacam bravamente os direitos humanos e estes grupos que já são violentados. Por isso, a orientação da Federação PSOL REDE é pelo \"não\" ao requerimento de urgência."
+        },
+        {
+            "dataHoraInicio": "2024-04-10T19:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "PELA ORDEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=11%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Orientação de bancada,Parecer (proposição legislativa),Comissão de Constituição e Justiça e de Cidadania (CCJC),Comunicação de Medida Cautelar Deferida em Desfavor de Deputado (CMC),favorável,Prisão,Deputado federal,Federação PSOL REDE,Voto favorável",
+            "sumario": "A Deputada orientou a bancada na votação do Parecer da Comissão de Constituição e Justiça e de Cidadania à Comunicação de Medida Cautelar nº 1, de 2024, pela manutenção dos efeitos da decisão judicial, exarada pelo Supremo Tribunal Federal (STF), que decretou a prisão do Deputado Chiquinho Brazão em face de flagrante delito pela prática do crime de obstrução de Justiça em organização criminosa.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Pela ordem. Sem revisão da oradora.) - Presidente, tenho o coração apertado, porque são 6 anos esperando justiça por Marielle e Anderson, ouvindo os horrores que já foram ditos neste espaço contra a memória de nossa companheira. Hoje nós sabemos que este Parlamento tem um papel fundamental e importante na defesa da democracia, na defesa dos direitos dos mais vulneráveis, na reparação e no passo de uma história tão brutal contra o País. É por isso que a nossa indicação é \"sim\". Nós sabemos que não poderemos sair daqui hoje sem uma resposta diferente. Essa é a resposta que o povo brasileiro espera. Essa é a resposta que a Justiça espera. Essa é a resposta que o Brasil precisa para continuar trabalhando por democracia e por justiça nos mais diversos territórios. Não se trata só de Marielle, mas também de um Brasil injustiçado. É por isso que a Federação PSOL REDE orienta pelo \"sim\", por justiça, pela memória, pela vida e pela trajetória de Marielle e Anderson."
+        },
+        {
+            "dataHoraInicio": "2024-04-10T18:00",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Breves Comunicações",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=11%2F4%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Deputado federal,Prisão,Autor intelectual,Câmara dos Deputados,Regimento Interno da Câmara dos Deputados,Homicídio,Vereadora,Rio de Janeiro (RJ),Processo legislativo",
+            "sumario": "A Deputada expressou sua preocupação em relação à apreciação da prisão do Deputado Chiquinho Brazão, destacando a gravidade do caso e a necessidade de um debate sério e profundo sobre o assunto. Ela enfatizou que este não é um caso comum e não pode ser tratado como tal, pois envolve questões complexas, como milícia e envolvimento de autoridades. A Deputada ressaltou a importância de respeitar os trâmites regimentais, garantindo tempo adequado para discussão e exposição de ideias. Ela apelou aos líderes para que não permitam o atropelamento do regimento e para que os Deputados participem da votação de forma responsável e comprometida.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Obrigada, Presidente. Presidente, venho a esta tribuna agora para dizer da minha preocupação com algo que deve acontecer nos próximos minutos neste plenário, que é a apreciação da prisão do Deputado Chiquinho Brazão. Presidente, este é um caso que está sem resposta há 6 anos, a execução brutal de uma Vereadora no Rio de Janeiro, e há fortes indícios de que um Deputado desta Casa tem envolvimentos claros e profundos nisso. Esta Casa não pode fazer a apreciação de um debate sério como esse sem respeitar os trâmites regimentais. Nós precisamos discutir a questão com profundidade e com seriedade, porque esta é a resposta que o povo brasileiro e a democracia vêm esperando há tanto tempo desde que o corpo de Marielle foi tombado. Nós não podemos fazer esse trâmite de forma acelerada e sem garantir os tempos mínimos de debate, de discussão. Nós precisamos aprofundar e escancarar para a sociedade brasileira qualquer tipo de dúvida que possa estar colocada na esteira dessa discussão. Presidente, este não é um caso qualquer e não pode ser tratado como um caso qualquer. Não pode ser colocado em comparação com outros casos que já foram julgados e tratados no Plenário desta Casa. Nós estamos falando de um crime bárbaro. Nós estamos falando de um crime que envolve milícia, Poder Legislativo, instituições, pessoas da segurança pública. Nós precisamos esgotar ao máximo esta discussão. Para isso, precisamos de tempo de debate. Para isso, precisamos expor as nossas ideias. Para isso, precisamos expor os acúmulos que nossas equipes técnico-jurídicas fizeram ao longo dessa discussão. É inaceitável e intolerável que façamos este debate de forma acelerada, que não façamos este debate com a preciosidade do tempo e com a delicadeza de que ele precisa! Por isso, Sr. Presidente, venho a essa tribuna fazer este registro e apelar aos Líderes para que olhem com atenção, com respeito, com seriedade o que será tratado aqui hoje, para que não permitam que o Regimento seja atropelado, para que não permitam que tomemos uma decisão importante, que deve ser, sim, pela manutenção da prisão deste Deputado, sem os tempos assegurados para as discussões que são necessárias. Este é um debate sério, um debate profundo. A imprensa brasileira, a sociedade civil e o Brasil estão neste momento com os olhos voltados para este Parlamento. E nós temos a responsabilidade, aliás, mais do que a responsabilidade, nós temos o dever de fazer esta discussão com a seriedade profunda que ela exige e merece, o dever de conseguir expor aquilo que precisa ser exposto. Precisamos que os Deputados se coloquem aqui para votar. Chama-me a atenção que nós não tenhamos sequer efeito administrativo numa votação tão importante como esta. Presidente, este é um dia importante para a democracia brasileira. Não é um dia importante apenas para o PSOL, é um dia importante para o Brasil, é um dia importante para a Justiça, pois é uma fenda que se abre num caso tão cruel e bárbaro como este. E o Parlamento precisa ter seriedade e compromisso na resposta a este caso. Presidente, solicito a V.Exa. que seja divulgado o meu discurso no programa A Voz do Brasil, por gentileza. Obrigada."
+        },
+        {
+            "dataHoraInicio": "2024-03-26T19:08",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Ordem do Dia",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "COMO LÍDER",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=27%2F3%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Partido Socialismo e Liberdade (PSOL),Homicídio,Vereadora,Rio de Janeiro (RJ),Prisão,Deputado federal",
+            "sumario": "A Deputada lamentou uma tentativa de representar falsamente o Partido Socialismo e Liberdade (PSOL) como partícipe de um acordo no Colégio de Líderes, relacionado ao assassinato de uma Parlamentar do partido. Criticou a abordagem de um Parlamentar sobre um assunto de extrema gravidade, destacando que o tema vai além de questões técnicas ou jurídicas, tocando a essência da política e da justiça. Após análise detalhada, afirmou que o PSOL reconhece a legalidade da prisão envolvida e criticou tentativas de distorcer sua posição, enfatizando a necessidade de uma resposta rápida e firme ao crime contra a democracia e os direitos humanos.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Como Líder. Sem revisão da oradora.) - Eu venho a esta tribuna, Presidente, lamentar e repudiar o que ocorreu há poucos minutos, quando um Deputado tentou dizer e agir como se houvesse ocorrido um acordo, que o PSOL havia pactuado no Colégio de Líderes, com relação ao que ocorre aqui, hoje. No Colégio de Líderes, eu comecei a minha fala dizendo o quanto este tema não é um tema sobre técnica, não é um tema sobre juridiquês, mas é um tema sobre alma, é um tema sobre político. Uma companheira do nosso partido foi, de forma brutal, executada. Na manhã de hoje, estive nesta tribuna falando sobre isso, demarcando que era necessária a celeridade, demarcando que era preciso que nós avançássemos, que nós déssemos uma resposta rápida, uma resposta à altura, uma resposta exemplar àquele crime bárbaro e brutal contra a democracia, contra os direitos, contra a vida de uma Parlamentar eleita. De repente, um Parlamentar vem a esta tribuna dizer que havia uma construção de acordo. Isso é lamentável, repugnante, revoltante e descredibiliza o diálogo que ocorre dentro do Colégio de Líderes, Presidente. A posição do PSOL é clara. Naquele momento, enquanto se discutiam as fragilidades do processo, se havia ou se não havia argumentos substanciais que legitimassem a prisão, eu disse que ainda não havia lido e consultado o texto. Mas, assim que eu o fiz, amparada pela equipe técnica de nossa Liderança, procurei V.Exa., procurei o Líder e disse: há todos os fundamentos legais para a manutenção da prisão. Disse também no Colégio de Líderes que não achava, de forma alguma, que Ministros do Supremo Tribunal Federal, PGR e Polícia Federal fariam uma prisão leviana. Então, Presidente, é preciso deixar registrado que isso é algo vergonhoso, que isso vai na contramão daquilo que estava sendo conversado entre nós no Colégio de Líderes. Eu não poderia deixar de vir aqui manifestar a posição clara do PSOL sobre a necessidade de dar celeridade, uma resposta rápida a esse horror. O que foi dito aqui é mais uma tentativa ridícula de nos colocar de um lado onde nós não nos encontramos e jamais estaremos. Era isso, Presidente. Muito obrigada."
+        },
+        {
+            "dataHoraInicio": "2024-03-26T12:32",
+            "dataHoraFim": null,
+            "uriEvento": "",
+            "faseEvento": {
+                "titulo": "Homenagem",
+                "dataHoraInicio": null,
+                "dataHoraFim": null
+            },
+            "tipoDiscurso": "HOMENAGEM",
+            "urlTexto": "https://imagem.camara.gov.br/dc_20b.asp?largura=&altura=&tipoForm=diarios&selCodColecaoCsv=D&Datain=27%2F3%2F2024&txPagina=&txSuplemento=&enviar=Pesquisar",
+            "urlAudio": null,
+            "urlVideo": null,
+            "keywords": "Sessão solene,Homenagem póstuma,Vereadora,Rio de Janeiro (RJ),Motorista",
+            "sumario": "A Deputada discursou na Sessão Solene em homenagem à Vereadora Marielle Franco e a Anderson Gomes, in memoriam.",
+            "transcricao": "A SRA. ERIKA HILTON (Bloco/PSOL - SP. Sem revisão da oradora.) - Obrigada, Deputada Talíria. Parabenizo V.Exa. por tornar possível nos reunirmos neste plenário mais 1 ano para lembrar a memória de Marielle e Anderson, agora em um cenário um pouco diferente, devido aos últimos acontecimentos, que são estarrecedores e, como disse a própria viúva de Anderson  e eu uso as palavras dela e faço das palavras dela as minhas , não trazem alívio; trazem revolta, preocupação, indignação. Mas que bom que também estamos avançando e caminhando, porque esse crime brutal contra a vida de uma companheira mulher, negra, LGBT e da favela não poderia mais permanecer impune. Mataram um corpo, mataram um projeto, atentaram contra a democracia e andavam livremente pelos corredores desta Casa, com a cabeça erguida pela certeza da impunidade. Nós estamos avançando, porque a luta e a resistência de mulheres negras do PSOL, dos partidos aliados, das pessoas que acreditam na Justiça e na democracia nunca deixaram de clamar e exigir justiça por Marielle e Anderson. Justiça por Marielle e Anderson é justiça por um Brasil que mata negros e negras todos os dias; é justiça por um Brasil que faz o genocídio brutal nas periferias deste País, que executa o corpo de mulheres transexuais e travestis. (Palmas.) É deste Brasil que nós estamos falando! E nós seguiremos aqui exigindo que essas investigações continuem, mostrando que o Estado brasileiro é conivente e apertou a arma que executou nossa companheira. É brutal, é chocante, é assustador, é desolador, mas nós não abaixamos a cabeça em nenhum minuto. Nós somos semente da luta histórica que é Marielle Franco. Nós ocupamos este Parlamento. Nós ocupamos a política institucional do Brasil de cabeça erguida, porque sabemos exatamente quais são os projetos que eles querem barrar: um projeto de vida, um projeto de diversidade, um projeto de democracia. Então, 6 anos depois, nós estamos aqui novamente exigindo justiça por Marielle, exigindo punição exemplar para os envolvidos nessa grave execução e exigindo a responsabilização do Estado brasileiro e de todos aqueles que estão por trás desse crime brutal, desse crime bárbaro. Marielle permanece viva nos nossos corações, nas nossas memórias, no nosso fazer político, na construção da refundação do Brasil que nós queremos, e é isso que nos move, é isso que nos mobiliza. Nossa cabeça nunca abaixou, porque a esperança da refundação do Brasil através da luta representada por Marielle Franco permanece viva em nós, e é esta a chama que nos mobiliza. Viva a memória de Marielle Franco! Viva Anderson! Nós seguiremos em luta! Seguiremos lutando por justiça, lutando pela democracia, lutando pela representação de mulheres negras, de jovens da periferia, de pessoas LGBT neste espaço nefasto que não nos quer  não nos quer! , mas terá que nos engolir, porque chegamos e não arredaremos o pé por Marielle e por todas nós. Muito obrigada. Parabéns Deputada Talíria Petrone! Sigamos juntas na luta. Obrigada e axé."
+        }
+    ]
+}
