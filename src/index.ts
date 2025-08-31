@@ -137,7 +137,7 @@ async function carregarMapeamento() {
 
 async function carregarGrafo(ano: string) {
   try {
-    const response = await fetch(`/${ano}.json`);
+    const response = await fetch(`/${ano}.json`);;
     const texto = await response.text();
     // Removido o console.log do response para não poluir o console
     if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
