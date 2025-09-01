@@ -2,17 +2,10 @@ import Graph from "graphology";
 import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { NodeData, LinkData } from "./graph/types";
+import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
 
 // Variável para armazenar o mapa de discursos em memória
 let mapaDiscursos: Record<string, string> = {};
-
-function getColorByComunidade(comunidade: number): string {
-  const colors = [
-    "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0",
-    "#f032e6", "#bcf60c", "#fabebe", "#008080", "#e6beff", "#9a6324", "#fffac8", "#800000"
-  ];
-  return colors[comunidade % colors.length] || "gray";
-}
 
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
@@ -20,12 +13,8 @@ let grafo: Graph | null = null;
 const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
 
-/**
- * Exibe um modal com os discursos de um político.
- * @param nomePolitico - O nome do político para exibir no título do modal.
- * @param nomeArquivo - O nome do arquivo JSON contendo os discursos.
- */
 async function exibirModalDiscursos(nomePolitico: string, nomeArquivo: string) {
+  // ... (código do modal permanece o mesmo)
   // Cria o overlay de fundo
   const overlay = document.createElement("div");
   overlay.id = "modal-overlay";
@@ -125,7 +114,6 @@ async function carregarGrafo(ano: string) {
   try {
     const response = await fetch(`/${ano}.json`);;
     const texto = await response.text();
-    // Removido o console.log do response para não poluir o console
     if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
     const jsonData = JSON.parse(texto);
     construirGrafo(jsonData);
@@ -135,11 +123,9 @@ async function carregarGrafo(ano: string) {
 }
 
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
-  // Limpa visualizações anteriores
   if (sigmaRenderer) sigmaRenderer.kill();
   if (grafo) grafo.clear();
 
-  //Remove menus antigos da DOM
   const idsParaRemover = [
     "buscaInput", "comunidadeContainer", "partidoCheckbox", "partidoLabel",
     "toggleMenuPartidos", "menuPartidos"
@@ -153,16 +139,13 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   grafo = graph;
 
   const partidoColors: Record<string, string> = {};
-  const colorPalette = [
-    "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0",
-    "#bcf60c", "#fabebe", "#008080", "#e6beff", "#9a6324", "#fffac8",
-    "#800000", "#aaffc3", "#808000", "#ffd8b1", "#000075", "#808080"
-  ];
+  // A paleta de cores foi removida daqui
   let colorIndex = 0;
 
   jsonData.nodes.forEach((node: NodeData) => {
     if (!partidoColors[node.partido]) {
-      partidoColors[node.partido] = colorPalette[colorIndex++ % colorPalette.length];
+      // Agora usa a constante importada
+      partidoColors[node.partido] = PARTIDO_COLOR_PALETTE[colorIndex++ % PARTIDO_COLOR_PALETTE.length];
     }
   });
 
@@ -197,11 +180,9 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
   sigmaRenderer = new Sigma(graph, container as HTMLElement);
 
-  // Evento de clique para buscar discursos usando o mapa
   sigmaRenderer.on("clickNode", ({ node }) => {
     const attrs = graph.getNodeAttributes(node);
     const nomePolitico = attrs.label.toUpperCase();
-
     const nomeArquivo = mapaDiscursos[nomePolitico];
     
     if (nomeArquivo) {
@@ -211,7 +192,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
-
+  // ... (todo o resto do código para criar UI, slider, etc., permanece o mesmo por enquanto)
   //Search bar
   const searchInput = document.createElement("input");
   searchInput.id = "buscaInput";
@@ -368,15 +349,13 @@ resetButton.style.top = "10px";
 resetButton.style.right = "10px";
 resetButton.style.padding = "5px 10px";
 resetButton.style.zIndex = "10";
+let indiceAnoAtual = 0; // Moved this line up to be available for the event listener
+const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 resetButton.addEventListener("click", () => {
   const anoAtual = anos[indiceAnoAtual];
   carregarGrafo(anoAtual);
 });
 document.body.appendChild(resetButton);
-
-
-const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
-let indiceAnoAtual = 0;
 
 const sliderContainer = document.createElement("div");
 sliderContainer.style.position = "absolute";
@@ -477,11 +456,9 @@ inputAno.addEventListener("change", () => {
 
 document.body.appendChild(sliderContainer);
 
-// Função para iniciar a aplicação
 async function iniciarAplicacao() {
-  await carregarMapeamento(); // Carrega o mapa primeiro
-  carregarGrafo("2017");       // Depois carrega o grafo inicial
+  await carregarMapeamento();
+  carregarGrafo("2017");
 }
 
-// Inicia a aplicação
 iniciarAplicacao();
