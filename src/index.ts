@@ -3,22 +3,23 @@ import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { NodeData, LinkData } from "./graph/types";
 import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
-import { exibirModalDiscursos } from "./ui/speechs-viewer";
+import { exibirModalDiscursos } from "./ui/speech-viewer.ts";
+import { createYearSlider } from "./ui/year-slider";
 
-// Variável para armazenar o mapa de discursos em memória
+// Variáveis de estado globais
 let mapaDiscursos: Record<string, string> = {};
-
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
-
 const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
 
-//
-// A função async function exibirModalDiscursos(...) foi removida daqui.
-//
+// Variáveis que ainda são usadas por múltiplos componentes (resetButton e lógica antiga)
+const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+let indiceAnoAtual = 0;
+
 
 async function carregarMapeamento() {
+  // ... (código inalterado)
   try {
     const response = await fetch('/mapeamento_discursos.json');
     if (!response.ok) throw new Error('Falha ao carregar mapa de discursos');
@@ -31,6 +32,9 @@ async function carregarMapeamento() {
 }
 
 async function carregarGrafo(ano: string) {
+  // Atualiza o índice do ano atual para o botão de reset saber qual é o ano
+  indiceAnoAtual = anos.indexOf(ano);
+
   try {
     const response = await fetch(`/${ano}.json`);;
     const texto = await response.text();
@@ -43,6 +47,7 @@ async function carregarGrafo(ano: string) {
 }
 
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
+  // ... (código de construirGrafo permanece o mesmo)
   if (sigmaRenderer) sigmaRenderer.kill();
   if (grafo) grafo.clear();
 
@@ -98,7 +103,6 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
   sigmaRenderer = new Sigma(graph, container as HTMLElement);
 
-  // O código aqui continua funcionando, pois agora chama a função importada.
   sigmaRenderer.on("clickNode", ({ node }) => {
     const attrs = graph.getNodeAttributes(node);
     const nomePolitico = attrs.label.toUpperCase();
@@ -111,7 +115,6 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
-  // ... (todo o resto do código para criar UI, slider, etc., permanece o mesmo por enquanto)
   //Search bar
   const searchInput = document.createElement("input");
   searchInput.id = "buscaInput";
@@ -260,7 +263,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   }
 }
 
-//Botão para recarregr o gráfico
+//Botão para recarregar o gráfico
 const resetButton = document.createElement("button");
 resetButton.textContent = "Recriar";
 resetButton.style.position = "absolute";
@@ -268,116 +271,24 @@ resetButton.style.top = "10px";
 resetButton.style.right = "10px";
 resetButton.style.padding = "5px 10px";
 resetButton.style.zIndex = "10";
-let indiceAnoAtual = 0;
-const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 resetButton.addEventListener("click", () => {
   const anoAtual = anos[indiceAnoAtual];
   carregarGrafo(anoAtual);
 });
 document.body.appendChild(resetButton);
 
-const sliderContainer = document.createElement("div");
-sliderContainer.style.position = "absolute";
-sliderContainer.style.bottom = "10px";
-sliderContainer.style.left = "10px";
-sliderContainer.style.zIndex = "10";
-sliderContainer.style.display = "flex";
-sliderContainer.style.flexDirection = "column";
-sliderContainer.style.background = "white";
-sliderContainer.style.padding = "6px 10px";
-sliderContainer.style.border = "1px solid #ccc";
-sliderContainer.style.borderRadius = "8px";
-sliderContainer.style.boxShadow = "0 2px 6px rgba(0,0,0,0.15)";
-sliderContainer.style.minWidth = "150px";
+//
+// Todo o código de criação do slider, botões, listeners e a função atualizarAno foi REMOVIDO daqui.
+//
 
-const linhaAno = document.createElement("div");
-linhaAno.style.display = "flex";
-linhaAno.style.alignItems = "center";
-linhaAno.style.gap = "8px";
-linhaAno.style.marginBottom = "8px";
-linhaAno.style.width = "130px";
-
-const labelAno = document.createElement("span");
-labelAno.textContent = "Ano:";
-labelAno.style.fontWeight = "bold";
-
-const inputAno = document.createElement("input");
-inputAno.type = "number";
-inputAno.min = "2017";
-inputAno.max = "2024";
-inputAno.value = anos[indiceAnoAtual];
-inputAno.style.width = "100px";
-inputAno.style.padding = "3px 5px";
-inputAno.style.border = "1px solid #ccc";
-inputAno.style.borderRadius = "4px";
-(inputAno.style as any).mozAppearance = "textfield";
-(inputAno.style as any).webkitAppearance = "none";
-
-linhaAno.appendChild(labelAno);
-linhaAno.appendChild(inputAno);
-sliderContainer.appendChild(linhaAno);
-
-const slider = document.createElement("input");
-slider.type = "range";
-slider.min = "0";
-slider.max = (anos.length - 1).toString();
-slider.value = indiceAnoAtual.toString();
-slider.step = "1";
-slider.style.width = "130px";
-slider.style.pointerEvents = "none"; 
-slider.style.opacity = "0.5";
-slider.style.marginBottom = "8px";
-sliderContainer.appendChild(slider);
-
-const botoesContainer = document.createElement("div");
-botoesContainer.style.display = "flex";
-botoesContainer.style.gap = "8px";
-botoesContainer.style.justifyContent = "center";
-botoesContainer.style.width = "130px";
-
-const botaoMenos = document.createElement("button");
-botaoMenos.textContent = "◀";
-botaoMenos.style.padding = "4px 8px";
-botaoMenos.addEventListener("click", () => {
-  atualizarAno(indiceAnoAtual - 1);
-});
-
-const botaoMais = document.createElement("button");
-botaoMais.textContent = "▶";
-botaoMais.style.padding = "4px 8px";
-botaoMais.addEventListener("click", () => {
-  atualizarAno(indiceAnoAtual + 1);
-});
-
-botoesContainer.appendChild(botaoMenos);
-botoesContainer.appendChild(botaoMais);
-sliderContainer.appendChild(botoesContainer);
-
-function atualizarAno(novoIndice: number) {
-  if (novoIndice < 0 || novoIndice >= anos.length) return;
-  indiceAnoAtual = novoIndice;
-  const anoSelecionado = anos[indiceAnoAtual];
-  inputAno.value = anoSelecionado;
-  slider.value = novoIndice.toString();
-  carregarGrafo(anoSelecionado);
-}
-
-inputAno.addEventListener("change", () => {
-  const valor = inputAno.value;
-  const indice = anos.indexOf(valor);
-  if (indice !== -1) {
-    atualizarAno(indice);
-  } else {
-    alert("Ano inválido. Digite um ano entre 2017 e 2024.");
-    inputAno.value = anos[indiceAnoAtual];
-  }
-});
-
-document.body.appendChild(sliderContainer);
-
+// Função para iniciar a aplicação
 async function iniciarAplicacao() {
   await carregarMapeamento();
+  // Passamos a função carregarGrafo como callback. O slider agora vai chamá-la.
+  createYearSlider(carregarGrafo); 
+  // Carrega o grafo inicial para o primeiro ano.
   carregarGrafo("2017");
 }
 
+// Inicia a aplicação
 iniciarAplicacao();
