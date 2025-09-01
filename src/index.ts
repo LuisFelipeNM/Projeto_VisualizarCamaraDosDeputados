@@ -8,8 +8,8 @@ import { createYearSlider } from "./ui/year-slider";
 import { createSearchBar } from "./ui/search-bar";
 import { createCommunityFilter } from "./ui/community-filter";
 import { createPartyControls } from "./ui/party-controls";
+import { createResetButton } from "./ui/reset-button";
 
-// ... (código inicial inalterado) ...
 let mapaDiscursos: Record<string, string> = {};
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
@@ -18,7 +18,6 @@ if (!container) throw new Error("Elemento #container não encontrado.");
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 let indiceAnoAtual = 0;
 
-// ... (funções carregarMapeamento e carregarGrafo inalteradas) ...
 async function carregarMapeamento() {
   try {
     const response = await fetch('/mapeamento_discursos.json');
@@ -40,12 +39,10 @@ async function carregarGrafo(ano: string) {
     if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
     const jsonData = JSON.parse(texto);
     construirGrafo(jsonData);
-  } catch (err)
- {
+  } catch (err) {
     console.error("Erro ao carregar grafo:", err);
   }
 }
-
 
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   if (sigmaRenderer) sigmaRenderer.kill();
@@ -71,7 +68,6 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
-  // ... (código de adicionar nós/arestas, forceAtlas2 e Sigma inalterado) ...
   jsonData.nodes.forEach((node) => {
     graph.addNode(node.id, {
       label: node.nome,
@@ -115,37 +111,20 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
-  // ================================================================
-  // INICIALIZAÇÃO DOS COMPONENTES DE UI
-  // ================================================================
-
   createSearchBar(graph);
   createCommunityFilter(graph, jsonData.nodes);
-  
-  // O código do toggle de cor e do menu de partidos foi REMOVIDO daqui.
-  
-  createPartyControls(graph, partidoColors); // <-- CHAMADA PARA O NOVO COMPONENTE
-
-  // ================================================================
+  createPartyControls(graph, partidoColors);
 }
-
-// ... (código do botão de reset e da inicialização inalterado) ...
-const resetButton = document.createElement("button");
-resetButton.textContent = "Recriar";
-resetButton.style.position = "absolute";
-resetButton.style.top = "10px";
-resetButton.style.right = "10px";
-resetButton.style.padding = "5px 10px";
-resetButton.style.zIndex = "10";
-resetButton.addEventListener("click", () => {
-  const anoAtual = anos[indiceAnoAtual];
-  carregarGrafo(anoAtual);
-});
-document.body.appendChild(resetButton);
 
 async function iniciarAplicacao() {
   await carregarMapeamento();
+
   createYearSlider(carregarGrafo); 
+  createResetButton(() => {
+    const anoAtual = anos[indiceAnoAtual];
+    carregarGrafo(anoAtual);
+  });
+
   carregarGrafo("2017");
 }
 
