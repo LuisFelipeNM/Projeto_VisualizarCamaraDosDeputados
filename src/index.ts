@@ -3,23 +3,21 @@ import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { NodeData, LinkData } from "./graph/types";
 import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
-import { exibirModalDiscursos } from "./ui/speech-viewer.ts";
+import { exibirModalDiscursos } from "./ui/speech-viewer";
 import { createYearSlider } from "./ui/year-slider";
+import { createSearchBar } from "./ui/search-bar";
 
-// Variáveis de estado globais
+// ... (código inicial inalterado) ...
 let mapaDiscursos: Record<string, string> = {};
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
 const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
-
-// Variáveis que ainda são usadas por múltiplos componentes (resetButton e lógica antiga)
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 let indiceAnoAtual = 0;
-
+// ... (funções carregarMapeamento e carregarGrafo inalteradas) ...
 
 async function carregarMapeamento() {
-  // ... (código inalterado)
   try {
     const response = await fetch('/mapeamento_discursos.json');
     if (!response.ok) throw new Error('Falha ao carregar mapa de discursos');
@@ -32,7 +30,6 @@ async function carregarMapeamento() {
 }
 
 async function carregarGrafo(ano: string) {
-  // Atualiza o índice do ano atual para o botão de reset saber qual é o ano
   indiceAnoAtual = anos.indexOf(ano);
 
   try {
@@ -46,8 +43,8 @@ async function carregarGrafo(ano: string) {
   }
 }
 
+
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
-  // ... (código de construirGrafo permanece o mesmo)
   if (sigmaRenderer) sigmaRenderer.kill();
   if (grafo) grafo.clear();
 
@@ -63,6 +60,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   const graph = new Graph();
   grafo = graph;
 
+  // ... (lógica de criação de cores e nós inalterada) ...
   const partidoColors: Record<string, string> = {};
   let colorIndex = 0;
 
@@ -92,6 +90,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     });
   });
 
+  // ... (lógica do forceAtlas2 e Sigma inalterada) ...
   const fa2Settings = forceAtlas2.inferSettings(graph);
   fa2Settings.scalingRatio = 30;
   fa2Settings.barnesHutOptimize = true;
@@ -115,31 +114,19 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
-  //Search bar
-  const searchInput = document.createElement("input");
-  searchInput.id = "buscaInput";
-  searchInput.type = "text";
-  searchInput.placeholder = "Buscar por nome...";
-  searchInput.style.position = "absolute";
-  searchInput.style.top = "10px";
-  searchInput.style.left = "10px";
-  searchInput.style.zIndex = "10";
-  document.body.appendChild(searchInput);
 
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
-    graph.forEachNode((node, attrs) => {
-      if (!query || attrs.label.toLowerCase().includes(query)) {
-        graph.setNodeAttribute(node, "size", query ? 10 : 5);
-        graph.setNodeAttribute(node, "highlighted", !!query);
-      } else {
-        graph.setNodeAttribute(node, "size", 5);
-        graph.setNodeAttribute(node, "highlighted", false);
-      }
-    });
-  });
+  // ================================================================
+  // A CRIAÇÃO DOS COMPONENTES DE UI COMEÇA A SER CENTRALIZADA AQUI
+  // ================================================================
+  
+  // O código da barra de busca foi REMOVIDO daqui.
+  
+  createSearchBar(graph); // <-- CHAMADA PARA O NOVO COMPONENTE
 
-  //Filtro de comunidades
+  // ================================================================
+
+
+  //Filtro de comunidades (ainda será movido)
   const communityContainer = document.createElement("div");
   communityContainer.id = "comunidadeContainer";
   communityContainer.style.position = "absolute";
@@ -195,7 +182,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     communityOptions.appendChild(label);
   });
 
-  //Toggle de cor por partido
+  //Toggle de cor por partido (ainda será movido)
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.id = "partidoCheckbox";
@@ -225,7 +212,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     });
   });
 
-  //Menu de partidos
+  //Menu de partidos (ainda será movido)
   const toggleMenu = document.createElement("button");
   toggleMenu.id = "toggleMenuPartidos";
   toggleMenu.textContent = "Mostrar Partidos";
@@ -263,7 +250,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   }
 }
 
-//Botão para recarregar o gráfico
+//Botão de reset (inalterado)
 const resetButton = document.createElement("button");
 resetButton.textContent = "Recriar";
 resetButton.style.position = "absolute";
@@ -277,18 +264,11 @@ resetButton.addEventListener("click", () => {
 });
 document.body.appendChild(resetButton);
 
-//
-// Todo o código de criação do slider, botões, listeners e a função atualizarAno foi REMOVIDO daqui.
-//
-
-// Função para iniciar a aplicação
+// Função de inicialização (inalterada)
 async function iniciarAplicacao() {
   await carregarMapeamento();
-  // Passamos a função carregarGrafo como callback. O slider agora vai chamá-la.
   createYearSlider(carregarGrafo); 
-  // Carrega o grafo inicial para o primeiro ano.
   carregarGrafo("2017");
 }
 
-// Inicia a aplicação
 iniciarAplicacao();
