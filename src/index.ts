@@ -6,6 +6,7 @@ import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
 import { exibirModalDiscursos } from "./ui/speech-viewer";
 import { createYearSlider } from "./ui/year-slider";
 import { createSearchBar } from "./ui/search-bar";
+import { createCommunityFilter } from "./ui/community-filter"; // <-- IMPORT ADICIONADO
 
 // ... (código inicial inalterado) ...
 let mapaDiscursos: Record<string, string> = {};
@@ -16,7 +17,6 @@ if (!container) throw new Error("Elemento #container não encontrado.");
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 let indiceAnoAtual = 0;
 // ... (funções carregarMapeamento e carregarGrafo inalteradas) ...
-
 async function carregarMapeamento() {
   try {
     const response = await fetch('/mapeamento_discursos.json');
@@ -38,11 +38,11 @@ async function carregarGrafo(ano: string) {
     if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
     const jsonData = JSON.parse(texto);
     construirGrafo(jsonData);
-  } catch (err) {
+  } catch (err)
+ {
     console.error("Erro ao carregar grafo:", err);
   }
 }
-
 
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   if (sigmaRenderer) sigmaRenderer.kill();
@@ -60,8 +60,8 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   const graph = new Graph();
   grafo = graph;
 
-  // ... (lógica de criação de cores e nós inalterada) ...
-  const partidoColors: Record<string, string> = {};
+  // ... (lógica de criação de cores, nós, arestas, forceAtlas2 e Sigma inalterada) ...
+    const partidoColors: Record<string, string> = {};
   let colorIndex = 0;
 
   jsonData.nodes.forEach((node: NodeData) => {
@@ -90,7 +90,6 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     });
   });
 
-  // ... (lógica do forceAtlas2 e Sigma inalterada) ...
   const fa2Settings = forceAtlas2.inferSettings(graph);
   fa2Settings.scalingRatio = 30;
   fa2Settings.barnesHutOptimize = true;
@@ -114,73 +113,18 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
     }
   });
 
+  // ================================================================
+  // INICIALIZAÇÃO DOS COMPONENTES DE UI
+  // ================================================================
 
-  // ================================================================
-  // A CRIAÇÃO DOS COMPONENTES DE UI COMEÇA A SER CENTRALIZADA AQUI
-  // ================================================================
+  createSearchBar(graph);
   
-  // O código da barra de busca foi REMOVIDO daqui.
-  
-  createSearchBar(graph); // <-- CHAMADA PARA O NOVO COMPONENTE
+  // O código do filtro de comunidades foi REMOVIDO daqui.
+
+  createCommunityFilter(graph, jsonData.nodes); // <-- CHAMADA PARA O NOVO COMPONENTE
 
   // ================================================================
 
-
-  //Filtro de comunidades (ainda será movido)
-  const communityContainer = document.createElement("div");
-  communityContainer.id = "comunidadeContainer";
-  communityContainer.style.position = "absolute";
-  communityContainer.style.top = "10px";
-  communityContainer.style.right = "150px";
-  communityContainer.style.zIndex = "10";
-  document.body.appendChild(communityContainer);
-
-  const communityButton = document.createElement("button");
-  communityButton.textContent = "Comunidades";
-  communityButton.style.padding = "5px 10px";
-  communityContainer.appendChild(communityButton);
-
-  const communityOptions = document.createElement("div");
-  communityOptions.style.display = "none";
-  communityOptions.style.position = "absolute";
-  communityOptions.style.background = "white";
-  communityOptions.style.border = "1px solid black";
-  communityOptions.style.padding = "5px";
-  communityButton.style.minWidth = "145px";
-  communityContainer.appendChild(communityOptions);
-
-  communityButton.addEventListener("click", () => {
-    communityOptions.style.display = communityOptions.style.display === "none" ? "block" : "none";
-  });
-
-  const communities = Array.from(new Set(jsonData.nodes.map(n => n.comunidade)));
-  const communityCheckboxes: Record<string, HTMLInputElement> = {};
-
-  communities.forEach((comunidade) => {
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.value = comunidade.toString();
-    checkbox.checked = true;
-    communityCheckboxes[comunidade.toString()] = checkbox;
-
-    checkbox.addEventListener("change", () => {
-      const selected = Object.entries(communityCheckboxes)
-        .filter(([_, cb]) => cb.checked)
-        .map(([k]) => parseInt(k));
-      graph.forEachNode((node, attrs) => {
-        graph.setNodeAttribute(node, "hidden", !selected.includes(attrs.comunidade));
-      });
-    });
-
-    label.style.display = "flex";
-    label.style.alignItems = "center";
-    label.style.gap = "8px";
-    label.style.padding = "2px 5px";
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(`Comunidade ${comunidade}`));
-    communityOptions.appendChild(label);
-  });
 
   //Toggle de cor por partido (ainda será movido)
   const checkbox = document.createElement("input");
@@ -250,7 +194,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   }
 }
 
-//Botão de reset (inalterado)
+// ... (código do botão de reset e da inicialização inalterado) ...
 const resetButton = document.createElement("button");
 resetButton.textContent = "Recriar";
 resetButton.style.position = "absolute";
@@ -264,7 +208,6 @@ resetButton.addEventListener("click", () => {
 });
 document.body.appendChild(resetButton);
 
-// Função de inicialização (inalterada)
 async function iniciarAplicacao() {
   await carregarMapeamento();
   createYearSlider(carregarGrafo); 
