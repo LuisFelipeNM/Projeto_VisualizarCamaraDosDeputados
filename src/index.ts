@@ -3,6 +3,7 @@ import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { NodeData, LinkData } from "./graph/types";
 import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
+import { exibirModalDiscursos } from "./ui/speechs-viewer";
 
 // Variável para armazenar o mapa de discursos em memória
 let mapaDiscursos: Record<string, string> = {};
@@ -13,90 +14,9 @@ let grafo: Graph | null = null;
 const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
 
-async function exibirModalDiscursos(nomePolitico: string, nomeArquivo: string) {
-  // ... (código do modal permanece o mesmo)
-  // Cria o overlay de fundo
-  const overlay = document.createElement("div");
-  overlay.id = "modal-overlay";
-  Object.assign(overlay.style, {
-    position: "fixed", top: "0", left: "0",
-    width: "100%", height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    zIndex: "1000",
-    display: "flex", alignItems: "center", justifyContent: "center",
-  });
-
-  // Cria o container do modal
-  const modal = document.createElement("div");
-  Object.assign(modal.style, {
-    background: "white", padding: "20px",
-    borderRadius: "8px", width: "80%",
-    maxWidth: "700px", maxHeight: "90vh",
-    overflowY: "auto", position: "relative",
-  });
-
-  // Adiciona título e botão de fechar
-  modal.innerHTML = `
-    <h2 style="margin-top: 0;">Discursos de ${nomePolitico}</h2>
-    <button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
-    <div id="discursos-content"><p>Carregando...</p></div>
-  `;
-
-  overlay.appendChild(modal);
-  document.body.appendChild(overlay);
-
-  // Função para fechar o modal
-  const fecharModal = () => document.body.removeChild(overlay);
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) fecharModal();
-  });
-  (modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
-
-  // Busca e exibe os discursos
-  try {
-    // Assumindo que os arquivos de discursos estão na pasta /public/discursos/
-    const response = await fetch(`/discursos/${nomeArquivo}`);
-    if (!response.ok) throw new Error(`Não foi possível encontrar o arquivo: ${nomeArquivo}`);
-    
-    const politicoData = await response.json();
-    const discursos = politicoData.discursos; // Acessa a lista de discursos dentro do objeto principal
-
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
-
-    if (Array.isArray(discursos) && discursos.length > 0) {
-      // Limpa o "Carregando..."
-      contentDiv.innerHTML = "";
-      // Itera sobre a lista de discursos encontrada
-      discursos.forEach((discurso: any) => {
-        const discursoEl = document.createElement("div");
-        discursoEl.style.borderBottom = "1px solid #eee";
-        discursoEl.style.padding = "10px 0";
-        discursoEl.style.marginBottom = "10px";
-        
-        // Formata a data para melhor visualização
-        const dataFormatada = new Date(discurso.dataHoraInicio).toLocaleDateString('pt-BR', {
-          day: '2-digit', month: '2-digit', year: 'numeric'
-        });
-
-        // Monta o HTML com os dados corretos do JSON
-        discursoEl.innerHTML = `
-          <p><strong>Data:</strong> ${dataFormatada}</p>
-          <p><strong>Tipo do Discurso:</strong> ${discurso.tipoDiscurso || 'Não informado'}</p>
-          <p><strong>Sumário:</strong> ${discurso.sumario || 'Não informado'}</p>
-          ${discurso.urlTexto ? `<a href="${discurso.urlTexto}" target="_blank" rel="noopener noreferrer">Ler íntegra no Diário da Câmara</a>` : ''}
-        `;
-        contentDiv.appendChild(discursoEl);
-      });
-    } else {
-      contentDiv.innerHTML = "<p>Nenhum discurso encontrado.</p>";
-    }
-
-  } catch (error) {
-    console.error("Erro ao carregar discursos:", error);
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
-    contentDiv.innerHTML = `<p style="color: red;">Ocorreu um erro ao carregar os discursos.</p>`;
-  }
-}
+//
+// A função async function exibirModalDiscursos(...) foi removida daqui.
+//
 
 async function carregarMapeamento() {
   try {
@@ -139,12 +59,10 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   grafo = graph;
 
   const partidoColors: Record<string, string> = {};
-  // A paleta de cores foi removida daqui
   let colorIndex = 0;
 
   jsonData.nodes.forEach((node: NodeData) => {
     if (!partidoColors[node.partido]) {
-      // Agora usa a constante importada
       partidoColors[node.partido] = PARTIDO_COLOR_PALETTE[colorIndex++ % PARTIDO_COLOR_PALETTE.length];
     }
   });
@@ -180,6 +98,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
   sigmaRenderer = new Sigma(graph, container as HTMLElement);
 
+  // O código aqui continua funcionando, pois agora chama a função importada.
   sigmaRenderer.on("clickNode", ({ node }) => {
     const attrs = graph.getNodeAttributes(node);
     const nomePolitico = attrs.label.toUpperCase();
@@ -349,7 +268,7 @@ resetButton.style.top = "10px";
 resetButton.style.right = "10px";
 resetButton.style.padding = "5px 10px";
 resetButton.style.zIndex = "10";
-let indiceAnoAtual = 0; // Moved this line up to be available for the event listener
+let indiceAnoAtual = 0;
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 resetButton.addEventListener("click", () => {
   const anoAtual = anos[indiceAnoAtual];
