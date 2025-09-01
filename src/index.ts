@@ -6,7 +6,8 @@ import { getColorByComunidade, PARTIDO_COLOR_PALETTE } from "./utils/colors";
 import { exibirModalDiscursos } from "./ui/speech-viewer";
 import { createYearSlider } from "./ui/year-slider";
 import { createSearchBar } from "./ui/search-bar";
-import { createCommunityFilter } from "./ui/community-filter"; // <-- IMPORT ADICIONADO
+import { createCommunityFilter } from "./ui/community-filter";
+import { createPartyControls } from "./ui/party-controls";
 
 // ... (código inicial inalterado) ...
 let mapaDiscursos: Record<string, string> = {};
@@ -16,6 +17,7 @@ const container = document.getElementById("container");
 if (!container) throw new Error("Elemento #container não encontrado.");
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 let indiceAnoAtual = 0;
+
 // ... (funções carregarMapeamento e carregarGrafo inalteradas) ...
 async function carregarMapeamento() {
   try {
@@ -44,6 +46,7 @@ async function carregarGrafo(ano: string) {
   }
 }
 
+
 function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   if (sigmaRenderer) sigmaRenderer.kill();
   if (grafo) grafo.clear();
@@ -60,16 +63,15 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   const graph = new Graph();
   grafo = graph;
 
-  // ... (lógica de criação de cores, nós, arestas, forceAtlas2 e Sigma inalterada) ...
-    const partidoColors: Record<string, string> = {};
+  const partidoColors: Record<string, string> = {};
   let colorIndex = 0;
-
   jsonData.nodes.forEach((node: NodeData) => {
     if (!partidoColors[node.partido]) {
       partidoColors[node.partido] = PARTIDO_COLOR_PALETTE[colorIndex++ % PARTIDO_COLOR_PALETTE.length];
     }
   });
 
+  // ... (código de adicionar nós/arestas, forceAtlas2 e Sigma inalterado) ...
   jsonData.nodes.forEach((node) => {
     graph.addNode(node.id, {
       label: node.nome,
@@ -118,80 +120,13 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
   // ================================================================
 
   createSearchBar(graph);
+  createCommunityFilter(graph, jsonData.nodes);
   
-  // O código do filtro de comunidades foi REMOVIDO daqui.
-
-  createCommunityFilter(graph, jsonData.nodes); // <-- CHAMADA PARA O NOVO COMPONENTE
+  // O código do toggle de cor e do menu de partidos foi REMOVIDO daqui.
+  
+  createPartyControls(graph, partidoColors); // <-- CHAMADA PARA O NOVO COMPONENTE
 
   // ================================================================
-
-
-  //Toggle de cor por partido (ainda será movido)
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.id = "partidoCheckbox";
-  checkbox.style.position = "absolute";
-  checkbox.style.top = "40px";
-  checkbox.style.left = "10px";
-  checkbox.style.zIndex = "10";
-
-  const label = document.createElement("label");
-  label.htmlFor = "partidoCheckbox";
-  label.id = "partidoLabel";
-  label.textContent = "Veja por partidos";
-  label.style.position = "absolute";
-  label.style.top = "40px";
-  label.style.left = "30px";
-  label.style.zIndex = "10";
-
-  document.body.appendChild(checkbox);
-  document.body.appendChild(label);
-
-  checkbox.addEventListener("change", () => {
-    graph.forEachNode((node, attrs) => {
-      const cor = checkbox.checked
-        ? partidoColors[attrs.partido]
-        : getColorByComunidade(attrs.comunidade);
-      graph.setNodeAttribute(node, "color", cor);
-    });
-  });
-
-  //Menu de partidos (ainda será movido)
-  const toggleMenu = document.createElement("button");
-  toggleMenu.id = "toggleMenuPartidos";
-  toggleMenu.textContent = "Mostrar Partidos";
-  toggleMenu.style.position = "absolute";
-  toggleMenu.style.top = "70px";
-  toggleMenu.style.left = "10px";
-  toggleMenu.style.zIndex = "10";
-  document.body.appendChild(toggleMenu);
-
-  const partidoMenu = document.createElement("div");
-  partidoMenu.id = "menuPartidos";
-  partidoMenu.style.position = "absolute";
-  partidoMenu.style.top = "100px";
-  partidoMenu.style.left = "10px";
-  partidoMenu.style.zIndex = "10";
-  partidoMenu.style.padding = "5px";
-  partidoMenu.style.border = "1px solid black";
-  partidoMenu.style.display = "none";
-  partidoMenu.style.background = "white";
-  document.body.appendChild(partidoMenu);
-
-  toggleMenu.onclick = () => {
-    partidoMenu.style.display = partidoMenu.style.display === "none" ? "block" : "none";
-  };
-
-  for (const partido in partidoColors) {
-    if (partidoColors.hasOwnProperty(partido)) {
-      const color = partidoColors[partido];
-      const partidoItem = document.createElement("div");
-      partidoItem.style.display = "flex";
-      partidoItem.style.alignItems = "center";
-      partidoItem.innerHTML = `<span style="width: 15px; height: 15px; background: ${color}; display: inline-block; margin-right: 5px;"></span> ${partido}`;
-      partidoMenu.appendChild(partidoItem);
-    }
-  }
 }
 
 // ... (código do botão de reset e da inicialização inalterado) ...
