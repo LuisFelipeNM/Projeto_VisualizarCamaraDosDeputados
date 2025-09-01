@@ -1,21 +1,7 @@
 import Graph from "graphology";
 import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
-
-// Interfaces
-interface NodeData {
-  id: string;
-  nome: string;
-  partido: string;
-  strength: number;
-  comunidade: number;
-}
-
-interface LinkData {
-  source: string;
-  target: string;
-  concordancia: number;
-}
+import { NodeData, LinkData } from "./graph/types";
 
 // Variável para armazenar o mapa de discursos em memória
 let mapaDiscursos: Record<string, string> = {};
@@ -494,7 +480,7 @@ document.body.appendChild(sliderContainer);
 // Função para iniciar a aplicação
 async function iniciarAplicacao() {
   await carregarMapeamento(); // Carrega o mapa primeiro
-  carregarGrafo("2017");      // Depois carrega o grafo inicial
+  carregarGrafo("2017");       // Depois carrega o grafo inicial
 }
 
 // Inicia a aplicação
