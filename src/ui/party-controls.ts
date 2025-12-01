@@ -1,18 +1,14 @@
 import Graph from "graphology";
 import { getColorByComunidade } from "../utils/colors";
 
-/**
- * Cria os controles de UI relacionados aos partidos (toggle de cor e menu de legenda).
- * @param graph A instância do grafo do Graphology.
- * @param partidoColors Um mapa contendo a cor associada a cada partido.
- */
+
 export function createPartyControls(graph: Graph, partidoColors: Record<string, string>): void {
   // 1. Toggle de cor por partido
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.id = "partidoCheckbox";
   checkbox.style.position = "absolute";
-  checkbox.style.top = "40px";
+  checkbox.style.top = "55px";
   checkbox.style.left = "10px";
   checkbox.style.zIndex = "10";
 
@@ -21,10 +17,11 @@ export function createPartyControls(graph: Graph, partidoColors: Record<string, 
   label.id = "partidoLabel";
   label.textContent = "Veja por partidos";
   label.style.position = "absolute";
-  label.style.top = "40px";
+  label.style.top = "55px";
   label.style.left = "30px";
   label.style.zIndex = "10";
-
+  label.style.lineHeight = "1.1";
+  
   document.body.appendChild(checkbox);
   document.body.appendChild(label);
 
@@ -42,7 +39,7 @@ export function createPartyControls(graph: Graph, partidoColors: Record<string, 
   toggleMenu.id = "toggleMenuPartidos";
   toggleMenu.textContent = "Mostrar Partidos";
   toggleMenu.style.position = "absolute";
-  toggleMenu.style.top = "70px";
+  toggleMenu.style.top = "90px";
   toggleMenu.style.left = "10px";
   toggleMenu.style.zIndex = "10";
   document.body.appendChild(toggleMenu);
@@ -50,7 +47,7 @@ export function createPartyControls(graph: Graph, partidoColors: Record<string, 
   const partidoMenu = document.createElement("div");
   partidoMenu.id = "menuPartidos";
   partidoMenu.style.position = "absolute";
-  partidoMenu.style.top = "100px";
+  partidoMenu.style.top = "125px";
   partidoMenu.style.left = "10px";
   partidoMenu.style.zIndex = "10";
   partidoMenu.style.padding = "5px";
