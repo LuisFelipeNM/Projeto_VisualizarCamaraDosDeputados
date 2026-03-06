@@ -99,20 +99,25 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
 	sigmaRenderer.on("clickNode", ({ node }) => {
 		const attrs = graph.getNodeAttributes(node);
-		const nomePolitico = attrs.label.toUpperCase();
-		const nomeArquivo = mapaDiscursos[nomePolitico];
+		
+		// Pega o ID do político (o 'node' geralmente é o ID no Graphology, 
+        // mas se o ID estiver em attrs.id, use attrs.id)
+		const idPolitico = node; 
+        
+        // Pega o ano atual do array global usando o índice
+		const anoAtual = anos[indiceAnoAtual]; 
 
-		if (nomeArquivo) {
-			exibirModalDiscursos(attrs.label, nomeArquivo);
+		if (idPolitico && anoAtual) {
+            // Nova chamada passando Nome, ID e Ano
+			exibirModalDiscursos(attrs.label, idPolitico, anoAtual);
 		} else {
-			console.log(`Nenhum arquivo de discurso encontrado no mapa para: ${attrs.label}`);
+			console.error("Dados insuficientes para carregar discursos.");
 		}
 	});
 
 	createSearchBar((query) => {
 		searchQuery = query;
 		hoveredNode = null;
-		let nodeToHover: string | null = null;
 
 		if (query) {
 			const matches = graph.filterNodes((node, attrs) =>
@@ -135,21 +140,11 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
 				const bestMatch = matches[0];
 				hoveredNode = bestMatch;
-				nodeToHover = bestMatch;
 			}
 		}
 
-		// Refresh FIRST
 		if (sigmaRenderer) sigmaRenderer.refresh();
 
-		// Set Hover LAST
-		if (sigmaRenderer) {
-			if (nodeToHover) {
-				sigmaRenderer.setHoveredNode(nodeToHover);
-			} else {
-				sigmaRenderer.setHoveredNode(undefined);
-			}
-		}
 	});
 
 	createCommunityFilter(graph, jsonData.nodes);
@@ -169,26 +164,12 @@ async function carregarGrafo(ano: string) {
 	}
 }
 
-async function carregarMapeamento() {
-	try {
-		const response = await fetch('/mapeamento_discursos.json');
-		if (!response.ok) throw new Error('Falha ao carregar mapa de discursos');
-		mapaDiscursos = await response.json();
-		console.log("Mapa de discursos carregado com sucesso.");
-	} catch (error) {
-		console.error("Não foi possível carregar o arquivo de mapeamento:", error);
-		alert("Atenção: A funcionalidade de exibir discursos pode não funcionar.");
-	}
-}
-
-
 export async function iniciarAplicacao() {
 	if (!container) {
 		console.error("Elemento #container não foi encontrado no DOM.");
 		return;
 	}
 
-	await carregarMapeamento();
 
 	createYearSlider(carregarGrafo);
 	createResetButton(() => {

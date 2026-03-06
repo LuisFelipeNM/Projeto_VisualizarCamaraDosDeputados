@@ -1,87 +1,109 @@
+function parseMarkdown(text: string): string {
+	return text
+		.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Converte **texto** para <b>texto</b>
+		.replace(/\n/g, '<br>'); // Converte quebras de linha para <br>
+}
+
 /**
- * @param nomePolitico - O nome do político para exibir no título do modal.
- * @param nomeArquivo - O nome do arquivo JSON contendo os discursos.
+ * @param nomePolitico - O nome do político para exibir no título.
+ * @param idPolitico - O ID do político (ex: 66179) para encontrar o arquivo.
+ * @param ano - O ano selecionado (ex: "2019") para buscar na pasta correta.
  */
-export async function exibirModalDiscursos(nomePolitico: string, nomeArquivo: string) {
-  // Cria o overlay de fundo
-  const overlay = document.createElement("div");
-  overlay.id = "modal-overlay";
-  Object.assign(overlay.style, {
-    position: "fixed", top: "0", left: "0",
-    width: "100%", height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    zIndex: "1000",
-    display: "flex", alignItems: "center", justifyContent: "center",
-  });
+export async function exibirModalDiscursos(nomePolitico: string, idPolitico: string, ano: string) {
+	// --- CONFIGURAÇÃO DO MODAL ---
+	const overlay = document.createElement("div");
+	overlay.id = "modal-overlay";
+	Object.assign(overlay.style, {
+		position: "fixed", top: "0", left: "0",
+		width: "100%", height: "100%",
+		backgroundColor: "rgba(0, 0, 0, 0.7)",
+		zIndex: "1000",
+		display: "flex", alignItems: "center", justifyContent: "center",
+	});
 
-  // Cria o container do modal
-  const modal = document.createElement("div");
-  Object.assign(modal.style, {
-    background: "white", padding: "20px",
-    borderRadius: "8px", width: "80%",
-    maxWidth: "700px", maxHeight: "90vh",
-    overflowY: "auto", position: "relative",
-  });
+	const modal = document.createElement("div");
+	Object.assign(modal.style, {
+		background: "white", padding: "20px",
+		borderRadius: "8px", width: "80%",
+		maxWidth: "700px", maxHeight: "90vh",
+		overflowY: "auto", position: "relative",
+	});
 
-  // Adiciona título e botão de fechar
-  modal.innerHTML = `
-    <h2 style="margin-top: 0;">Discursos de ${nomePolitico}</h2>
-    <button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
-    <div id="discursos-content"><p>Carregando...</p></div>
-  `;
+	modal.innerHTML = `
+		<h2 style="margin-top: 0;">Resumo: ${nomePolitico} (${ano})</h2>
+		<button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
+		<div id="discursos-content"><p>Carregando...</p></div>
+	`;
 
-  overlay.appendChild(modal);
-  document.body.appendChild(overlay);
+	overlay.appendChild(modal);
+	document.body.appendChild(overlay);
 
-  // Função para fechar o modal
-  const fecharModal = () => document.body.removeChild(overlay);
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) fecharModal();
-  });
-  (modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
+	const fecharModal = () => {
+		if (document.body.contains(overlay)) {
+			document.body.removeChild(overlay);
+		}
+	};
+	
+	overlay.addEventListener("click", (e) => {
+		if (e.target === overlay) fecharModal();
+	});
+	(modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
 
-  // Busca e exibe os discursos
-  try {
-    // Assumindo que os arquivos de discursos estão na pasta /public/discursos/
-    const response = await fetch(`/discursos/${nomeArquivo}`);
-    if (!response.ok) throw new Error(`Não foi possível encontrar o arquivo: ${nomeArquivo}`);
-    
-    const politicoData = await response.json();
-    const discursos = politicoData.discursos; // Acessa a lista de discursos dentro do objeto principal
+	// --- LÓGICA DE LEITURA (JSON ou TEXTO) ---
+	try {
+		const nomeArquivo = `${ano}-01-01_${ano}-12-31_${idPolitico}.txt`;
+		const url = `/discursos/${ano}/${nomeArquivo}`;
+		
+		console.log(`Tentando carregar: ${url}`);
+		
+		const response = await fetch(url);
+		
+		if (!response.ok) {
+			if (response.status === 404) {
+				throw new Error("Arquivo não encontrado (404). Verifique se o arquivo existe na pasta 'public/discursos/" + ano + "'.");
+			}
+			throw new Error(`Erro HTTP: ${response.status}`);
+		}
 
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+		// Lê o conteúdo como texto primeiro
+		const textData = await response.text();
+		const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
 
-    if (Array.isArray(discursos) && discursos.length > 0) {
-      // Limpa o "Carregando..."
-      contentDiv.innerHTML = "";
-      // Itera sobre a lista de discursos encontrada
-      discursos.forEach((discurso: any) => {
-        const discursoEl = document.createElement("div");
-        discursoEl.style.borderBottom = "1px solid #eee";
-        discursoEl.style.padding = "10px 0";
-        discursoEl.style.marginBottom = "10px";
-        
-        // Formata a data para melhor visualização
-        const dataFormatada = new Date(discurso.dataHoraInicio).toLocaleDateString('pt-BR', {
-          day: '2-digit', month: '2-digit', year: 'numeric'
-        });
+		try {
+			// Tenta converter para JSON caso seja estruturado
+			const jsonData = JSON.parse(textData);
+			const discursos = Array.isArray(jsonData) ? jsonData : (jsonData.discursos || []);
 
-        // Monta o HTML com os dados corretos do JSON
-        discursoEl.innerHTML = `
-          <p><strong>Data:</strong> ${dataFormatada}</p>
-          <p><strong>Tipo do Discurso:</strong> ${discurso.tipoDiscurso || 'Não informado'}</p>
-          <p><strong>Sumário:</strong> ${discurso.sumario || 'Não informado'}</p>
-          ${discurso.urlTexto ? `<a href="${discurso.urlTexto}" target="_blank" rel="noopener noreferrer">Ler íntegra no Diário da Câmara</a>` : ''}
-        `;
-        contentDiv.appendChild(discursoEl);
-      });
-    } else {
-      contentDiv.innerHTML = "<p>Nenhum discurso encontrado.</p>";
-    }
+			if (Array.isArray(discursos) && discursos.length > 0) {
+				contentDiv.innerHTML = "";
+				discursos.forEach((d: any) => {
+					const div = document.createElement("div");
+					div.style.marginBottom = "15px";
+					div.style.borderBottom = "1px solid #ddd";
+					div.innerHTML = `
+						<p><strong>Data:</strong> ${d.dataHoraInicio || '?'}</p>
+						<p>${d.sumario || d.transcricao || 'Sem conteúdo.'}</p>
+					`;
+					contentDiv.appendChild(div);
+				});
+			} else {
+				contentDiv.innerHTML = "<p>Formato JSON reconhecido, mas sem discursos.</p>";
+			}
 
-  } catch (error) {
-    console.error("Erro ao carregar discursos:", error);
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
-    contentDiv.innerHTML = `<p style="color: red;">Ocorreu um erro ao carregar os discursos.</p>`;
-  }
+		} catch (e) {
+			// SE FALHAR O JSON: Assume que é Texto Puro / Markdown (Seu caso atual!)
+			console.log("Arquivo não é JSON, exibindo como texto/markdown.");
+			
+			contentDiv.innerHTML = `
+				<div style="white-space: pre-wrap; line-height: 1.5; color: #333;">
+					${parseMarkdown(textData)}
+				</div>
+			`;
+		}
+
+	} catch (error: any) {
+		console.error(error);
+		const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+		contentDiv.innerHTML = `<p style="color: red;"><strong>Erro:</strong> ${error.message}</p>`;
+	}
 }
