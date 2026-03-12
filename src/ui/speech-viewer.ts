@@ -1,87 +1,98 @@
-/**
- * @param nomePolitico - O nome do político para exibir no título do modal.
- * @param nomeArquivo - O nome do arquivo JSON contendo os discursos.
- */
-export async function exibirModalDiscursos(nomePolitico: string, nomeArquivo: string) {
-  // Cria o overlay de fundo
-  const overlay = document.createElement("div");
-  overlay.id = "modal-overlay";
-  Object.assign(overlay.style, {
-    position: "fixed", top: "0", left: "0",
-    width: "100%", height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    zIndex: "1000",
-    display: "flex", alignItems: "center", justifyContent: "center",
-  });
+function parseMarkdown(text: string): string {
+	return text
+		.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+		.replace(/\n/g, '<br>');
+}
 
-  // Cria o container do modal
-  const modal = document.createElement("div");
-  Object.assign(modal.style, {
-    background: "white", padding: "20px",
-    borderRadius: "8px", width: "80%",
-    maxWidth: "700px", maxHeight: "90vh",
-    overflowY: "auto", position: "relative",
-  });
+export async function exibirModalDiscursos(nomePolitico: string, idPolitico: string, ano: string) {
 
-  // Adiciona título e botão de fechar
-  modal.innerHTML = `
-    <h2 style="margin-top: 0;">Discursos de ${nomePolitico}</h2>
-    <button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
-    <div id="discursos-content"><p>Carregando...</p></div>
-  `;
+	const overlay = document.createElement("div");
+	overlay.id = "modal-overlay";
+	Object.assign(overlay.style, {
+		position: "fixed", top: "0", left: "0",
+		width: "100%", height: "100%",
+		backgroundColor: "rgba(0, 0, 0, 0.7)",
+		zIndex: "1000",
+		display: "flex", alignItems: "center", justifyContent: "center",
+	});
 
-  overlay.appendChild(modal);
-  document.body.appendChild(overlay);
+	const modal = document.createElement("div");
+	Object.assign(modal.style, {
+		background: "white", padding: "20px",
+		borderRadius: "8px", width: "80%",
+		maxWidth: "700px", maxHeight: "90vh",
+		overflowY: "auto", position: "relative",
+	});
 
-  // Função para fechar o modal
-  const fecharModal = () => document.body.removeChild(overlay);
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) fecharModal();
-  });
-  (modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
+	modal.innerHTML = `
+		<h2 style="margin-top: 0;">Resumo: ${nomePolitico} (${ano})</h2>
+		<button id="modal-close" style="position: absolute; top: 10px; right: 10px; font-size: 20px; border: none; background: transparent; cursor: pointer;">&times;</button>
+		<div id="discursos-content"><p>Carregando...</p></div>
+	`;
 
-  // Busca e exibe os discursos
-  try {
-    // Assumindo que os arquivos de discursos estão na pasta /public/discursos/
-    const response = await fetch(`/discursos/${nomeArquivo}`);
-    if (!response.ok) throw new Error(`Não foi possível encontrar o arquivo: ${nomeArquivo}`);
-    
-    const politicoData = await response.json();
-    const discursos = politicoData.discursos; // Acessa a lista de discursos dentro do objeto principal
+	overlay.appendChild(modal);
+	document.body.appendChild(overlay);
 
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+	const fecharModal = () => {
+		if (document.body.contains(overlay)) {
+			document.body.removeChild(overlay);
+		}
+	};
+	
+	overlay.addEventListener("click", (e) => {
+		if (e.target === overlay) fecharModal();
+	});
+	(modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
 
-    if (Array.isArray(discursos) && discursos.length > 0) {
-      // Limpa o "Carregando..."
-      contentDiv.innerHTML = "";
-      // Itera sobre a lista de discursos encontrada
-      discursos.forEach((discurso: any) => {
-        const discursoEl = document.createElement("div");
-        discursoEl.style.borderBottom = "1px solid #eee";
-        discursoEl.style.padding = "10px 0";
-        discursoEl.style.marginBottom = "10px";
-        
-        // Formata a data para melhor visualização
-        const dataFormatada = new Date(discurso.dataHoraInicio).toLocaleDateString('pt-BR', {
-          day: '2-digit', month: '2-digit', year: 'numeric'
-        });
 
-        // Monta o HTML com os dados corretos do JSON
-        discursoEl.innerHTML = `
-          <p><strong>Data:</strong> ${dataFormatada}</p>
-          <p><strong>Tipo do Discurso:</strong> ${discurso.tipoDiscurso || 'Não informado'}</p>
-          <p><strong>Sumário:</strong> ${discurso.sumario || 'Não informado'}</p>
-          ${discurso.urlTexto ? `<a href="${discurso.urlTexto}" target="_blank" rel="noopener noreferrer">Ler íntegra no Diário da Câmara</a>` : ''}
-        `;
-        contentDiv.appendChild(discursoEl);
-      });
-    } else {
-      contentDiv.innerHTML = "<p>Nenhum discurso encontrado.</p>";
-    }
+	try {
 
-  } catch (error) {
-    console.error("Erro ao carregar discursos:", error);
-    const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
-    contentDiv.innerHTML = `<p style="color: red;">Ocorreu um erro ao carregar os discursos.</p>`;
-  }
+		const urlAPI = `http://localhost:3000/api/discursos/${idPolitico}/${ano}`;
+		console.log(`Buscando discursos no banco de dados: ${urlAPI}`);
+		
+		const response = await fetch(urlAPI);
+		
+		if (!response.ok) {
+			throw new Error(`Erro na API: ${response.status}`);
+		}
+
+		const jsonData = await response.json();
+		const discursos = jsonData.discursos || [];
+
+		const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+
+		if (discursos.length > 0) {
+			contentDiv.innerHTML = "";
+			
+			discursos.forEach((d: any) => {
+				const div = document.createElement("div");
+				div.style.marginBottom = "15px";
+				div.style.borderBottom = "1px solid #ddd";
+				div.style.paddingBottom = "10px";
+
+				let dataFormatada = 'Data desconhecida';
+				if (d.data_hora) {
+					dataFormatada = new Date(d.data_hora).toLocaleDateString('pt-BR');
+				}
+
+				div.innerHTML = `
+					<p style="font-size: 0.9em; color: #666; margin-bottom: 5px;">
+						<strong>Data:</strong> ${dataFormatada} | <strong>Tipo:</strong> ${d.tipo || 'Não informado'}
+					</p>
+					<div style="line-height: 1.5; color: #333; margin-top: 10px;">
+						${parseMarkdown(d.sumario || 'Sem conteúdo disponível.')}
+					</div>
+					${d.url_texto ? `<div style="margin-top: 8px;"><a href="${d.url_texto}" target="_blank" style="font-size: 0.8em; color: #0066cc;">Ler na íntegra no Diário da Câmara</a></div>` : ''}
+				`;
+				contentDiv.appendChild(div);
+			});
+		} else {
+			contentDiv.innerHTML = `<p>Nenhum discurso encontrado para este deputado no ano de ${ano}.</p>`;
+		}
+
+	} catch (error: any) {
+		console.error("Erro ao buscar discursos:", error);
+		const contentDiv = modal.querySelector("#discursos-content") as HTMLElement;
+		contentDiv.innerHTML = `<p style="color: red;"><strong>Erro de Conexão:</strong> Não foi possível acessar o banco de dados. Verifique se o server.ts está rodando no terminal.</p>`;
+	}
 }

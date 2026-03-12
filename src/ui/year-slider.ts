@@ -1,9 +1,5 @@
 const ANOS = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 
-/**
- * Cria e anexa o componente de slider de ano ao corpo do documento.
- * @param onYearChange - Uma função de callback que é chamada sempre que um novo ano é selecionado.
- */
 export function createYearSlider(onYearChange: (ano: string) => void) {
   let indiceAnoAtual = 0;
 

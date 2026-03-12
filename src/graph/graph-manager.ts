@@ -10,7 +10,6 @@ import { createCommunityFilter } from "../ui/community-filter";
 import { createPartyControls } from "../ui/party-controls";
 import { createResetButton } from "../ui/reset-button";
 
-//Application state
 let mapaDiscursos: Record<string, string> = {};
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
@@ -18,7 +17,6 @@ const container = document.getElementById("container");
 const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
 let indiceAnoAtual = 0;
 
-//Search state
 let searchQuery = "";
 let hoveredNode: string | null = null;
 
@@ -63,6 +61,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 	jsonData.links.forEach((link) => {
 		graph.addEdge(link.source, link.target, {
 			size: link.concordancia * 2,
+			weight: link.concordancia,
 			color: "rgba(0, 0, 0, 0.08)",
 		});
 	});
@@ -73,7 +72,7 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 	fa2Settings.linLogMode = false;
 	fa2Settings.outboundAttractionDistribution = true;
 	fa2Settings.gravity = 0;
-	fa2Settings.edgeWeightInfluence = 0;
+	fa2Settings.edgeWeightInfluence = 1;
 	forceAtlas2.assign(graph, { ...fa2Settings, iterations: 1000 });
 
 	sigmaRenderer = new Sigma(graph, container as HTMLElement);
@@ -88,10 +87,8 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 				res.zIndex = 10;
 
 			} else {
-				//res.color = "#E0E0E0";
 				res.label = "";
 				res.zIndex = 0;
-				//res.size = 4;
 			}
 		}
 		return res;
@@ -99,20 +96,21 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
 	sigmaRenderer.on("clickNode", ({ node }) => {
 		const attrs = graph.getNodeAttributes(node);
-		const nomePolitico = attrs.label.toUpperCase();
-		const nomeArquivo = mapaDiscursos[nomePolitico];
+		
+		const idPolitico = node; 
+        
+		const anoAtual = anos[indiceAnoAtual]; 
 
-		if (nomeArquivo) {
-			exibirModalDiscursos(attrs.label, nomeArquivo);
+		if (idPolitico && anoAtual) {
+			exibirModalDiscursos(attrs.label, idPolitico, anoAtual);
 		} else {
-			console.log(`Nenhum arquivo de discurso encontrado no mapa para: ${attrs.label}`);
+			console.error("Dados insuficientes para carregar discursos.");
 		}
 	});
 
 	createSearchBar((query) => {
 		searchQuery = query;
 		hoveredNode = null;
-		let nodeToHover: string | null = null;
 
 		if (query) {
 			const matches = graph.filterNodes((node, attrs) =>
@@ -135,21 +133,11 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 
 				const bestMatch = matches[0];
 				hoveredNode = bestMatch;
-				nodeToHover = bestMatch;
 			}
 		}
 
-		// Refresh FIRST
 		if (sigmaRenderer) sigmaRenderer.refresh();
 
-		// Set Hover LAST
-		if (sigmaRenderer) {
-			if (nodeToHover) {
-				sigmaRenderer.setHoveredNode(nodeToHover);
-			} else {
-				sigmaRenderer.setHoveredNode(undefined);
-			}
-		}
 	});
 
 	createCommunityFilter(graph, jsonData.nodes);
@@ -159,28 +147,18 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 async function carregarGrafo(ano: string) {
 	indiceAnoAtual = anos.indexOf(ano);
 	try {
-		const response = await fetch(`/${ano}.json`);
-		const texto = await response.text();
+
+		const response = await fetch(`http://localhost:3000/api/grafo/${ano}`);
+		
 		if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
-		const jsonData = JSON.parse(texto);
+
+		const jsonData = await response.json();
+		
 		construirGrafo(jsonData);
 	} catch (err) {
-		console.error("Erro ao carregar grafo:", err);
+		console.error("Erro ao carregar grafo da API:", err);
 	}
 }
-
-async function carregarMapeamento() {
-	try {
-		const response = await fetch('/mapeamento_discursos.json');
-		if (!response.ok) throw new Error('Falha ao carregar mapa de discursos');
-		mapaDiscursos = await response.json();
-		console.log("Mapa de discursos carregado com sucesso.");
-	} catch (error) {
-		console.error("Não foi possível carregar o arquivo de mapeamento:", error);
-		alert("Atenção: A funcionalidade de exibir discursos pode não funcionar.");
-	}
-}
-
 
 export async function iniciarAplicacao() {
 	if (!container) {
@@ -188,7 +166,6 @@ export async function iniciarAplicacao() {
 		return;
 	}
 
-	await carregarMapeamento();
 
 	createYearSlider(carregarGrafo);
 	createResetButton(() => {

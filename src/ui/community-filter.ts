@@ -1,12 +1,6 @@
-// src/ui/community-filter.ts
 import Graph from "graphology";
 import { NodeData } from "../graph/types";
 
-/**
- * Cria e anexa o filtro de comunidades ao corpo do documento.
- * @param graph - A instância do grafo do Graphology.
- * @param nodes - A lista de nós para extrair as comunidades existentes.
- */
 export function createCommunityFilter(graph: Graph, nodes: NodeData[]): void {
   const communityContainer = document.createElement("div");
   communityContainer.id = "comunidadeContainer";

@@ -1,7 +1,3 @@
-/**
- * Cria o botão para recarregar/recriar o grafo.
- * @param onClick A função a ser executada quando o botão é clicado.
- */
 export function createResetButton(onClick: () => void): void {
   const resetButton = document.createElement("button");
   resetButton.textContent = "Recriar";
