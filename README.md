@@ -1,6 +1,8 @@
 # Visualizador da Câmara dos Deputados
 
-Este projeto é uma aplicação full-stack que processa e visualiza dados dos discursos da Câmara dos Deputados. Ele é composto por um pipeline de ingestão de dados em **Python**, um backend em **Node.js (Express)** e um frontend interativo.
+O **Visualizador da Câmara dos Deputados** é um projeto focado na exploração visual e interativa dos discursos e conexões políticas. Desenvolvido em **TypeScript** e utilizando a biblioteca **Sigma.js**, o projeto renderiza grafos de rede para mapear, filtrar e analisar o cenário político brasileiro de forma dinâmica. 
+
+O ecossistema do projeto também conta com scripts em Python para a ingestão e estruturação dos dados, e um servidor Node.js leve para fornecer essas informações do banco de dados MySQL diretamente para a interface de visualização.
 
 ## Pré-requisitos
 
@@ -18,7 +20,7 @@ Siga o passo a passo abaixo para configurar o banco de dados, as dependências e
 ### Passo 1: Configuração do Banco de Dados
 O projeto utiliza um banco de dados MySQL chamado `camara_deputados`. Um arquivo de exportação já foi providenciado para facilitar a criação.
 
-1. Abra o **MySQL Workbench** (ou seu gerenciador SQL favorito).
+1. Abra o **MySQL Workbench** (ou outro gerenciador de sua escolha).
 2. Importe o arquivo de dump localizado na pasta `sql/` do projeto. 
    *(Isso criará automaticamente o banco `camara_deputados`, as tabelas necessárias e os dados iniciais).*
 
@@ -83,6 +85,6 @@ chmod +x iniciar.sh
 
 ---
 
-### 🛑 Encerrando a aplicação
+### Encerrando a aplicação
 * **Windows:** Feche a janela do terminal onde o frontend está rodando e feche o terminal minimizado do "Backend Node".
 * **Linux / macOS:** Pressione `Ctrl+C` no terminal onde o script está rodando (o script está configurado para encerrar o backend automaticamente junto com o frontend).
