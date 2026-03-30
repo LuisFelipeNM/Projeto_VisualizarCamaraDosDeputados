@@ -1,4 +1,4 @@
-const ANOS = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+const ANOS = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 
 export function createYearSlider(onYearChange: (ano: string) => void) {
   let indiceAnoAtual = 0;
@@ -31,7 +31,7 @@ export function createYearSlider(onYearChange: (ano: string) => void) {
   const inputAno = document.createElement("input");
   inputAno.type = "number";
   inputAno.min = "2017";
-  inputAno.max = "2024";
+  inputAno.max = "2025";
   inputAno.value = ANOS[indiceAnoAtual];
   inputAno.style.width = "100px";
   inputAno.style.padding = "3px 5px";
@@ -96,7 +96,7 @@ export function createYearSlider(onYearChange: (ano: string) => void) {
     if (indice !== -1) {
       atualizarAno(indice);
     } else {
-      alert("Ano inválido. Digite um ano entre 2017 e 2024.");
+      alert("Ano inválido. Digite um ano entre 2017 e 2025.");
       inputAno.value = ANOS[indiceAnoAtual];
     }
   });

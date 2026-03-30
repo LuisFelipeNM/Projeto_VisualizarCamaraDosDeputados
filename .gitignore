@@ -139,3 +139,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Ambiente Virtual Python
+visualizar_camara/

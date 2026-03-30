@@ -33,31 +33,36 @@ def processar_dados():
     for file in [f for f in os.listdir(public_path) if f.endswith('.json')]:
         ano = file.replace('.json', '')
         print(f"-> Importando grafo de {ano}...")
+        
+        # --- BLINDAGEM: Limpa os links antigos deste ano antes de reimportar ---
+        cursor.execute("DELETE FROM links WHERE ano = %s", (ano,))
+        
         with open(os.path.join(public_path, file), 'r', encoding='utf-8') as f:
             data = json.load(f)
             for node in data.get('nodes', []):
+                # INSERT IGNORE protege contra erro de chave duplicada em deputados e anos_atuacao
                 cursor.execute("INSERT IGNORE INTO deputados (id, nome) VALUES (%s, %s)", (node['id'], node['nome']))
                 cursor.execute("INSERT IGNORE INTO anos_atuacao (id_deputado, ano, partido, uf, strength, comunidade) VALUES (%s, %s, %s, %s, %s, %s)", (node['id'], ano, node['partido'], node['uf'], node['strength'], node['community'] if 'community' in node else node.get('comunidade', 0)))
+            
             for link in data.get('links', []):
                 cursor.execute("INSERT INTO links (ano, source_id, target_id, concordancia, probability) VALUES (%s, %s, %s, %s, %s)", (ano, link['source'], link['target'], link['concordancia'], link['probability']))
 
-    # 2. PROCESSAR DISCURSOS (COM VALIDAÇÃO DE ID)
+    # 2. PROCESSAR DISCURSOS
     discursos_base = os.path.join(public_path, 'discursos')
     if os.path.exists(discursos_base):
         for ano_pasta in os.listdir(discursos_base):
             caminho_ano = os.path.join(discursos_base, ano_pasta)
             if os.path.isdir(caminho_ano):
                 print(f"-> Analisando discursos de {ano_pasta}...")
+                
+                # --- BLINDAGEM: Limpa os discursos antigos deste ano antes de reimportar ---
+                cursor.execute("DELETE FROM discursos WHERE ano = %s", (ano_pasta,))
+                
                 for txt_file in os.listdir(caminho_ano):
                     if not txt_file.endswith('.txt'): continue
                     
-                    # Extrai o ID (ex: 73433)
                     dep_id = txt_file.split('_')[-1].replace('.txt', '').strip()
-                    
-                    # VALIDAÇÃO: Se o ID não for numérico (ex: "AVANTE"), ignoramos o arquivo
-                    if not dep_id.isdigit():
-                        print(f"   [PULADO] Arquivo inválido ignorado: {txt_file}")
-                        continue
+                    if not dep_id.isdigit(): continue
 
                     with open(os.path.join(caminho_ano, txt_file), 'r', encoding='utf-8') as f:
                         conteudo = f.read()
@@ -67,7 +72,7 @@ def processar_dados():
     conn.commit()
     cursor.close()
     conn.close()
-    print("\n[OK] Tudo pronto, Luís! Banco de dados populado.")
+    print("\n[OK] Banco de dados atualizado sem duplicatas!")
 
 if __name__ == "__main__":
     setup_database()

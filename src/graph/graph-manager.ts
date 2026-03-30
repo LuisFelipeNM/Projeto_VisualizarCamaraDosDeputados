@@ -14,7 +14,7 @@ let mapaDiscursos: Record<string, string> = {};
 let sigmaRenderer: Sigma | null = null;
 let grafo: Graph | null = null;
 const container = document.getElementById("container");
-const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+const anos = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 let indiceAnoAtual = 0;
 
 let searchQuery = "";
