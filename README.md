@@ -1,30 +1,88 @@
-# Projeto_VisualizarCamaraDosDeputados
+# Visualizador da Câmara dos Deputados
 
-Este projeto tem como objetivo visualizar dados da Câmara dos Deputados de forma interativa, utilizando ferramentas de visualização em rede.
+Este projeto é uma aplicação full-stack que processa e visualiza dados dos discursos da Câmara dos Deputados. Ele é composto por um pipeline de ingestão de dados em **Python**, um backend em **Node.js (Express)** e um frontend interativo.
 
-Pré-requisitos:
+## Pré-requisitos
 
-Antes de tudo, certifique-se de que você possui o Node.js instalado na sua máquina.
+Antes de começar, certifique-se de ter instalado em sua máquina:
+* [Node.js](https://nodejs.org/) (Versão 18 ou superior)
+* [Python](https://www.python.org/) (Versão 3.10 ou superior)
+* [MySQL Server e Workbench](https://dev.mysql.com/downloads/)
 
-Passo a passo para rodar o projeto:
+---
 
-    Copiar arquivos da pasta public para a pasta dist
-    (Isso garante que os arquivos estáticos estejam disponíveis para execução.)
+## Como configurar o projeto localmente
 
-    Compilar o TypeScript:
+Siga o passo a passo abaixo para configurar o banco de dados, as dependências e inicializar a aplicação.
 
-        npx tsc
+### Passo 1: Configuração do Banco de Dados
+O projeto utiliza um banco de dados MySQL chamado `camara_deputados`. Um arquivo de exportação já foi providenciado para facilitar a criação.
 
-Iniciar o servidor:
+1. Abra o **MySQL Workbench** (ou seu gerenciador SQL favorito).
+2. Importe o arquivo de dump localizado na pasta `sql/` do projeto. 
+   *(Isso criará automaticamente o banco `camara_deputados`, as tabelas necessárias e os dados iniciais).*
 
-    npm start
+### Passo 2: Variáveis de Ambiente (`.env`)
+Tanto o Node.js quanto o Python precisam das suas credenciais do banco de dados para funcionar. 
 
-Estrutura básica do projeto
+Na **raiz do projeto**, crie um arquivo chamado **`.env`** (com o ponto no início e sem extensão) e adicione o seguinte conteúdo, substituindo pela sua senha do MySQL:
 
-    public/: Arquivos estáticos (HTML, imagens, dados, etc.)
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=sua_senha_aqui
+DB_NAME=camara_deputados
+```
 
-    src/: Código-fonte principal em TypeScript
+### Passo 3: Configuração do Python (Script de Ingestão)
+O script Python (`ingestao.py`) utiliza um ambiente virtual isolado para não conflitar com outras dependências do seu sistema.
 
-    dist/: Código compilado gerado pelo TypeScript
+1. Abra o terminal na raiz do projeto e crie o ambiente virtual:
+   ```bash
+   python -m venv visualizar_camara
+   ```
+2. Ative o ambiente virtual:
+   * **Windows:** `visualizar_camara\Scripts\activate`
+   * **Linux/macOS:** `source visualizar_camara/bin/activate`
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+*(Nota: O script de ingestão pode ser rodado manualmente com `python ingestao.py` quando for necessário atualizar os dados).*
 
-    package.json: Configurações do projeto e dependências
+### Passo 4: Configuração do Node.js (Backend e Frontend)
+As dependências do JavaScript são gerenciadas pelo npm.
+
+1. No terminal, na raiz do projeto, instale as dependências:
+   ```bash
+   npm install
+   ```
+
+---
+
+## Rodando a Aplicação
+
+Para facilitar, criamos scripts de automação que iniciam o Servidor (Backend) e o Frontend (Vite) simultaneamente.
+
+### No Windows
+Basta dar um duplo clique no arquivo **`iniciar.bat`** localizado na raiz do projeto, ou rodar no terminal:
+```bash
+.\iniciar.bat
+```
+*O script abrirá o servidor Node em segundo plano e iniciará o Frontend na sua janela atual, abrindo o navegador automaticamente.*
+
+### No Linux / macOS
+Basta utilizar o script `iniciar.sh` que já está na raiz do projeto. No terminal, execute:
+```bash
+# Dê permissão de execução (apenas na primeira vez)
+chmod +x iniciar.sh
+
+# Execute o script
+./iniciar.sh
+```
+
+---
+
+### 🛑 Encerrando a aplicação
+* **Windows:** Feche a janela do terminal onde o frontend está rodando e feche o terminal minimizado do "Backend Node".
+* **Linux / macOS:** Pressione `Ctrl+C` no terminal onde o script está rodando (o script está configurado para encerrar o backend automaticamente junto com o frontend).
