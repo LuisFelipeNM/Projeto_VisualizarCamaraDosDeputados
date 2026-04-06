@@ -58,19 +58,14 @@ app.get('/api/grafo/:ano', async (req, res) => {
 
 app.get('/api/discursos/:deputadoId/:ano', async (req, res) => {
     const { deputadoId, ano } = req.params;
-
     try {
         const [rows] = await dbPool.execute(
-            `SELECT conteudo AS sumario, 'Transcrição do Arquivo' AS tipo 
-             FROM discursos 
-             WHERE id_deputado = ? AND ano = ?`,
+            `SELECT conteudo, resumo FROM discursos WHERE id_deputado = ? AND ano = ?`,
             [deputadoId, ano]
         );
-
         res.json({ discursos: rows });
-
     } catch (error) {
-        console.error("Erro ao buscar discursos:", error);
+        console.error(error);
         res.status(500).json({ erro: "Erro ao buscar discursos" });
     }
 });
