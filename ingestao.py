@@ -20,14 +20,16 @@ def setup_database():
     cursor.execute("CREATE TABLE IF NOT EXISTS anos_atuacao (id_deputado VARCHAR(100), ano INT, partido VARCHAR(20), uf CHAR(2), strength DOUBLE, comunidade INT, PRIMARY KEY (id_deputado, ano), FOREIGN KEY (id_deputado) REFERENCES deputados(id))")
     cursor.execute("CREATE TABLE IF NOT EXISTS links (id_link INT AUTO_INCREMENT PRIMARY KEY, ano INT, source_id VARCHAR(100), target_id VARCHAR(100), concordancia DOUBLE, probability DOUBLE, FOREIGN KEY (source_id) REFERENCES deputados(id), FOREIGN KEY (target_id) REFERENCES deputados(id))")
     
-    # MODIFICAÇÃO 1: Removida a linha do nome_arquivo
+    # Tabela discursos atualizada: 
+    # Removido o 'nome_arquivo' e adicionado UNIQUE KEY(id_deputado, ano)
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS discursos (
             id_discurso INT AUTO_INCREMENT PRIMARY KEY, 
             id_deputado VARCHAR(100), 
             ano INT, 
             conteudo LONGTEXT, 
-            resumo LONGTEXT, 
+            resumo LONGTEXT,
+            UNIQUE KEY uq_deputado_ano (id_deputado, ano),
             FOREIGN KEY (id_deputado) REFERENCES deputados(id)
         )
     """)
@@ -87,11 +89,19 @@ def processar_dados():
                 if os.path.exists(path_resumo):
                     with open(path_resumo, 'r', encoding='utf-8') as f:
                         resumo_texto = f.read().strip()
-                
-                # MODIFICAÇÃO 2: Removido nome_arquivo do SQL e dos valores
-                sql = "INSERT IGNORE INTO discursos (id_deputado, ano, conteudo, resumo) VALUES (%s, %s, %s, %s)"
+                else:
+                    print(f"   [!] Resumo não encontrado: {path_resumo}")
+
+                # INSERT modificado para não usar nome_arquivo
+                # O ON DUPLICATE KEY UPDATE agora reage à tentativa de duplicar (id_deputado, ano)
+                sql = """
+                    INSERT INTO discursos (id_deputado, ano, conteudo, resumo)
+                    VALUES (%s, %s, %s, %s)
+                    ON DUPLICATE KEY UPDATE
+                        conteudo = VALUES(conteudo),
+                        resumo   = VALUES(resumo)
+                """
                 cursor.execute(sql, (dep_id, ano_extraido, conteudo, resumo_texto))
-                
                 conn.commit()
 
             except Exception as e:
