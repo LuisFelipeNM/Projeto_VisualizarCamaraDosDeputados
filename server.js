@@ -59,14 +59,25 @@ app.get('/api/grafo/:ano', async (req, res) => {
 app.get('/api/discursos/:deputadoId/:ano', async (req, res) => {
     const { deputadoId, ano } = req.params;
     try {
-        const [rows] = await dbPool.execute(
-            `SELECT conteudo, resumo FROM discursos WHERE id_deputado = ? AND ano = ?`,
-            [deputadoId, ano]
-        );
+        const query = `
+            SELECT 
+                d.conteudo AS discurso_completo, 
+                d.resumo AS resumo_deputado,
+                rp.resumo AS resumo_partido,
+                rc.resumo AS resumo_comunidade
+            FROM discursos d
+            JOIN anos_atuacao a ON d.id_deputado = a.id_deputado AND d.ano = a.ano
+            LEFT JOIN resumos_partidos rp ON a.partido = rp.partido AND a.ano = rp.ano
+            LEFT JOIN resumos_comunidades rc ON a.comunidade = rc.comunidade AND a.ano = rc.ano
+            WHERE d.id_deputado = ? AND d.ano = ?
+        `;
+        
+        const [rows] = await dbPool.execute(query, [deputadoId, ano]);
+        
         res.json({ discursos: rows });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ erro: "Erro ao buscar discursos" });
+        res.status(500).json({ erro: "Erro ao buscar discursos completos" });
     }
 });
 
