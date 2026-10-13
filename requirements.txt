@@ -1,2 +1,7 @@
 mysql-connector-python==9.6.0
 python-dotenv==1.2.2
+fastapi
+uvicorn
+pydantic
+pandas
+google-genai

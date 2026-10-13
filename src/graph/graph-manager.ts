@@ -9,6 +9,7 @@ import { createSearchBar } from "../ui/search-bar";
 import { createCommunityFilter } from "../ui/community-filter";
 import { createPartyControls } from "../ui/party-controls";
 import { createResetButton } from "../ui/reset-button";
+import { createAnaliseButton } from "../ui/analysis-button";
 
 let mapaDiscursos: Record<string, string> = {};
 let sigmaRenderer: Sigma | null = null;
@@ -75,7 +76,8 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 	fa2Settings.edgeWeightInfluence = 1;
 	forceAtlas2.assign(graph, { ...fa2Settings, iterations: 1000 });
 
-	sigmaRenderer = new Sigma(graph, container as HTMLElement);
+	const renderer = new Sigma(graph, container as HTMLElement);
+	sigmaRenderer = renderer;
 
 	sigmaRenderer.setSetting("nodeReducer", (node, data) => {
 		const res = { ...data };
@@ -94,18 +96,16 @@ function construirGrafo(jsonData: { nodes: NodeData[]; links: LinkData[] }) {
 		return res;
 	});
 
-	sigmaRenderer.on("clickNode", ({ node }) => {
-		const attrs = graph.getNodeAttributes(node);
-		
-		const idPolitico = node; 
-        
-		const anoAtual = anos[indiceAnoAtual]; 
+	renderer.on("clickNode", ({ node }) => {
+	const attrs = graph.getNodeAttributes(node);
+	const idPolitico = node;
+	const anoAtual = anos[indiceAnoAtual];
 
-		if (idPolitico && anoAtual) {
-			exibirModalDiscursos(attrs.label, idPolitico, anoAtual);
-		} else {
-			console.error("Dados insuficientes para carregar discursos.");
-		}
+	if (idPolitico && anoAtual) {
+		exibirModalDiscursos(attrs.label, idPolitico, anoAtual, renderer);
+	} else {
+		console.error("Dados insuficientes para carregar discursos.");
+	}
 	});
 
 	createSearchBar((query) => {
@@ -161,17 +161,18 @@ async function carregarGrafo(ano: string) {
 }
 
 export async function iniciarAplicacao() {
-	if (!container) {
-		console.error("Elemento #container não foi encontrado no DOM.");
-		return;
-	}
+    if (!container) {
+        console.error("Elemento #container não foi encontrado no DOM.");
+        return;
+    }
 
+    createYearSlider(carregarGrafo);
+    createResetButton(() => {
+        const anoAtual = anos[indiceAnoAtual];
+        carregarGrafo(anoAtual);
+    });
 
-	createYearSlider(carregarGrafo);
-	createResetButton(() => {
-		const anoAtual = anos[indiceAnoAtual];
-		carregarGrafo(anoAtual);
-	});
+    createAnaliseButton();
 
-	carregarGrafo("2017");
+    carregarGrafo("2017");
 }

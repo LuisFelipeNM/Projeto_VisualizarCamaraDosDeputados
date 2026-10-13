@@ -1,8 +1,12 @@
 @echo off
 
-echo [SISTEMA] Iniciando Servidor e Frontend...
-:: O comando abaixo roda o server em segundo plano e o dev na janela atual
-start /min "Backend" cmd /c "node server.js"
+echo [SISTEMA] Iniciando API Python (FastAPI)...
+start "API Python" cmd /k "call visualizar_camara\Scripts\activate && python -m uvicorn api_analise:app --reload --port 8000"
+
+echo [SISTEMA] Iniciando Servidor Node.js...
+start "Backend Node" cmd /k "node server.js"
+
+echo [SISTEMA] Iniciando Frontend...
 npm run dev
 
 pause

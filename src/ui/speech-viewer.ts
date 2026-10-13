@@ -1,3 +1,6 @@
+import type Sigma from "sigma";
+import { calcularEPreencherMedidasLocal } from "./measures-panel";
+
 function parseMarkdown(text: string | null | undefined): string {
     if (!text || text === "null") return 'Informação não disponível ou ainda não processada pela IA.';
     return text
@@ -5,7 +8,12 @@ function parseMarkdown(text: string | null | undefined): string {
         .replace(/\n/g, '<br>');
 }
 
-export async function exibirModalDiscursos(nomePolitico: string, idPolitico: string, ano: string) {
+export async function exibirModalDiscursos(
+    nomePolitico: string,
+    idPolitico: string,
+    ano: string,
+    sigma: Sigma
+) {
     const overlay = document.createElement("div");
     overlay.id = "modal-overlay";
     Object.assign(overlay.style, {
@@ -27,7 +35,6 @@ export async function exibirModalDiscursos(nomePolitico: string, idPolitico: str
         fontFamily: "sans-serif"
     });
 
-    // Estrutura HTML do modal com as abas
     modal.innerHTML = `
         <h2 style="margin-top: 0; color: #2c3e50; padding-bottom: 10px;">
             Análise Parlamentar: ${nomePolitico} (${ano})
@@ -40,6 +47,7 @@ export async function exibirModalDiscursos(nomePolitico: string, idPolitico: str
             <button class="tab-btn" data-target="tab-resumo-partido" style="padding: 8px 15px; border: none; background: #ecf0f1; color: #333; border-radius: 5px; cursor: pointer;">Partido (IA)</button>
             <button class="tab-btn" data-target="tab-resumo-comunidade" style="padding: 8px 15px; border: none; background: #ecf0f1; color: #333; border-radius: 5px; cursor: pointer;">Comunidade (IA)</button>
             <button class="tab-btn" data-target="tab-discursos-brutos" style="padding: 8px 15px; border: none; background: #ecf0f1; color: #333; border-radius: 5px; cursor: pointer;">Discursos Completos</button>
+            <button class="tab-btn" data-target="tab-medidas-grafo" style="padding: 8px 15px; border: none; background: #ecf0f1; color: #333; border-radius: 5px; cursor: pointer;">Medidas do Grafo</button>
         </div>
 
         <!-- Conteúdo das Abas -->
@@ -47,6 +55,7 @@ export async function exibirModalDiscursos(nomePolitico: string, idPolitico: str
         <div id="tab-resumo-partido" class="tab-content" style="display: none; line-height: 1.6; color: #333;"><p>Carregando...</p></div>
         <div id="tab-resumo-comunidade" class="tab-content" style="display: none; line-height: 1.6; color: #333;"><p>Carregando...</p></div>
         <div id="tab-discursos-brutos" class="tab-content" style="display: none;"><p>Carregando...</p></div>
+        <div id="tab-medidas-grafo" class="tab-content" style="display: none; line-height: 1.6; color: #333;"><p>Calculando topologia da rede...</p></div>
     `;
 
     overlay.appendChild(modal);
@@ -56,9 +65,10 @@ export async function exibirModalDiscursos(nomePolitico: string, idPolitico: str
     overlay.addEventListener("click", (e) => { if (e.target === overlay) fecharModal(); });
     (modal.querySelector("#modal-close") as HTMLElement).onclick = fecharModal;
 
-    // Lógica de alternância das abas
     const tabBtns = modal.querySelectorAll('.tab-btn');
     const tabContents = modal.querySelectorAll('.tab-content');
+
+    let medidasCarregadas = false;
 
     tabBtns.forEach(btn => {
         (btn as HTMLElement).onclick = (e) => {
@@ -78,10 +88,18 @@ export async function exibirModalDiscursos(nomePolitico: string, idPolitico: str
             if (targetId) {
                 const targetEl = modal.querySelector(`#${targetId}`) as HTMLElement;
                 if (targetEl) targetEl.style.display = 'block';
+
+                if (targetId === "tab-medidas-grafo" && !medidasCarregadas) {
+                    const divMedidasGrafo = modal.querySelector("#tab-medidas-grafo") as HTMLElement;
+                    const graph = sigma.getGraph(); // grafo atual do Sigma, pego no momento do clique
+                    calcularEPreencherMedidasLocal(graph, String(idPolitico), ano, divMedidasGrafo);
+                    medidasCarregadas = true;
+                }
             }
         };
     });
-
+    
+    
     try {
         const urlAPI = `http://localhost:3000/api/discursos/${idPolitico}/${ano}`;
         const response = await fetch(urlAPI);

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Discursiva</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #222222; color: #ffffff; }
+        .container { max-width: 1200px; margin: auto; }
+        .card { background: #333333; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        select, button { padding: 10px; margin-right: 10px; border-radius: 4px; border: 1px solid #555; background: #444; color: white; }
+        button { background: #007bff; cursor: pointer; border: none; font-weight: bold; }
+        button:hover { background: #0056b3; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #555; padding: 10px; text-align: left; }
+        th { background: #444; }
+        .citacao { margin-left: 20px; font-style: italic; color: #ccc; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; }
+        .card-header h3 { margin: 0; }
+        #btn-download { margin-right: 0; background: #28a745; }
+        #btn-download:hover { background: #1e7e34; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Métricas de Aderência e Dinâmica Parlamentar</h1>
+        
+        <div class="card">
+            <select id="select-ano"></select>
+            <select id="select-tipo">
+                <option value="Comunidade">Comunidade</option>
+                <option value="Partido">Partido</option>
+            </select>
+            <select id="select-grupo"></select>
+            <button id="btn-calcular">Calcular Métricas</button>
+        </div>
+
+        <div id="loading" style="display: none; color: #ffcc00; font-weight: bold;">
+            Processando com IA (isso pode levar alguns minutos)...
+        </div>
+        
+        <div id="resultados" style="display: none;">
+            <div class="card" id="metricas-gerais"></div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Classificação Geral</h3>
+                    <button id="btn-download">Baixar tabela (CSV)</button>
+                </div>
+                <table id="tabela-resultados">
+                    <thead>
+                        <tr>
+                            <th>Deputado</th>
+                            <th>Partido</th>
+                            <th>GPD (%)</th>
+                            <th>Grau</th>
+                            <th>Clustering</th>
+                            <th>Betweenness</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="card" id="citacoes-container">
+                <h3>Citações Identificadas</h3>
+                <div id="citacoes-conteudo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { buscarMetricasDoAno } from "/src/ui/analysis-metrics.ts";
+
+        const API_URL = "http://localhost:8000/api";
+        let dadosFiltros = {};
+
+        let ultimaTabela = [];
+        let ultimoNomeArquivo = "analise";
+
+        const SEPARADOR_CSV = ";";
+        const DECIMAL_CSV = ",";
+
+        const COLUNAS = [
+            ["deputado", "Deputado"],
+            ["partido", "Partido"],
+            ["gpd", "GPD (%)"],
+            ["grau", "Grau"],
+            ["clustering", "Clustering"],
+            ["betweenness", "Betweenness"],
+        ];
+
+        async function carregarFiltros() {
+            try {
+                const res = await fetch(`${API_URL}/filtros`);
+                dadosFiltros = await res.json();
+                
+                const selectAno = document.getElementById('select-ano');
+                dadosFiltros.anos.forEach(ano => {
+                    selectAno.options.add(new Option(ano, ano));
+                });
+
+                preencherGrupos("Comunidade");
+            } catch (err) {
+                alert("Erro ao conectar com a API Python. Verifique se o servidor está rodando na porta 8000.");
+            }
+        }
+
+        function preencherGrupos(tipo) {
+            const selectGrupo = document.getElementById('select-grupo');
+            selectGrupo.innerHTML = "";
+            const opcoes = tipo === "Comunidade" ? dadosFiltros.comunidades : dadosFiltros.partidos;
+            opcoes.forEach(op => selectGrupo.options.add(new Option(op, op)));
+        }
+
+        function formatarCelula(valor) {
+            return valor === null || valor === undefined ? "—" : valor;
+        }
+
+        function escaparCSV(valor) {
+            if (valor === null || valor === undefined) return "";
+            let texto = typeof valor === "number" ? String(valor).replace(".", DECIMAL_CSV) : String(valor);
+            if (texto.includes('"') || texto.includes(SEPARADOR_CSV) || texto.includes("\n")) {
+                texto = `"${texto.replace(/"/g, '""')}"`;
+            }
+            return texto;
+        }
+
+        function baixarCSV() {
+            if (ultimaTabela.length === 0) return;
+
+            const linhas = [COLUNAS.map(([, titulo]) => escaparCSV(titulo)).join(SEPARADOR_CSV)];
+            ultimaTabela.forEach(row => {
+                linhas.push(COLUNAS.map(([chave]) => escaparCSV(row[chave])).join(SEPARADOR_CSV));
+            });
+
+            const csv = "\uFEFF" + linhas.join("\r\n");
+            const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `${ultimoNomeArquivo}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        document.getElementById('select-tipo').addEventListener('change', (e) => {
+            preencherGrupos(e.target.value);
+        });
+
+        document.getElementById('btn-download').addEventListener('click', baixarCSV);
+
+        document.getElementById('btn-calcular').addEventListener('click', async () => {
+            const btn = document.getElementById('btn-calcular');
+            const loading = document.getElementById('loading');
+            const resultados = document.getElementById('resultados');
+            
+            btn.disabled = true;
+            loading.style.display = 'block';
+            resultados.style.display = 'none';
+
+            const ano = parseInt(document.getElementById('select-ano').value);
+            const modo = document.getElementById('select-tipo').value;
+            const grupo = document.getElementById('select-grupo').value;
+
+            try {
+                let metricas_grafo = null;
+                try {
+                    metricas_grafo = await buscarMetricasDoAno(ano);
+                } catch (e) {
+                    console.warn("Não foi possível calcular as métricas do grafo; as colunas ficarão vazias.", e);
+                }
+
+                const payload = {
+                    ano,
+                    modo_agrupamento: modo,
+                    selecao: grupo,
+                    metricas_grafo
+                };
+
+                const res = await fetch(`${API_URL}/calcular`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) throw new Error(await res.text());
+                
+                const data = await res.json();
+                
+                document.getElementById('metricas-gerais').innerHTML = `
+                    <h3>Aderência Média: ${data.metricas_gerais.aderencia_media}%</h3>
+                    <p><strong>Raio Discursivo (Dispersão):</strong> ${data.metricas_gerais.raio_discursivo} pts</p>
+                    <p><strong>Líder Discursivo:</strong> ${data.metricas_gerais.lider}</p>
+                    <p><strong>Candidato de Borda:</strong> ${data.metricas_gerais.borda}</p>
+                `;
+
+                const tbody = document.querySelector('#tabela-resultados tbody');
+                tbody.innerHTML = "";
+                data.tabela.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.deputado}</td>
+                        <td>${row.partido}</td>
+                        <td>${row.gpd}</td>
+                        <td>${formatarCelula(row.grau)}</td>
+                        <td>${formatarCelula(row.clustering)}</td>
+                        <td>${formatarCelula(row.betweenness)}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+                ultimaTabela = data.tabela;
+                const sufixo = `${modo}_${grupo}_${ano}`.replace(/[^\w-]+/g, "_");
+                ultimoNomeArquivo = `analise_${sufixo}`;
+
+                const citContainer = document.getElementById('citacoes-conteudo');
+                citContainer.innerHTML = "";
+                for (const [deputado, analise] of Object.entries(data.citacoes)) {
+                    let html = `<h4>${deputado}</h4>`;
+                    
+                    const favs = analise.favoraveis_encontrados || [];
+                    if (favs.length > 0) {
+                        html += `<p><strong>Favoráveis:</strong></p>`;
+                        favs.forEach(f => {
+                            html += `<p>Tópico: ${f.topico}</p>`;
+                            f.citacoes.forEach(c => html += `<p class="citacao">"${c}"</p>`);
+                        });
+                    }
+
+                    const crits = analise.criticas_encontradas || [];
+                    if (crits.length > 0) {
+                        html += `<p><strong>Críticas:</strong></p>`;
+                        crits.forEach(c => {
+                            html += `<p>Tópico: ${c.topico}</p>`;
+                            c.citacoes.forEach(cit => html += `<p class="citacao">"${cit}"</p>`);
+                        });
+                    }
+                    
+                    citContainer.innerHTML += html + `<hr style="border-color: #555;">`;
+                }
+
+                resultados.style.display = 'block';
+            } catch (err) {
+                alert("Erro ao processar: " + err.message);
+            } finally {
+                btn.disabled = false;
+                loading.style.display = 'none';
+            }
+        });
+
+        carregarFiltros();
+    </script>
+</body>
+</html>
