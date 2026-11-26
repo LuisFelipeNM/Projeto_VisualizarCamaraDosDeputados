@@ -1,0 +1,3 @@
+*.html linguist-generated
+*.ipynb linguist-language=Python
+

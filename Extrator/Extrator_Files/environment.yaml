@@ -1,0 +1,25 @@
+name: votacoes
+channels:
+  - conda-forge
+  - anaconda
+  - huggingface
+  - pytorch
+dependencies:
+  - python==3.11
+  - fa2
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - requests
+  - networkx
+  - transformers
+  - pytorch
+  - huggingface_hub
+  - accelerate
+  - deepspeed
+  - tabulate
+  - pip
+  - pip: 
+    - ipysigma

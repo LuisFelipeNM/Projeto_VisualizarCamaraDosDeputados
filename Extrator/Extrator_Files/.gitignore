@@ -1,0 +1,11 @@
+# Mantém as pastas, mas ignora o conteúdo pesado
+data/jsons/discursos/*.json
+data/proposicoes/afetadas/*.pdf
+data/proposicoes/citadas/*.pdf
+data/networks/*.pkl
+data/logs/*.log
+
+# Ignora logs de sistema e arquivos de ambiente
+*.out
+.offload/
+__pycache__/
